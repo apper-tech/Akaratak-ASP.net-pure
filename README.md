@@ -1,6 +1,7 @@
 # Akaratak-ASP.net
 Akaratak Listing Web Application Using Dynamic Data Framework 6 and ASP.net 4.5
 
+The Main App is located at the following location ([dynamicdatawebsite](https://github.com/apper-tech/akaratak-old/tree/master/eServices/Properties/Marketing/DynamicDataWebSite) ) 
 # Features: 
 * Property lisitng and full CRUD operations
 * Filter system with paging
