@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Cities">
+    <Key>
+      <PropertyRef Name="City_ID" />
+    </Key>
+    <Property Name="City_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="City_Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Country_ID" Type="int" Nullable="false" />
+    <Property Name="City_Native_Name" Type="ntext" Nullable="false" />
+    <Property Name="Latitude" Type="text" />
+    <Property Name="Longitude" Type="text" />
+    <Property Name="City_Latin_Name" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Contract_Type">
+    <Key>
+      <PropertyRef Name="Contract_Type_ID" />
+    </Key>
+    <Property Name="Contract_Type_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Contract_Type_Desc" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Countries">
+    <Key>
+      <PropertyRef Name="Country_ID" />
+    </Key>
+    <Property Name="Country_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Country_Code" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="Country_Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Country_Native_Name" Type="ntext" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Properties">
+    <Key>
+      <PropertyRef Name="PropertyID" />
+    </Key>
+    <Property Name="PropertyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Property_Category_ID" Type="int" Nullable="false" />
+    <Property Name="Property_Type_ID" Type="int" Nullable="false" />
+    <Property Name="Property_Size" Type="int" Nullable="false" />
+    <Property Name="Date_Added" Type="datetime" Nullable="false" />
+    <Property Name="Floor" Type="int" Nullable="false" />
+    <Property Name="Has_Garage" Type="bit" />
+    <Property Name="Has_Garden" Type="bit" />
+    <Property Name="Num_Bedrooms" Type="int" Nullable="false" />
+    <Property Name="Num_Bathrooms" Type="int" Nullable="false" />
+    <Property Name="Expire_Date" Type="datetime" Nullable="false" />
+    <Property Name="Contract_Type" Type="int" />
+    <Property Name="City_ID" Type="int" />
+    <Property Name="Country_ID" Type="int" />
+    <Property Name="Address" Type="nvarchar" MaxLength="100" />
+    <Property Name="Location" Type="varchar" MaxLength="50" />
+    <Property Name="Zip_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Other_Details" Type="ntext" />
+    <Property Name="Sale_Price" Type="int" />
+    <Property Name="Rent_Price" Type="int" />
+    <Property Name="Num_Floors" Type="int" />
+    <Property Name="User_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Property_Photo" Type="text" />
+    <Property Name="Url_ext" Type="varchar(max)" />
+    <Property Name="Property_Id_ext" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Property_Category">
+    <Key>
+      <PropertyRef Name="Cat_ID" />
+    </Key>
+    <Property Name="Cat_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Cat_Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Cat_Description" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DynamicEservice-RealEstate.dbo.Property_Photos' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Property_Photos">
+    <Key>
+      <PropertyRef Name="Property_Photo_ID" />
+      <PropertyRef Name="Photo_Num" />
+      <PropertyRef Name="Photo_Description" />
+      <PropertyRef Name="Photo_Path" />
+    </Key>
+    <Property Name="Property_Photo_ID" Type="int" Nullable="false" />
+    <Property Name="Photo_Num" Type="int" Nullable="false" />
+    <Property Name="Photo_Description" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Photo_Path" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Property_Type">
+    <Key>
+      <PropertyRef Name="Property_Type_ID" />
+    </Key>
+    <Property Name="Property_Type_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Property_Type_Description" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Property_Type_Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Cat_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="User_ID" />
+    </Key>
+    <Property Name="User_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="First_Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Last_Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Address" Type="nvarchar" MaxLength="100" />
+    <Property Name="Has_Office" Type="bit" Nullable="false" />
+    <Property Name="Allow_Prom" Type="bit" Nullable="false" />
+    <Property Name="Sub_NewsLetter" Type="bit" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Phone_Num" Type="varchar" MaxLength="50" />
+    <Property Name="Telegram_ID" Type="bigint" />
+  </EntityType>
+  <Association Name="FK_Cities_Countries">
+    <End Role="Countries" Type="Self.Countries" Multiplicity="1" />
+    <End Role="Cities" Type="Self.Cities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="Country_ID" />
+      </Principal>
+      <Dependent Role="Cities">
+        <PropertyRef Name="Country_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Property_Type_Property_Category">
+    <End Role="Property_Category" Type="Self.Property_Category" Multiplicity="1" />
+    <End Role="Property_Type" Type="Self.Property_Type" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Property_Category">
+        <PropertyRef Name="Cat_ID" />
+      </Principal>
+      <Dependent Role="Property_Type">
+        <PropertyRef Name="Cat_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="Cities" EntityType="Self.Cities" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Contract_Type" EntityType="Self.Contract_Type" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Countries" EntityType="Self.Countries" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Properties" EntityType="Self.Properties" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Property_Category" EntityType="Self.Property_Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Property_Type" EntityType="Self.Property_Type" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Property_Photos" EntityType="Self.Property_Photos" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Property_Photos].[Property_Photo_ID] AS [Property_Photo_ID], 
+    [Property_Photos].[Photo_Num] AS [Photo_Num], 
+    [Property_Photos].[Photo_Description] AS [Photo_Description], 
+    [Property_Photos].[Photo_Path] AS [Photo_Path]
+    FROM [dbo].[Property_Photos] AS [Property_Photos]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_Cities_Countries" Association="Self.FK_Cities_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="Cities" EntitySet="Cities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Property_Type_Property_Category" Association="Self.FK_Property_Type_Property_Category">
+      <End Role="Property_Category" EntitySet="Property_Category" />
+      <End Role="Property_Type" EntitySet="Property_Type" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,985 @@
+﻿/*#27DA93*/
+@media (max-width: @screen-xs) {
+    body {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: @screen-sm) {
+    body {
+        font-size: 14px;
+    }
+}
+
+
+h5 {
+    font-size: 1.4em;
+}
+
+.headarlogo {
+    font-family: Cold,Arial,Impact,fantasy;
+    font-size: 45px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+
+.footerlogo {
+    font-family:'Segoe UI',Cold,Arial,Impact,fantasy;
+    font-size: 45px;
+    color: #27DA93;
+    font-weight: bolder;
+}
+
+.headarlogo2 {
+    color: red;
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+    height: 3px;
+}
+
+::-webkit-scrollbar-button {
+    background-color: #a3a3a3;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #27DA93;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #a3a3a3;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 50px;
+    background-color: #27DA93;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #999;
+}
+
+::-webkit-resizer {
+    background-color: #666;
+}
+
+.cal {
+}
+
+.hidden {
+    display: none;
+}
+
+.caldeftoday {
+}
+
+.caldisabled {
+}
+
+.image {
+    width: 45px;
+    height: 35px;
+}
+
+.buttom-margin {
+    margin-bottom: 20px;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    min-height: 170px;
+}
+
+.img-responsive_def {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.img-responsive2 {
+    display: block;
+    max-width: 100%;
+    height: 200px;
+}
+
+.button {
+    background: none;
+    border: none;
+    color: white;
+    font-family: 'Segoe UI';
+}
+
+.checkboxlist {
+    position: relative;
+    left: 40px;
+}
+
+    .checkboxlist input[type=checkbox] {
+        width: 0px;
+    }
+
+        .checkboxlist input[type=checkbox] + label::before {
+            display: block;
+            position: relative;
+            content: url('../images/checkbox_off.png');
+            left: -30px;
+            top: 20px;
+            width: 20px;
+            height: 20px;
+        }
+
+        .checkboxlist input[type=checkbox]:checked + label::before {
+            content: url('../images/checkbox_on.png');
+            width: 20px;
+            height: 20px;
+        }
+/* Dropdown Button */
+.dropbtnlng {
+    background-color: #fff;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: url('../images/2.png'),pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdownlng {
+    position: relative;
+    display: inline-block;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table-pager {
+    position: relative;
+    left: auto;
+}
+
+table td.shrink {
+    white-space: nowrap
+}
+
+table td.expand {
+    width: 99%
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-contentlng {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+    /* Links inside the dropdown */
+    .dropdown-contentlng a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .dropdown-contentlng a span {
+            position: relative;
+            left: 20px;
+            font-size: 20px;
+        }
+        /* Change color of dropdown links on hover */
+        .dropdown-contentlng a:hover {
+            background-color: #27DA93;
+        }
+
+/* Show the dropdown menu on hover */
+.dropdownlng:hover .dropdown-contentlng {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdownlng:hover .dropbtn {
+    background-color: #333;
+}
+
+.button2 {
+    background: none;
+    border: none;
+    color: #27DA93;
+    font-family: 'Segoe UI';
+}
+
+    .button2:hover {
+        color: white;
+    }
+
+.ajax__html_editor_extender_button ajax__html_editor_extender_Redo {
+    background-color: #27DA93;
+}
+
+.button2d {
+    background-color: gray;
+    border: none;
+    color: gray;
+    font-family: 'Segoe UI';
+}
+
+    .button2d:hover {
+        color: gray;
+    }
+
+.fontstyled {
+    font-family: 'Segoe UI';
+    font-size: 14px;
+}
+
+.fontstyled1 {
+    font-family: 'Segoe UI';
+    font-size: 20px;
+}
+
+.fontstyled2 {
+    font-family: 'Segoe UI';
+    /* font-size: 30px;*/
+}
+
+.fontstyled3 {
+    font-family: 'Segoe UI';
+    font-size: 35px;
+}
+
+.fontstyled4 {
+    font-family: 'Segoe UI';
+    font-size: 40px;
+}
+
+.black {
+    color: black;
+}
+
+td {
+    height: 50px;
+    vertical-align: central;
+}
+
+.noitem {
+    position: relative;
+    left: 50%;
+    color: red;
+    font-size: 30px;
+}
+
+.infoimg {
+    width: 64px;
+    height: 64px;
+}
+
+.errorimg {
+    width: 64px;
+    height: 64px;
+}
+
+.warningimg {
+    width: 64px;
+    height: 64px;
+}
+
+.checkbox {
+    background-color: white;
+}
+
+body {
+    font-family: 'Segoe UI',Arial,Impact,fantasy;
+    cursor: url('../images/1.png'),default;
+}
+
+a {
+    cursor: url('../images/2.png'),pointer;
+}
+
+h1 {
+    font-family: 'Segoe UI';
+}
+
+a:hover {
+    text-decoration: none;
+    color: #8E8E8E;
+}
+
+.banner2 {
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    position: relative;
+}
+
+.banner-info2 {
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    min-height: 0px;
+    background: rgba(0, 0, 0, 0.41);
+}
+/*--Kumya--*/
+.link-kumya {
+    overflow: hidden;
+}
+
+    .link-kumya:hover {
+        color: #000;
+    }
+
+    .link-kumya::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: -2px;
+        z-index: 1;
+        background: #27DA93;
+        -webkit-transform: translate3d(101%,0,0);
+        transform: translate3d(101%,0,0);
+        -webkit-transition: -webkit-transform 0.5s;
+        transition: transform 0.5s;
+        -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+        transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    }
+
+    .link-kumya:hover::after {
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+
+    .link-kumya span {
+        position: relative;
+        z-index: 9999;
+        font-family: 'Segoe UI';
+    }
+
+        .link-kumya span::before {
+            content: attr(data-letters);
+            position: absolute;
+            color: #fff;
+            left: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 0%;
+            -webkit-transition: width 0.5s;
+            transition: width 0.5s;
+            -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+            transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+        }
+
+    .link-kumya:hover span::before {
+        width: 100%;
+    }
+/*--//Kumya--*/
+.active2 .glyphicon {
+    color: #333;
+}
+
+.tabs .nav-tabs > li.active > a, .tabs .nav-tabs > li.active > a:hover, .tabs .nav-tabs > li.active > a:focus {
+    border: 0;
+    background-color: #27DA93;
+    color: #fff;
+}
+
+.active2 {
+    display: block;
+}
+
+a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
+    border-color: #27DA93;
+}
+
+a {
+    color: #27DA93;
+    text-decoration: none;
+}
+
+logo {
+    color: #fff;
+}
+
+.tab-content > .active {
+    display: block;
+    visibility: visible;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    z-index: 0;
+}
+
+.top-nav2 ul li a.link-kumya.active {
+    background: #27DA93;
+}
+
+.top-nav2 ul li a {
+    font-size: 1.1em;
+}
+
+.top-nav2 ul li a {
+    letter-spacing: 0;
+    padding: 10px 11px;
+}
+
+.top-nav2 ul li {
+    display: block;
+    margin: .5em 0;
+}
+/*--top-nav--*/
+.top-nav2 {
+    z-index: 999;
+    background-size: 0px;
+}
+
+nav.navbar.navbar-default {
+    background-color: inherit;
+    border: none;
+    margin: 0;
+}
+
+.top-nav2 ul li {
+    margin: 0 0.5em;
+    display: inline-block;
+}
+
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .top-nav2 ul li a.active:before {
+        color: #5BD982;
+    }
+    /* Effect 11: text fill based on Lea Verou's animation http://dabblet.com/gist/6046779 */
+    .top-nav2 ul li a {
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-size: 1.2em;
+        color: #fff;
+        font-family: 'Abel-Regular';
+        position: relative;
+    }
+
+        .top-nav2 ul li a.link-kumya.active {
+            background: #27DA93;
+        }
+
+.nav > li > a:hover, .nav > li > a:focus, .top-nav ul li a.active {
+    background: none;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #27DA93;
+}
+/*--//drop-down--*/
+/*--Kumya--*/
+.link-kumya {
+    overflow: hidden;
+}
+
+    .link-kumya:hover {
+        color: #000;
+    }
+
+    .link-kumya::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: -2px;
+        z-index: 1;
+        background: #27DA93;
+        -webkit-transform: translate3d(101%,0,0);
+        transform: translate3d(101%,0,0);
+        -webkit-transition: -webkit-transform 0.5s;
+        transition: transform 0.5s;
+        -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+        transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    }
+
+    .link-kumya:hover::after {
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+
+    .link-kumya span {
+        position: relative;
+        z-index: 9999;
+    }
+
+        .link-kumya span::before {
+            content: attr(data-letters);
+            position: absolute;
+            color: #fff;
+            left: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 0%;
+            -webkit-transition: width 0.5s;
+            transition: width 0.5s;
+            -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+            transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+        }
+
+    .link-kumya:hover span::before {
+        width: 100%;
+    }
+/*--//Kumya--*/
+.navbar-default .navbar-brand {
+    color: #fff;
+    font-size: 3em;
+    padding: 13px 0;
+}
+
+@media(max-width:767px) {
+    button.navbar-toggle {
+        background: #87D54D;
+        border-color: #fff;
+    }
+}
+
+nav.navbar.navbar-default {
+    background-color: inherit;
+    border: none;
+    margin: 0;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .top-nav ul li a.active:before {
+    color: #5BD982;
+}
+
+ul.nav.navbar-right {
+    margin-top: .3em;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+    font-size: 3em;
+    padding: 13px 0;
+}
+
+ul.nav.navbar-right {
+    margin-top: 0;
+}
+/* iCheck plugin Square skin, green
+----------------------------------- */
+.icheckbox_square-green,
+.iradio_square-green {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    background: url(../images/green.png) no-repeat;
+    border: none;
+    cursor: url('../images/2.png'),pointer;
+}
+
+label {
+    font-weight: bold;
+}
+
+.icheckbox_square-green {
+    background-position: 0 0;
+}
+
+    .icheckbox_square-green.hover {
+        background-position: -24px 0;
+    }
+
+    .icheckbox_square-green.checked {
+        background-position: -48px 0;
+    }
+
+    .icheckbox_square-green.disabled {
+        background-position: -72px 0;
+        cursor: default;
+    }
+
+    .icheckbox_square-green.checked.disabled {
+        background-position: -96px 0;
+    }
+
+.iradio_square-green {
+    background-position: -120px 0;
+}
+
+    .iradio_square-green.hover {
+        background-position: -144px 0;
+    }
+
+    .iradio_square-green.checked {
+        background-position: -168px 0;
+    }
+
+    .iradio_square-green.disabled {
+        background-position: -192px 0;
+        cursor: default;
+    }
+
+    .iradio_square-green.checked.disabled {
+        background-position: -216px 0;
+    }
+
+/* HiDPI support */
+@media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
+    .icheckbox_square-green,
+    .iradio_square-green {
+        background-image: url(../images/green@2x.png);
+        -webkit-background-size: 240px 24px;
+        background-size: 240px 24px;
+    }
+}
+/* Default styling for jQuery Calendars Picker v2.0.0. */
+.calendars {
+    background-color: #777;
+    color: #000;
+    border: 1px solid #444;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+    border-radius: 0.25em;
+    font-family: 'Segoe UI';
+    font-size: 90%;
+    width: 290px;
+}
+
+.calendars-rtl {
+    direction: rtl;
+}
+
+.calendars-popup {
+    z-index: 1000;
+}
+
+.calendars-disable {
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.calendars a {
+    color: #fff;
+    text-decoration: none;
+}
+
+    .calendars a.calendars-disabled {
+        color: #888;
+        cursor: auto;
+    }
+
+.calendars button {
+    margin: 0.25em;
+    padding: 0.125em 0em;
+    background-color: #fcc;
+    border: none;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+    border-radius: 0.25em;
+    font-weight: bold;
+}
+
+.calendars-nav, .calendars-ctrl {
+    float: left;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    font-size: 90%;
+    font-weight: bold;
+}
+
+.calendars-ctrl {
+    background-color: #1ca36d;
+}
+
+.calendars-cmd {
+    width: 30%;
+}
+
+    .calendars-cmd:hover {
+        background-color: #777;
+    }
+
+.calendars-ctrl .calendars-cmd:hover {
+    background-color: #68fbc1;
+}
+
+.calendars-cmd-prevJump, .calendars-cmd-nextJump {
+    width: 8%;
+}
+
+a.calendars-cmd {
+    height: 1.5em;
+}
+
+button.calendars-cmd {
+    text-align: center;
+}
+
+.calendars-cmd-prev, .calendars-cmd-prevJump, .calendars-cmd-clear {
+    float: left;
+    padding-left: 2%;
+}
+
+.calendars-cmd-current, .calendars-cmd-today {
+    float: left;
+    width: 35%;
+    text-align: center;
+}
+
+.calendars-cmd-next, .calendars-cmd-nextJump, .calendars-cmd-close {
+    float: right;
+    padding-right: 2%;
+    text-align: right;
+}
+
+.calendars-rtl .calendars-cmd-prev, .calendars-rtl .calendars-cmd-prevJump,
+.calendars-rtl .calendars-cmd-clear {
+    float: right;
+    padding-left: 0%;
+    padding-right: 2%;
+    text-align: right;
+}
+
+.calendars-rtl .calendars-cmd-current, .calendars-rtl .calendars-cmd-today {
+    float: right;
+}
+
+.calendars-rtl .calendars-cmd-next, .calendars-rtl .calendars-cmd-nextJump,
+.calendars-rtl .calendars-cmd-close {
+    float: left;
+    padding-left: 2%;
+    padding-right: 0%;
+    text-align: left;
+}
+
+.calendars-month-nav {
+    float: left;
+    background-color: #777;
+    text-align: center;
+}
+
+    .calendars-month-nav div {
+        float: left;
+        width: 12.5%;
+        margin: 1%;
+        padding: 1%;
+    }
+
+    .calendars-month-nav span {
+        color: #888;
+    }
+
+.calendars-month-row {
+    clear: left;
+}
+
+.calendars-month {
+    float: left;
+    width: 99.5%;
+    border: 1px solid #444;
+    text-align: center;
+}
+
+.calendars-month-header, .calendars-month-header select, .calendars-month-header input {
+    height: 1.5em;
+    background-color: #444;
+    color: #fff;
+    font-weight: bold;
+}
+
+    .calendars-month-header select, .calendars-month-header input {
+        height: 1.4em;
+        border: none;
+    }
+
+    .calendars-month-header input {
+        position: absolute;
+        display: none;
+    }
+
+.calendars-month table {
+    width: 100.5%;
+    border-collapse: collapse;
+}
+
+.calendars-month thead {
+    border-bottom: 1px solid #aaa;
+}
+
+.calendars-month th, .calendars-month td {
+    margin: 0em;
+    padding: 0em;
+    font-weight: normal;
+    text-align: center;
+}
+
+.calendars-month th {
+    border: 1px solid #777;
+}
+
+    .calendars-month th, .calendars-month th a {
+        background-color: #777;
+        color: #fff;
+    }
+
+.calendars-month td {
+    background-color: #eee;
+    border: 1px solid #aaa;
+}
+
+    .calendars-month td.calendars-week {
+        border: 1px solid #777;
+    }
+
+        .calendars-month td.calendars-week * {
+            background-color: #777;
+            color: #fff;
+            border: none;
+        }
+
+.calendars-month a {
+    display: block;
+    width: 100%;
+    padding: 0.125em 0em;
+    background-color: #eee;
+    color: #000;
+    text-decoration: none;
+}
+
+.calendars-month span {
+    display: block;
+    width: 100%;
+    padding: 0.125em 0em;
+}
+
+.calendars-month td span {
+    color: #888;
+}
+
+.calendars-month td .calendars-other-month {
+    background-color: #eee;
+}
+
+.calendars-month td .calendars-weekend {
+    background-color: #ddd;
+}
+
+.calendars-month td .calendars-today {
+    background-color: #00ff9a;
+}
+
+.calendars-month td .calendars-highlight {
+    background-color: #79c1a4;
+}
+
+.calendars-month td .calendars-selected {
+    background-color: #777;
+    color: #fff;
+}
+
+.calendars-month th.calendars-week {
+    background-color: #777;
+    color: #fff;
+}
+
+.calendars-status {
+    clear: both;
+    background-color: #ddd;
+    text-align: center;
+}
+
+.calendars-clear-fix {
+    clear: both;
+}
+
+@media(max-width:500px) {
+    .headarlogo {
+        font-size: 24px;
+    }
+
+    .headarlogo2 {
+        font-size: 24px;
+    }
+
+    .buttom-margin {
+        margin-bottom: -6px
+    }
+
+    .img-responsive {
+        display: block;
+        max-width: 100%;
+        height: 150px;
+        min-height: 60px !important;
+        max-height: 100px;
+    }
+
+    .deal-bottom {
+        margin: -6px;
+    }
+
+    .num-pager {
+        display: none !important;
+    }
+}
+
+@media(max-width:767px) {
+    button.navbar-toggle {
+        background: #87D54D;
+        border-color: #fff;
+    }
+
+    .navbar-toggle .icon-bar {
+        background: #fff;
+    }
+
+    div#bs-example-navbar-collapse-1 {
+        background: rgba(0, 0, 0, 0.82);
+        margin: 0;
+        padding: 0;
+    }
+
+    ul.nav.navbar-right {
+        text-align: center;
+    }
+
+    .navbar-right .dropdown-menu {
+        min-width: 100%;
+        position: relative;
+        text-align: center;
+    }
+
+    .navbar-toggle .icon-bar {
+        background: #fff;
+    }
+    .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .top-deal2 {
+        margin-top: -2.5em !important;
+    }
+}
+@media only screen and (max-device-width : 320px) {
+    .top-deal2 {
+        margin-top: 0.5em !important;
+    }
+}

@@ -1,0 +1,664 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Contact_info" xml:space="preserve">
+    <value>Contact information</value>
+  </data>
+  <data name="Control_OpenAuthProviders_SubmitTitleFormat" xml:space="preserve">
+    <value>Log in using your {0} account.</value>
+  </data>
+  <data name="Control_OpenAuthProviders_Title" xml:space="preserve">
+    <value>Use another service to log in.</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>LogIn</value>
+  </data>
+  <data name="Logoff" xml:space="preserve">
+    <value>Log off</value>
+  </data>
+  <data name="Page_AddPhoneNumber_Name" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+  <data name="Page_AddPhoneNumber_PhoneNumber" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+  <data name="Page_AddPhoneNumber_PhoneNumber_Message_YourSecurityCode" xml:space="preserve">
+    <value>Your security code is: {0}&gt;</value>
+  </data>
+  <data name="Page_AddPhoneNumber_PhoneNumber_RequiredFieldValidator" xml:space="preserve">
+    <value>The Phone Number field is required.</value>
+  </data>
+  <data name="Page_AddPhoneNumber_PhoneNumber_Submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="Page_AddPhoneNumber_Title" xml:space="preserve">
+    <value>Add a phone number</value>
+  </data>
+  <data name="Page_Confirm_Error" xml:space="preserve">
+    <value>An error has occurred. Contact the Site Admin, please.</value>
+  </data>
+  <data name="Page_Confirm_Here" xml:space="preserve">
+    <value> here </value>
+  </data>
+  <data name="Page_Confirm_Name" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="Page_Confirm_ThankYouPrefix" xml:space="preserve">
+    <value>Thank you for confirming your account. Click</value>
+  </data>
+  <data name="Page_Confirm_ThankYouSuffix" xml:space="preserve">
+    <value> to login</value>
+  </data>
+  <data name="Page_Forgot_DisplayEmail" xml:space="preserve">
+    <value>Please check your email to reset your password.</value>
+  </data>
+  <data name="Page_Forgot_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Page_Forgot_Email_RequiredFieldValidator" xml:space="preserve">
+    <value>The email field is required.</value>
+  </data>
+  <data name="Page_Forgot_FailureText" xml:space="preserve">
+    <value>The user either does not exist or is not confirmed.</value>
+  </data>
+  <data name="Page_Forgot_Name" xml:space="preserve">
+    <value>Forgot password</value>
+  </data>
+  <data name="Page_Forgot_Submit" xml:space="preserve">
+    <value>Email Link</value>
+  </data>
+  <data name="Page_Forgot_Title" xml:space="preserve">
+    <value>Forgot your password?</value>
+  </data>
+  <data name="Page_Lockout_Message" xml:space="preserve">
+    <value>This account has been locked out, please try again later.</value>
+  </data>
+  <data name="Page_Lockout_Name" xml:space="preserve">
+    <value>Locked out</value>
+  </data>
+  <data name="Page_Login_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Page_Login_Email_RequiredFieldValidator" xml:space="preserve">
+    <value>The email field is required.</value>
+  </data>
+  <data name="Page_Login_Error_InvalidLoginAttempt" xml:space="preserve">
+    <value>Invalid login attempt</value>
+  </data>
+  <data name="Page_Login_ForgotPasswordHyperLink" xml:space="preserve">
+    <value>Forgot your password?</value>
+  </data>
+  <data name="Page_Login_Name" xml:space="preserve">
+    <value>Log in</value>
+  </data>
+  <data name="Page_Login_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Page_Login_Password_RequiredFieldValidator" xml:space="preserve">
+    <value>The password field is required.</value>
+  </data>
+  <data name="Page_Login_RegisterHyperLink" xml:space="preserve">
+    <value>Register as a new user</value>
+  </data>
+  <data name="Page_Login_RememberMe" xml:space="preserve">
+    <value>Remember me?</value>
+  </data>
+  <data name="Page_Login_Submit" xml:space="preserve">
+    <value>Log in</value>
+  </data>
+  <data name="Page_Login_Title" xml:space="preserve">
+    <value>Log in </value>
+  </data>
+  <data name="Page_ManageDetails_Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="Page_ManageDetails_Address_Required" xml:space="preserve">
+    <value>Address Required</value>
+  </data>
+  <data name="Page_ManageDetails_FirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="Page_ManageDetails_FirstName_Required" xml:space="preserve">
+    <value>First Name Required</value>
+  </data>
+  <data name="Page_ManageDetails_HasOffice" xml:space="preserve">
+    <value>Do you have an Office?</value>
+  </data>
+  <data name="Page_ManageDetails_HasOffice_Required" xml:space="preserve">
+    <value>Office Required</value>
+  </data>
+  <data name="Page_ManageDetails_LastName" xml:space="preserve">
+    <value>Last Name </value>
+  </data>
+  <data name="Page_ManageDetails_LastName_Required" xml:space="preserve">
+    <value>Last Name Required</value>
+  </data>
+  <data name="Page_ManageDetails_Name" xml:space="preserve">
+    <value>Edit Details</value>
+  </data>
+  <data name="Page_ManageDetails_PhoneNumber" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+  <data name="Page_ManageDetails_PhoneNumber_Required" xml:space="preserve">
+    <value>Phone Number Required</value>
+  </data>
+  <data name="Page_ManageDetails_Submit_Details" xml:space="preserve">
+    <value>Save Changes</value>
+  </data>
+  <data name="Page_ManageLogins_Name" xml:space="preserve">
+    <value>Manage your external logins</value>
+  </data>
+  <data name="Page_ManageLogins_RegisteredLogins" xml:space="preserve">
+    <value>Registered Logins</value>
+  </data>
+  <data name="Page_ManageLogins_SuccessMessage_RemoveLoginSuccess" xml:space="preserve">
+    <value>External Login has been removed successfuly</value>
+  </data>
+  <data name="Page_ManagePassword_ChangePassword_Title" xml:space="preserve">
+    <value>Change Password Form</value>
+  </data>
+  <data name="Page_ManagePassword_ConfirmNewPassword" xml:space="preserve">
+    <value>Confirm new password</value>
+  </data>
+  <data name="Page_ManagePassword_ConfirmNewPassword_CompareValidator" xml:space="preserve">
+    <value>The new password and confirmation password do not match.</value>
+  </data>
+  <data name="Page_ManagePassword_ConfirmNewPassword_RequiredFieldValidator" xml:space="preserve">
+    <value>Confirm new password is required.</value>
+  </data>
+  <data name="Page_ManagePassword_ConfirmPassword" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="Page_ManagePassword_ConfirmPassword_CompareValidator" xml:space="preserve">
+    <value>The password and confirmation password do not match.</value>
+  </data>
+  <data name="Page_ManagePassword_ConfirmPassword_RequiredFieldValidator" xml:space="preserve">
+    <value>The confirm password field is required.</value>
+  </data>
+  <data name="Page_ManagePassword_CurrentPassword" xml:space="preserve">
+    <value>Current password</value>
+  </data>
+  <data name="Page_ManagePassword_CurrentPassword_RequiredFieldValidator" xml:space="preserve">
+    <value>The current password field is required.</value>
+  </data>
+  <data name="Page_ManagePassword_Name" xml:space="preserve">
+    <value>Manage Password</value>
+  </data>
+  <data name="Page_ManagePassword_NewPassword" xml:space="preserve">
+    <value>New password</value>
+  </data>
+  <data name="Page_ManagePassword_NewPassword_RequiredFieldValidator" xml:space="preserve">
+    <value>The new password is required.</value>
+  </data>
+  <data name="Page_ManagePassword_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Page_ManagePassword_Password_RequiredFieldValidator" xml:space="preserve">
+    <value>The password field is required.</value>
+  </data>
+  <data name="Page_ManagePassword_SetPassword_Text" xml:space="preserve">
+    <value>You do not have a local password for this site. Add a local password so you can log in without an external login.</value>
+  </data>
+  <data name="Page_ManagePassword_SetPassword_Title" xml:space="preserve">
+    <value>Set Password Form</value>
+  </data>
+  <data name="Page_ManagePassword_Submit_ChangePassword" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="Page_ManagePassword_Submit_SetPassword" xml:space="preserve">
+    <value>Set Password</value>
+  </data>
+  <data name="Page_Manage_Details" xml:space="preserve">
+    <value>Edit User Details</value>
+  </data>
+  <data name="Page_Manage_Details_Change" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Page_Manage_ExternalLogins" xml:space="preserve">
+    <value>External Logins</value>
+  </data>
+  <data name="Page_Manage_Name" xml:space="preserve">
+    <value>Manage Account</value>
+  </data>
+  <data name="Page_Manage_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Page_Manage_Password_Change" xml:space="preserve">
+    <value>[Change]</value>
+  </data>
+  <data name="Page_Manage_Password_Create" xml:space="preserve">
+    <value>[Create]</value>
+  </data>
+  <data name="Page_Manage_Password_Manage" xml:space="preserve">
+    <value>[Manage]</value>
+  </data>
+  <data name="Page_Manage_SuccessMessage_AddPhoneNumberSuccess" xml:space="preserve">
+    <value>Phone number has been added</value>
+  </data>
+  <data name="Page_Manage_SuccessMessage_ChangePwdSuccess" xml:space="preserve">
+    <value>Your password has been changed.</value>
+  </data>
+  <data name="Page_Manage_SuccessMessage_RemoveLoginProvider" xml:space="preserve">
+    <value>Remove this {0} login from your account</value>
+  </data>
+  <data name="Page_Manage_SuccessMessage_RemoveLoginSuccess" xml:space="preserve">
+    <value>The account was removed.</value>
+  </data>
+  <data name="Page_Manage_SuccessMessage_RemovePhoneNumberSuccess" xml:space="preserve">
+    <value>Phone number was removed</value>
+  </data>
+  <data name="Page_Manage_SuccessMessage_SetPwdSuccess" xml:space="preserve">
+    <value>Your password has been set.</value>
+  </data>
+  <data name="Page_Manage_Title" xml:space="preserve">
+    <value>Change your account settings</value>
+  </data>
+  <data name="Page_Manage_TwoFactorAuthentication" xml:space="preserve">
+    <value>Two-Factor Authentication</value>
+  </data>
+  <data name="Page_Manage_TwoFactorAuthentication_NoProvider" xml:space="preserve">
+    <value>There are no two-factor authentication providers configured. See &lt;a href="http://go.microsoft.com/fwlink/?LinkId=403804"&gt;this article&lt;/a&gt;
+                            for details on setting up this ASP.NET application to support two-factor authentication.</value>
+  </data>
+  <data name="Page_RegisterExternalLogin_AssociationForm" xml:space="preserve">
+    <value>Association Form</value>
+  </data>
+  <data name="Page_RegisterExternalLogin_Description" xml:space="preserve">
+    <value>You've authenticated with &lt;strong&gt;{0}&lt;/strong&gt;. Please enter an email below for the current site and click the Log in button.</value>
+  </data>
+  <data name="Page_RegisterExternalLogin_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Page_RegisterExternalLogin_Name" xml:space="preserve">
+    <value>Register an external login</value>
+  </data>
+  <data name="Page_RegisterExternalLogin_Submit" xml:space="preserve">
+    <value>Log in</value>
+  </data>
+  <data name="Page_RegisterExternalLogin_Title" xml:space="preserve">
+    <value>Register with your {0} account</value>
+  </data>
+  <data name="Page_Register_Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="Page_Register_AddressRequired" xml:space="preserve">
+    <value>The Address is Required</value>
+  </data>
+  <data name="Page_Register_ConfirmPassword" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="Page_Register_ConfirmPassword_CompareValidator" xml:space="preserve">
+    <value>The password and confirmation password do not match.</value>
+  </data>
+  <data name="Page_Register_ConfirmPassword_RequiredFieldValidator" xml:space="preserve">
+    <value>The confirm password field is required.</value>
+  </data>
+  <data name="Page_Register_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Page_Register_Email_RequiredFieldValidator" xml:space="preserve">
+    <value>The email field is required.</value>
+  </data>
+  <data name="Page_Register_FirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="Page_Register_FirstNameRequired" xml:space="preserve">
+    <value>The First Name is Required</value>
+  </data>
+  <data name="Page_Register_HasOffice" xml:space="preserve">
+    <value>Do you have a office?</value>
+  </data>
+  <data name="Page_Register_LastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="Page_Register_LastNameRequired" xml:space="preserve">
+    <value>The Last Name is Requred</value>
+  </data>
+  <data name="Page_Register_Name" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="Page_Register_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Page_Register_Password_RequiredFieldValidator" xml:space="preserve">
+    <value>The password field is required.</value>
+  </data>
+  <data name="Page_Register_PhoneNumber" xml:space="preserve">
+    <value>Phone Number (+963)</value>
+  </data>
+  <data name="Page_Register_PhoneNumberRequired" xml:space="preserve">
+    <value>The Phone Number is Required</value>
+  </data>
+  <data name="Page_Register_Submit" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="Page_Register_Title" xml:space="preserve">
+    <value>Create a new account.</value>
+  </data>
+  <data name="Page_ResetPasswordConfirmation_Message_ClickHere" xml:space="preserve">
+    <value> here </value>
+  </data>
+  <data name="Page_ResetPasswordConfirmation_Message_Prefix" xml:space="preserve">
+    <value>Your password has been changed. Click </value>
+  </data>
+  <data name="Page_ResetPasswordConfirmation_Message_Suffix" xml:space="preserve">
+    <value> to login</value>
+  </data>
+  <data name="Page_ResetPasswordConfirmation_Name" xml:space="preserve">
+    <value>Password Changed</value>
+  </data>
+  <data name="Page_ResetPassword_ConfirmPassword" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="Page_ResetPassword_ConfirmPassword_CompareValidator" xml:space="preserve">
+    <value>The password and confirmation password do not match.</value>
+  </data>
+  <data name="Page_ResetPassword_ConfirmPassword_RequiredFieldValidator" xml:space="preserve">
+    <value>The confirm password field is required.</value>
+  </data>
+  <data name="Page_ResetPassword_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Page_ResetPassword_Email_RequiredFieldValidator" xml:space="preserve">
+    <value>The email field is required.</value>
+  </data>
+  <data name="Page_ResetPassword_Error" xml:space="preserve">
+    <value>An error has occurred. Contact the Site Admin, please.</value>
+  </data>
+  <data name="Page_ResetPassword_Error_NoUserFound" xml:space="preserve">
+    <value>No user found</value>
+  </data>
+  <data name="Page_ResetPassword_Name" xml:space="preserve">
+    <value>Reset Password</value>
+  </data>
+  <data name="Page_ResetPassword_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Page_ResetPassword_Password_RequiredFieldValidator" xml:space="preserve">
+    <value>The password field is required.</value>
+  </data>
+  <data name="Page_ResetPassword_Submit" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="Page_ResetPassword_Title" xml:space="preserve">
+    <value>Enter your new password</value>
+  </data>
+  <data name="Page_TwoFactorAuthenticationSignIn_EnterVerificationCode_Code" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="Page_TwoFactorAuthenticationSignIn_EnterVerificationCode_RememberBrowser" xml:space="preserve">
+    <value>Remember Browser</value>
+  </data>
+  <data name="Page_TwoFactorAuthenticationSignIn_EnterVerificationCode_Submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="Page_TwoFactorAuthenticationSignIn_EnterVerificationCode_Title" xml:space="preserve">
+    <value>Enter verification code</value>
+  </data>
+  <data name="Page_TwoFactorAuthenticationSignIn_Error_InvalidCode" xml:space="preserve">
+    <value>Invalid code</value>
+  </data>
+  <data name="Page_TwoFactorAuthenticationSignIn_Name" xml:space="preserve">
+    <value>Two-Factor Authentication</value>
+  </data>
+  <data name="Page_TwoFactorAuthenticationSignIn_SendVerificationCode_Select" xml:space="preserve">
+    <value>Select Two-Factor Authentication Provider</value>
+  </data>
+  <data name="Page_TwoFactorAuthenticationSignIn_SendVerificationCode_Submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="Page_TwoFactorAuthenticationSignIn_SendVerificationCode_Title" xml:space="preserve">
+    <value>Send verification code</value>
+  </data>
+  <data name="Page_VerifyPhoneNumber_Code" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="Page_VerifyPhoneNumber_Code_RequiredFieldValidator" xml:space="preserve">
+    <value>The Code field is required.</value>
+  </data>
+  <data name="Page_VerifyPhoneNumber_Error_FailedToVerifyPhone" xml:space="preserve">
+    <value>Failed to verify phone. Contact the Site Admin, please.</value>
+  </data>
+  <data name="Page_VerifyPhoneNumber_Error_InvalidCode" xml:space="preserve">
+    <value>Invalid code</value>
+  </data>
+  <data name="Page_VerifyPhoneNumber_Name" xml:space="preserve">
+    <value>Enter verification code</value>
+  </data>
+  <data name="Page_VerifyPhoneNumber_Submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="Page_VerifyPhoneNumber_Title" xml:space="preserve">
+    <value>Verify Phone Number</value>
+  </data>
+  <data name="Page_ViewDetails_More" xml:space="preserve">
+    <value>View Contact Info</value>
+  </data>
+  <data name="Page_ViewDetail_Return" xml:space="preserve">
+    <value>Return to House Details</value>
+  </data>
+  <data name="PleaseWait" xml:space="preserve">
+    <value>Please Wait...</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>Adminstrator</value>
+  </data>
+  <data name="Stackholder" xml:space="preserve">
+    <value>HouseOwner</value>
+  </data>
+  <data name="Visitor" xml:space="preserve">
+    <value>Visitor</value>
+  </data>
+  <data name="Page_Manage_Role" xml:space="preserve">
+    <value>Manage Roles</value>
+  </data>
+  <data name="Page_Manage_Role_Change" xml:space="preserve">
+    <value>Manage</value>
+  </data>
+  <data name="Page_Login_New" xml:space="preserve">
+    <value>New To Akaratak Sign up here!</value>
+  </data>
+  <data name="Page_Register_CheckAgree" xml:space="preserve">
+    <value>You Must Agree to the Terms to Continue</value>
+  </data>
+  <data name="Login_Holder" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Register_Holder" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="Complete_Profile" xml:space="preserve">
+    <value>Complete Profile</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="Sure" xml:space="preserve">
+    <value>Sure?</value>
+  </data>
+  <data name="Page_Register_Agree" xml:space="preserve">
+    <value>&amp;nbsp;&amp;nbsp;By signing up you agree &lt;a href='../TermsArabic'&gt;Registration Terms&lt;/a&gt; And &lt;a href='../PrivacyPolicy.aspx'&gt;Privacy Policy&lt;/a&gt;</value>
+  </data>
+  <data name="Page_Register_Email_RegularExpVal" xml:space="preserve">
+    <value>Please Enter Correct Email</value>
+  </data>
+  <data name="Page_Register_LoginLink" xml:space="preserve">
+    <value>Are you a member of Akaratak , Login in here </value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="Page_Manage_Property" xml:space="preserve">
+    <value>View Added Properties</value>
+  </data>
+  <data name="String" xml:space="preserve">
+    <value>&lt;%= Resources.RealEstate.Filter_Desc_1_T %&gt;</value>
+  </data>
+  <data name="View_Users" xml:space="preserve">
+    <value>View Users</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Edit_User_Details" xml:space="preserve">
+    <value>Edit Account</value>
+  </data>
+  <data name="Edit_User_Details_Desc" xml:space="preserve">
+    <value>Edit your Information</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="Choose" xml:space="preserve">
+    <value>Choose</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>Count:</value>
+  </data>
+  <data name="Page_Role_Manage_Title" xml:space="preserve">
+    <value>Manage Roles</value>
+  </data>
+  <data name="Permession" xml:space="preserve">
+    <value>Permission</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="User_Grantee" xml:space="preserve">
+    <value>Users that is in this role</value>
+  </data>
+  <data name="User_Revoke" xml:space="preserve">
+    <value>Users that is not in this role</value>
+  </data>
+  <data name="Phone_Number" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+</root>

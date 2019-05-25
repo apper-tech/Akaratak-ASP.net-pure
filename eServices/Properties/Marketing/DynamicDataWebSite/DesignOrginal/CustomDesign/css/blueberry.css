@@ -1,0 +1,112 @@
+﻿/*
+ * jQuery Blueberry Slider v0.4 BETA
+ * http://marktyrrell.com/labs/blueberry/
+ *
+ * Copyright (C) 2011, Mark Tyrrell <me@marktyrrell.com>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
+.blueberry {
+				margin: 0 auto;
+				vertical-align:top;
+}
+.blueberry .slides {
+				display: block;
+				position: relative;
+				overflow: hidden;
+				margin: 0px;
+				padding:0px !important;
+                min-height:120px;
+}
+.blueberry .slides ul {
+				margin: 0px;
+				padding:0px !important;
+				
+}
+
+.blueberry .slides li {
+				position: absolute;
+				top: 0;
+				right: 0;
+				overflow: hidden;
+}
+.blueberry .slides li p{
+				font-family: DINNextLTArabic, tahoma;
+				font-size: 32px;
+				font-weight:700;
+				height: 30px;
+				line-height: 30px;
+				color: #c37400;
+				margin: 0px;
+				padding:0px !important;
+}
+.blueberry .slides li div{
+				font-family: DINNextLTArabic, tahoma;
+				font-size: 17px;
+				line-height: 30px;
+				text-align:justify;
+				font-weight:700;
+				color: #565758;
+				padding-top:20px;
+}
+
+.blueberry .slides li img {
+				display: block;
+				width: 100%;
+				max-width: none;
+}
+.blueberry .slides li.active {
+				display: block;
+				position: relative;
+}
+.blueberry .crop li img {
+				width: auto;
+}
+.blueberry .pager {
+				height: 40px;
+				text-align: center;
+				margin: 0px;
+				padding:0px !important;
+				text-align:left
+
+}
+
+.blueberry .pager li {
+				display: inline-block;
+				margin-right:5px;
+}
+.blueberry .pager li a, .blueberry .pager li a span {
+				display: block;
+				height: 21px;
+				width: 21px;
+}
+.blueberry .pager li a {
+				padding: 5px 0px;
+}
+.blueberry .pager li a span {
+				overflow: hidden;
+				text-indent: -9999px;
+				height: 21px;
+				width: 21px;
+				background-image: url('/CustomDesign/images/bullet_banner_off.png');
+				background-repeat: no-repeat;
+				background-position: center center;
+				text-align:center;
+}
+.blueberry .pager li.active a span {
+				background-image: url('/CustomDesign/images/bullet_banner_on.png');
+				background-repeat: no-repeat;
+				background-position: center center;
+}

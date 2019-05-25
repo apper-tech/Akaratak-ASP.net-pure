@@ -1,0 +1,134 @@
+﻿/*	--------------------------------------------------
+	Reveal Modals
+	-------------------------------------------------- */
+.big-link {
+    color: #06f;
+}
+
+.reveal-modal-bg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    background: rgba(0,0,0,.8);
+    z-index: 100;
+    display: none;
+    top: 0;
+    left: 0;
+}
+
+.reveal-modal {
+    display: none;
+    position: fixed;
+    z-index: 101;
+    padding: 20px 0px;
+    background-color: #fdfefc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+    -box-shadow: 0 0 10px rgba(0,0,0,.4);
+    font-size: 12px;
+    font-weight: normal;
+    color: #07405b;
+    line-height: 20px;
+}
+
+.loading_area {
+    visibility: hidden;
+    top: 300px;
+    left: 50%;
+    margin-left: -300px;
+    width: 600px;
+    position: absolute;
+    z-index: 101;
+}
+
+.reveal-modal.small {
+    width: 200px; /*margin-left: -140px;*/
+}
+
+.reveal-modal.medium {
+    width: 400px; /*margin-left: -240px;*/
+}
+
+.reveal-modal.large {
+    width: 600px; /*margin-left: -340px;*/
+}
+
+.reveal-modal.xlarge {
+    width: 780px; /*margin-left: -440px;*/
+}
+
+.reveal-modal .close-reveal-modal {
+    font-size: 30px;
+    line-height: .5;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: #aaa;
+    text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.error_msg {
+    font-family: Tahoma;
+    color: Red;
+    font-weight: bold;
+    line-height: 32px;
+    padding: 0px 20px 0px 20px;
+    vertical-align: top;
+}
+
+    .error_msg span {
+        vertical-align: top;
+    }
+
+.error_textarea {
+    font-family: Tahoma;
+    font-size: 12px;
+    color: #787878;
+    background-color: #e6f6f9;
+    border: 0px;
+    line-height: 22px;
+    width: 560px;
+    height: 80px;
+    padding: 5px 10px;
+    margin-top: 20px;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    text-align: right;
+}
+
+.notice_msg {
+    font-family: Tahoma;
+    color: #3e88cb;
+    font-weight: bold;
+    line-height: 32px;
+    padding: 0px 20px;
+    vertical-align: top;
+}
+
+    .notice_msg span {
+        vertical-align: top;
+    }
+
+.notice_textarea {
+    font-family: Tahoma;
+    font-size: 12px;
+    color: #787878;
+    background-color: #EFF9E6;
+    border: 0px;
+    line-height: 22px;
+    width: 540px;
+    height: 80px;
+    padding: 5px 10px;
+    margin-top: 20px;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    text-align: left;
+}

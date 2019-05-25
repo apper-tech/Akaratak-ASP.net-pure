@@ -1,0 +1,47 @@
+#region Lang
+        public static string _Lang_List(Options_Handler handler, out ReplyKeyboardMarkup keyboardButtons)
+        {
+            ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+            replyKeyboardMarkup.OneTimeKeyboard = true;
+            replyKeyboardMarkup.Keyboard = new KeyboardButton[][]
+            {
+                new KeyboardButton[]
+                {
+                    new KeyboardButton(_Get_Command_Value("Lang","en")),
+                    new KeyboardButton(_Get_Command_Value("Lang","ar"))
+                },
+                new KeyboardButton[]
+                {
+                     new KeyboardButton(_Get_Command_Value("Cancel",handler.Lang))
+                }
+            };
+            keyboardButtons = replyKeyboardMarkup;
+            return _Get_Command_Value("Lang", handler.Lang);
+        }
+        public static void _Lang(string command_en,string command_ar,Chat chat)
+        {
+            #region Lang
+            if (command_ar == "Lang_Select" || command_en == "Lang_Select")
+            {
+                replay = _Lang_List(settings, out commands);
+                Send_Message(replay, chat, commands);
+            }
+            else if (command_ar == "Lang")
+            {
+                Send_Message(_Get_Command_Value("Lang_Selected", "ar"), chat, commands);
+                settings.Lang = "ar";
+                settings.Store_Settings();
+                replay = _Command_List(settings, out commands);
+                Send_Message(replay, chat, commands);
+            }
+            else if (command_en == "Lang")
+            {
+                Send_Message(_Get_Command_Value("Lang_Selected", "en"), chat, commands);
+                settings.Lang = "en";
+                settings.Store_Settings();
+                replay = _Command_List(settings, out commands);
+                Send_Message(replay, chat, commands);
+            }
+            #endregion
+        }
+        #endregion

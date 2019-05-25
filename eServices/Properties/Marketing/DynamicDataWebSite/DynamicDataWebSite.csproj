@@ -1,0 +1,2813 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AC883DBC-7F20-400A-9943-04D5DB9B2158}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DynamicDataWebSite</RootNamespace>
+    <AssemblyName>DynamicDataWebSite</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <WebGreaseLibPath>..\..\..\..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.5.7.1213, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\packages\AjaxControlToolkit.7.1213\lib\45\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin, Version=5.14.5506.26196, Culture=neutral, PublicKeyToken=21ef50ce11b5d80f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\packages\AjaxMin.5.14.5506.26202\lib\net40\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\..\..\..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Binaries\HtmlAgilityPack\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="JuiceUI">
+      <HintPath>..\..\..\..\Binaries\Others\JuiceUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.DynamicData.EFProvider">
+      <HintPath>..\..\..\..\packages\Microsoft.AspNet.DynamicData.EFProvider.6.0.0\lib\net40\Microsoft.AspNet.DynamicData.EFProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.EntityDataSource">
+      <HintPath>..\..\..\..\packages\Microsoft.AspNet.EntityDataSource.6.0.0\lib\net40\Microsoft.AspNet.EntityDataSource.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <HintPath>..\..\..\..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Data.Edm, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\packages\Microsoft.Data.Edm.5.2.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\packages\Microsoft.Data.OData.5.2.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Binaries\Microsoft\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Linq.Dynamic">
+      <HintPath>..\..\..\..\packages\System.Linq.Dynamic.1.0.0\lib\net40\System.Linq.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Spatial, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\packages\System.Spatial.5.2.0\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Entity.Design" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.DynamicData.Design" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebGrease">
+      <HintPath>..\..\..\..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\..\..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\..\..\..\packages\AspNet.ScriptManager.bootstrap.3.0.0\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\..\..\..\packages\AspNet.ScriptManager.jQuery.1.10.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\..\..\..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\..\..\..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\..\..\..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\..\..\..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <Private>True</Private>
+      <HintPath>..\..\..\..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\..\..\..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\..\..\..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\..\..\..\packages\Microsoft.AspNet.Identity.Core.2.1.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\..\..\..\packages\Microsoft.AspNet.Identity.Owin.2.1.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\..\..\..\packages\Microsoft.AspNet.Identity.EntityFramework.2.1.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\..\..\..\packages\Microsoft.AspNet.Providers.Core.2.0.0\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\..\..\..\packages\Microsoft.Owin.2.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\..\..\..\packages\Microsoft.Owin.Host.SystemWeb.2.1.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\..\..\..\packages\Microsoft.Owin.Security.2.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\..\..\..\packages\Microsoft.Owin.Security.Facebook.2.1.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\..\..\..\packages\Microsoft.Owin.Security.Cookies.2.1.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\..\..\..\packages\Microsoft.Owin.Security.Google.2.1.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\..\..\..\packages\Microsoft.Owin.Security.Twitter.2.1.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\..\..\..\packages\Microsoft.Owin.Security.MicrosoftAccount.2.1.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\..\..\..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\..\..\..\packages\Microsoft.Owin.Security.OAuth.2.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AccessDenied.aspx.cs">
+      <DependentUpon>AccessDenied.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccessDenied.aspx.designer.cs">
+      <DependentUpon>AccessDenied.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\AddPhoneNumber.aspx.cs">
+      <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\AddPhoneNumber.aspx.designer.cs">
+      <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Confirm.aspx.cs">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Confirm.aspx.designer.cs">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Forgot.aspx.cs">
+      <DependentUpon>Forgot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Forgot.aspx.designer.cs">
+      <DependentUpon>Forgot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Lockout.aspx.cs">
+      <DependentUpon>Lockout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Lockout.aspx.designer.cs">
+      <DependentUpon>Lockout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ManageLogins.aspx.cs">
+      <DependentUpon>ManageLogins.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ManageLogins.aspx.designer.cs">
+      <DependentUpon>ManageLogins.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ManagePassword.aspx.cs">
+      <DependentUpon>ManagePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ManagePassword.aspx.designer.cs">
+      <DependentUpon>ManagePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.designer.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ResetPasswordConfirmation.aspx.cs">
+      <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ResetPasswordConfirmation.aspx.designer.cs">
+      <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Role\RolesManage.aspx.cs">
+      <DependentUpon>RolesManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Role\RolesManage.aspx.designer.cs">
+      <DependentUpon>RolesManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Telegram_Token.aspx.cs">
+      <DependentUpon>Telegram_Token.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Telegram_Token.aspx.designer.cs">
+      <DependentUpon>Telegram_Token.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\TwoFactorAuthenticationSignIn.aspx.cs">
+      <DependentUpon>TwoFactorAuthenticationSignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\TwoFactorAuthenticationSignIn.aspx.designer.cs">
+      <DependentUpon>TwoFactorAuthenticationSignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\VerifyPhoneNumber.aspx.cs">
+      <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
+      <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\About.tr.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>About.tr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Account.tr.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Account.tr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Application.tr.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Application.tr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\City.tr.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>City.tr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Contract_Type.tr.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Contract_Type.tr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\DynamicData.tr.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DynamicData.tr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IdentityError.tr.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IdentityError.tr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Map.tr.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Map.tr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Privacy.ar.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Privacy.ar.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Privacy.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Privacy.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Privacy.tr.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Privacy.tr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Property_Category.tr.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Property_Category.tr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Property_Type.tr.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Property_Type.tr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RealEstate.tr.designer.cs">
+      <DependentUpon>RealEstate.tr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Route.ar.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Route.ar.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Route.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Route.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Route.tr.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Route.tr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Terms.ar.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Terms.ar.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Terms.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Terms.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Telegram_User.cs" />
+    <Compile Include="DynamicData\FieldTemplates\HTMLEditor.ascx.cs">
+      <DependentUpon>HTMLEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\HTMLEditor.ascx.designer.cs">
+      <DependentUpon>HTMLEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\HTMLEditor_Edit.ascx.cs">
+      <DependentUpon>HTMLEditor_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\HTMLEditor_Edit.ascx.designer.cs">
+      <DependentUpon>HTMLEditor_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Nestoria_Logo.ascx.cs">
+      <DependentUpon>Nestoria_Logo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Nestoria_Logo.ascx.designer.cs">
+      <DependentUpon>Nestoria_Logo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Nestoria_Logo_Edit.ascx.cs">
+      <DependentUpon>Nestoria_Logo_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Nestoria_Logo_Edit.ascx.designer.cs">
+      <DependentUpon>Nestoria_Logo_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\PageTemplates\ListDetails.aspx.cs">
+      <DependentUpon>ListDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\PageTemplates\ListDetails.aspx.designer.cs">
+      <DependentUpon>ListDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServerControls\BreadCrumb.ascx.cs">
+      <DependentUpon>BreadCrumb.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServerControls\BreadCrumb.ascx.designer.cs">
+      <DependentUpon>BreadCrumb.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ServerControls\Pushmenu\Pushmenu.ascx.cs">
+      <DependentUpon>Pushmenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServerControls\Pushmenu\Pushmenu.ascx.designer.cs">
+      <DependentUpon>Pushmenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ServerControls\Pushmenu\PushMenu_Item.ascx.cs">
+      <DependentUpon>PushMenu_Item.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServerControls\Pushmenu\PushMenu_Item.ascx.designer.cs">
+      <DependentUpon>PushMenu_Item.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ITelegram_Handler.cs" />
+    <Compile Include="Services\Telegram_Handler.svc.cs">
+      <DependentUpon>Telegram_Handler.svc</DependentUpon>
+    </Compile>
+    <Compile Include="TestMaster.aspx.cs">
+      <DependentUpon>TestMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestMaster.aspx.designer.cs">
+      <DependentUpon>TestMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestNoMaster.aspx.cs">
+      <DependentUpon>TestNoMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestNoMaster.aspx.designer.cs">
+      <DependentUpon>TestNoMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Content Include="Account\Telegram_Token.aspx" />
+    <Content Include="App_Code\ScriptCompressor.cs" />
+    <Compile Include="App_GlobalResources\About.ar.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>About.ar.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\About.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>About.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Account.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Account.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\City.ar1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>City.ar.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\City1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>City.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Contract_Type.ar.designer.cs">
+      <DependentUpon>Contract_Type.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Contract_Type.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Contract_Type.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\DynamicData1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DynamicData.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\HeavyParts.ar.designer.cs">
+      <DependentUpon>HeavyParts.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Map.ar.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Map.ar.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Map.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Map.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Property_Category.ar.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Property_Category.ar.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Property_Category.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Property_Category.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Property_Type.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Property_Type.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Property_Type.ar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Property_Type.ar.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\IdentityError.ar.designer.cs">
+      <DependentUpon>IdentityError.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\IdentityError.de.designer.cs">
+      <DependentUpon>IdentityError.de.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\IdentityError.designer.cs">
+      <DependentUpon>IdentityError.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Account.ar.designer.cs">
+      <DependentUpon>Account.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Application.designer.cs">
+      <DependentUpon>Application.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Application.ar.designer.cs">
+      <DependentUpon>Application.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\RealEstate.ar1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RealEstate.ar.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RealEstate1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RealEstate.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Carrer.aspx.cs">
+      <DependentUpon>Carrer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carrer.aspx.designer.cs">
+      <DependentUpon>Carrer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\ApplicationSettings.cs" />
+    <Compile Include="Classes\BLUtilities.cs" />
+    <Compile Include="Classes\CountryCityHandler.cs" />
+    <Compile Include="Classes\DynamicDataHelper.cs" />
+    <Compile Include="Classes\IconData.cs" />
+    <Compile Include="Classes\SecurityHandler.cs" />
+    <Compile Include="Classes\System Constants.cs" />
+    <Compile Include="Classes\UserInfo.cs" />
+    <Compile Include="Classes\UserProfile.cs" />
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\CustomPages\Properties\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\CustomPages\Properties\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\CustomPages\Users\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\CustomPages\Users\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\CustomPages\Users\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\CustomPages\Users\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\CustomPages\Users\Insert.aspx.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\CustomPages\Users\Insert.aspx.designer.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\CustomPages\Users\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\CustomPages\Users\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\CustomPages\View_AbsenceCount\ListViewOnly.aspx.cs">
+      <DependentUpon>ListViewOnly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\CustomPages\View_AbsenceCount\ListViewOnly.aspx.designer.cs">
+      <DependentUpon>ListViewOnly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\CascadingForeignKey.ascx.cs">
+      <DependentUpon>CascadingForeignKey.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\CascadingForeignKey.ascx.designer.cs">
+      <DependentUpon>CascadingForeignKey.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\CascadingForeignKey_Edit.ascx.cs">
+      <DependentUpon>CascadingForeignKey_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\CascadingForeignKey_Edit.ascx.designer.cs">
+      <DependentUpon>CascadingForeignKey_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\DatePicker.ascx.cs">
+      <DependentUpon>DatePicker.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\DatePicker.ascx.designer.cs">
+      <DependentUpon>DatePicker.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\DatePicker_Edit.ascx.cs">
+      <DependentUpon>DatePicker_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\DatePicker_Edit.ascx.designer.cs">
+      <DependentUpon>DatePicker_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Html.ascx.cs">
+      <DependentUpon>Html.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Html.ascx.designer.cs">
+      <DependentUpon>Html.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Html_Edit.ascx.cs">
+      <DependentUpon>Html_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Html_Edit.ascx.designer.cs">
+      <DependentUpon>Html_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\ImagePathUpload.ascx.cs">
+      <DependentUpon>ImagePathUpload.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\ImagePathUpload.ascx.designer.cs">
+      <DependentUpon>ImagePathUpload.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\ImagePathUpload_Edit.ascx.cs">
+      <DependentUpon>ImagePathUpload_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\ImagePathUpload_Edit.ascx.designer.cs">
+      <DependentUpon>ImagePathUpload_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Integer.ascx.cs">
+      <DependentUpon>Integer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Integer.ascx.designer.cs">
+      <DependentUpon>Integer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Localized_Foreign_Key.ascx.cs">
+      <DependentUpon>Localized_Foreign_Key.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Localized_Foreign_Key.ascx.designer.cs">
+      <DependentUpon>Localized_Foreign_Key.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Localized_Foreign_Key_Edit.ascx.cs">
+      <DependentUpon>Localized_Foreign_Key_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Localized_Foreign_Key_Edit.ascx.designer.cs">
+      <DependentUpon>Localized_Foreign_Key_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\MapLocation.ascx.cs">
+      <DependentUpon>MapLocation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\MapLocation.ascx.designer.cs">
+      <DependentUpon>MapLocation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\MapLocation_Edit.ascx.cs">
+      <DependentUpon>MapLocation_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\MapLocation_Edit.ascx.designer.cs">
+      <DependentUpon>MapLocation_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\MapLocation_Insert.ascx.cs">
+      <DependentUpon>MapLocation_Insert.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\MapLocation_Insert.ascx.designer.cs">
+      <DependentUpon>MapLocation_Insert.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\MultilineText.ascx.cs">
+      <DependentUpon>MultilineText.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\MultilineText.ascx.designer.cs">
+      <DependentUpon>MultilineText.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\MultilineText_Edit.ascx.cs">
+      <DependentUpon>MultilineText_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\MultilineText_Edit.ascx.designer.cs">
+      <DependentUpon>MultilineText_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Phone.ascx.cs">
+      <DependentUpon>Phone.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Phone.ascx.designer.cs">
+      <DependentUpon>Phone.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Phone_Edit.ascx.cs">
+      <DependentUpon>Phone_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Phone_Edit.ascx.designer.cs">
+      <DependentUpon>Phone_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\GoogleMap.ascx.cs">
+      <DependentUpon>GoogleMap.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\GoogleMap.ascx.designer.cs">
+      <DependentUpon>GoogleMap.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\FormView.ascx.cs">
+      <DependentUpon>FormView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\FormView.ascx.designer.cs">
+      <DependentUpon>FormView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\FormView__Edit.ascx.cs">
+      <DependentUpon>FormView__Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\FormView__Edit.ascx.designer.cs">
+      <DependentUpon>FormView__Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\User_Edit.ascx.cs">
+      <DependentUpon>User_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\User_Edit.ascx.designer.cs">
+      <DependentUpon>User_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\User_Insert.ascx.cs">
+      <DependentUpon>User_Insert.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\User_Insert.ascx.designer.cs">
+      <DependentUpon>User_Insert.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\Filters\CascadingForeignKey.ascx.cs">
+      <DependentUpon>CascadingForeignKey.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\Filters\CascadingForeignKey.ascx.designer.cs">
+      <DependentUpon>CascadingForeignKey.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\PageTemplates\ListOriginal.aspx.cs">
+      <DependentUpon>ListOriginal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\PageTemplates\ListOriginal.aspx.designer.cs">
+      <DependentUpon>ListOriginal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\PageTemplates\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\PageTemplates\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\PageTemplates\DetailsOriginal.aspx.cs">
+      <DependentUpon>DetailsOriginal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\PageTemplates\DetailsOriginal.aspx.designer.cs">
+      <DependentUpon>DetailsOriginal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\PageTemplates\ListWithIcons.aspx.cs">
+      <DependentUpon>ListWithIcons.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\PageTemplates\ListWithIcons.aspx.designer.cs">
+      <DependentUpon>ListWithIcons.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Feed.aspx.cs">
+      <DependentUpon>Feed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Feed.aspx.designer.cs">
+      <DependentUpon>Feed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201601131410427_InitialCreate.cs" />
+    <Compile Include="Migrations\201601131410427_InitialCreate.Designer.cs">
+      <DependentUpon>201601131410427_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201601150103376_FirstName.cs" />
+    <Compile Include="Migrations\201601150103376_FirstName.Designer.cs">
+      <DependentUpon>201601150103376_FirstName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201601150107240_LastName.cs" />
+    <Compile Include="Migrations\201601150107240_LastName.Designer.cs">
+      <DependentUpon>201601150107240_LastName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201601151339165_Address.cs" />
+    <Compile Include="Migrations\201601151339165_Address.Designer.cs">
+      <DependentUpon>201601151339165_Address.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201601151343056_HasOffice.cs" />
+    <Compile Include="Migrations\201601151343056_HasOffice.Designer.cs">
+      <DependentUpon>201601151343056_HasOffice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Pages\ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Print.Master.cs">
+      <DependentUpon>Print.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Print.Master.designer.cs">
+      <DependentUpon>Print.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PrivacyPolicy.aspx.cs">
+      <DependentUpon>PrivacyPolicy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrivacyPolicy.aspx.designer.cs">
+      <DependentUpon>PrivacyPolicy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ServerControls\CheckBox.ascx.cs">
+      <DependentUpon>CheckBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServerControls\CheckBox.ascx.designer.cs">
+      <DependentUpon>CheckBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ServerControls\Icons.ascx.cs">
+      <DependentUpon>Icons.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServerControls\Icons.ascx.designer.cs">
+      <DependentUpon>Icons.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ServerControls\Loader.ascx.cs">
+      <DependentUpon>Loader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServerControls\Loader.ascx.designer.cs">
+      <DependentUpon>Loader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.master.cs">
+      <DependentUpon>Site.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.master.designer.cs">
+      <DependentUpon>Site.master</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.cs" />
+    <Compile Include="Terms.aspx.cs">
+      <DependentUpon>Terms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Terms.aspx.designer.cs">
+      <DependentUpon>Terms.aspx</DependentUpon>
+    </Compile>
+    <Content Include="About.aspx" />
+    <Content Include="AccessDenied.aspx" />
+    <Content Include="Account\AddPhoneNumber.aspx" />
+    <Content Include="Account\Confirm.aspx" />
+    <Content Include="Account\Forgot.aspx" />
+    <Content Include="Account\Lockout.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Manage.aspx" />
+    <Content Include="Account\ManageLogins.aspx" />
+    <Content Include="Account\ManagePassword.aspx" />
+    <Content Include="Account\OpenAuthProviders.ascx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="Account\ResetPassword.aspx" />
+    <Content Include="Account\ResetPasswordConfirmation.aspx" />
+    <Content Include="Account\Role\RolesManage.aspx" />
+    <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
+    <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="AutocompleteFilter.asmx" />
+    <Content Include="AutocompleteStyle.css" />
+    <Content Include="Build.txt" />
+    <Content Include="Carrer.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\animate.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\font-awesome.min.css" />
+    <Content Include="Content\css\main.css" />
+    <Content Include="Content\css\popup.css" />
+    <Content Include="Content\css\prettyPhoto.css" />
+    <Content Include="Content\css\tooltip.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.menu.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.spinner.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\jquery.ui.tooltip.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.menu.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.spinner.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tooltip.min.css" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-bg_diagonals-small_25_c9c9c9_40x40.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-bg_flat_0_313f3c_40x100.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-bg_flat_0_4d4d4d_40x100.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-bg_flat_100_f1eeee_40x100.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-bg_highlight-soft_50_f7e17d_1x100.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-bg_highlight-soft_65_e9f245_1x100.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-bg_highlight-soft_75_59c9c0_1x100.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-bg_highlight-soft_75_d8ff94_1x100.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-bg_inset-soft_95_f46f5d_1x100.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-icons_16837f_256x240.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-icons_186764_256x240.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-icons_834916_256x240.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\images\ui-icons_9f1d1d_256x240.png" />
+    <Content Include="Content\themes\Fresh-Squeezed\jquery-ui-1.9.0.custom.css" />
+    <Content Include="Content\themes\Supercharged\images\ui-bg_flat_0_303030_40x100.png" />
+    <Content Include="Content\themes\Supercharged\images\ui-bg_flat_100_383838_40x100.png" />
+    <Content Include="Content\themes\Supercharged\images\ui-bg_flat_75_f2f2f2_40x100.png" />
+    <Content Include="Content\themes\Supercharged\images\ui-bg_inset-hard_5_2b2b2b_1x100.png" />
+    <Content Include="Content\themes\Supercharged\images\ui-bg_inset-soft_15_5e5e5e_1x100.png" />
+    <Content Include="Content\themes\Supercharged\images\ui-bg_inset-soft_45_ffc905_1x100.png" />
+    <Content Include="Content\themes\Supercharged\images\ui-bg_inset-soft_75_ffec52_1x100.png" />
+    <Content Include="Content\themes\Supercharged\images\ui-bg_inset-soft_95_ff6124_1x100.png" />
+    <Content Include="Content\themes\Supercharged\images\ui-icons_1c1c1c_256x240.png" />
+    <Content Include="Content\themes\Supercharged\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\Supercharged\images\ui-icons_303030_256x240.png" />
+    <Content Include="Content\themes\Supercharged\images\ui-icons_774322_256x240.png" />
+    <Content Include="Content\themes\Supercharged\images\ui-icons_8a4e19_256x240.png" />
+    <Content Include="Content\themes\Supercharged\images\ui-icons_ffbc0f_256x240.png" />
+    <Content Include="Content\themes\Supercharged\images\ui-icons_ffc905_256x240.png" />
+    <Content Include="Content\themes\Supercharged\jquery-ui-1.9.0.custom.css" />
+    <Content Include="CustomDesign\about.html" />
+    <Content Include="CustomDesign\blog.html" />
+    <Content Include="CustomDesign\blog_single.html" />
+    <Content Include="CustomDesign\buy.html" />
+    <Content Include="CustomDesign\buy_single.html" />
+    <Content Include="CustomDesign\calendarsBasic.html" />
+    <Content Include="CustomDesign\calendarsPickerBasic.html" />
+    <Content Include="CustomDesign\career.html" />
+    <Content Include="CustomDesign\contact.html" />
+    <Content Include="CustomDesign\css\animate.css" />
+    <Content Include="CustomDesign\css\asBreadcrumbs.css" />
+    <Content Include="CustomDesign\css\base.css" />
+    <Content Include="CustomDesign\css\bootstrap-datepicker.css" />
+    <Content Include="CustomDesign\css\bootstrap-datetimepicker.css" />
+    <Content Include="CustomDesign\css\bootstrap-lightbox.min.css" />
+    <Content Include="CustomDesign\css\bootstrap-toggle.min.css" />
+    <Content Include="CustomDesign\css\bootstrap.css" />
+    <Content Include="CustomDesign\css\bootstrap.min.css" />
+    <Content Include="CustomDesign\css\BreadCrumb.css" />
+    <Content Include="CustomDesign\css\custominput.css" />
+    <Content Include="CustomDesign\css\datepicker3.css" />
+    <Content Include="CustomDesign\css\default.css" />
+    <Content Include="CustomDesign\css\docs.css" />
+    <Content Include="CustomDesign\css\flexslider.css" />
+    <Content Include="CustomDesign\css\flora.calendars.picker.css" />
+    <Content Include="CustomDesign\css\font-awesome.min.css" />
+    <Content Include="CustomDesign\css\header.css" />
+    <Content Include="CustomDesign\css\humanity.calendars.picker.css" />
+    <Content Include="CustomDesign\css\jquery.calendars.picker.css" />
+    <Content Include="CustomDesign\css\main.css" />
+    <Content Include="CustomDesign\css\Map.css" />
+    <Content Include="CustomDesign\css\mdb.css" />
+    <Content Include="CustomDesign\css\mdb.min.css" />
+    <Content Include="CustomDesign\css\popuo-box.css" />
+    <Content Include="CustomDesign\css\popup.css" />
+    <Content Include="CustomDesign\css\prettify.css" />
+    <Content Include="CustomDesign\css\prettyPhoto.css" />
+    <Content Include="CustomDesign\css\prettySticky.css" />
+    <Content Include="CustomDesign\css\pushmenu\jquery.multilevelpushmenu.css" />
+    <Content Include="CustomDesign\css\redmond.calendars.picker.css" />
+    <Content Include="CustomDesign\css\services.css" />
+    <Content Include="CustomDesign\css\smoothness.calendars.picker.css" />
+    <Content Include="CustomDesign\css\style.css" />
+    <Content Include="CustomDesign\css\tooltip.css" />
+    <Content Include="CustomDesign\css\ui.calendars.picker.css" />
+    <Content Include="CustomDesign\css\w3.css" />
+    <Content Include="CustomDesign\dealers.html" />
+    <Content Include="CustomDesign\faqs.html" />
+    <Content Include="CustomDesign\feedback.html" />
+    <Content Include="CustomDesign\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="CustomDesign\images\1.png" />
+    <Content Include="CustomDesign\images\2.png" />
+    <Content Include="CustomDesign\images\comodo_secure_seal_113x59_transp.png" />
+    <Content Include="CustomDesign\images\cursor.png" />
+    <Content Include="CustomDesign\images\11.png" />
+    <Content Include="CustomDesign\images\13.png" />
+    <Content Include="CustomDesign\images\14.png" />
+    <Content Include="CustomDesign\images\15.png" />
+    <Content Include="CustomDesign\images\32.jpg" />
+    <Content Include="CustomDesign\images\334.jpg" />
+    <Content Include="CustomDesign\images\4.jpg" />
+    <Content Include="CustomDesign\images\5.jpg" />
+    <Content Include="CustomDesign\images\aa.jpg" />
+    <Content Include="CustomDesign\images\aas.jpg" />
+    <Content Include="CustomDesign\images\ab.jpg" />
+    <Content Include="CustomDesign\images\adh.png" />
+    <Content Include="CustomDesign\images\admin.png" />
+    <Content Include="CustomDesign\images\ar.jpg" />
+    <Content Include="CustomDesign\images\ar.png" />
+    <Content Include="CustomDesign\images\arr.png" />
+    <Content Include="CustomDesign\images\arrow.png" />
+    <Content Include="CustomDesign\images\at.jpg" />
+    <Content Include="CustomDesign\images\at1.jpg" />
+    <Content Include="CustomDesign\images\ato.jpg" />
+    <Content Include="CustomDesign\images\av.png" />
+    <Content Include="CustomDesign\images\ba.png" />
+    <Content Include="CustomDesign\images\ba1.png" />
+    <Content Include="CustomDesign\images\ba2.png" />
+    <Content Include="CustomDesign\images\ba3.png" />
+    <Content Include="CustomDesign\images\ba4.png" />
+    <Content Include="CustomDesign\images\back1.jpg" />
+    <Content Include="CustomDesign\images\bl1.jpg" />
+    <Content Include="CustomDesign\images\bl2.jpg" />
+    <Content Include="CustomDesign\images\bo.jpg" />
+    <Content Include="CustomDesign\images\bo1.jpg" />
+    <Content Include="CustomDesign\images\bo2.jpg" />
+    <Content Include="CustomDesign\images\bo3.jpg" />
+    <Content Include="CustomDesign\images\bo4.jpg" />
+    <Content Include="CustomDesign\images\calendar-blue.gif" />
+    <Content Include="CustomDesign\images\calendar-green.gif" />
+    <Content Include="CustomDesign\images\calendar.gif" />
+    <Content Include="CustomDesign\images\ce.jpg" />
+    <Content Include="CustomDesign\images\ce1.jpg" />
+    <Content Include="CustomDesign\images\ce2.jpg" />
+    <Content Include="CustomDesign\images\ce3.jpg" />
+    <Content Include="CustomDesign\images\ce4.jpg" />
+    <Content Include="CustomDesign\images\ce5.jpg" />
+    <Content Include="CustomDesign\images\checkbox.gif" />
+    <Content Include="CustomDesign\images\checkbox_hvr.png" />
+    <Content Include="CustomDesign\images\checkbox_off.png" />
+    <Content Include="CustomDesign\images\checkbox_on.png" />
+    <Content Include="CustomDesign\images\chk.png" />
+    <Content Include="CustomDesign\images\ci.jpg" />
+    <Content Include="CustomDesign\images\ci1.jpg" />
+    <Content Include="CustomDesign\images\ci2.jpg" />
+    <Content Include="CustomDesign\images\ci3.jpg" />
+    <Content Include="CustomDesign\images\ci4.jpg" />
+    <Content Include="CustomDesign\images\ci5.jpg" />
+    <Content Include="CustomDesign\images\ci6.jpg" />
+    <Content Include="CustomDesign\images\ci7.jpg" />
+    <Content Include="CustomDesign\images\close.png" />
+    <Content Include="CustomDesign\images\co.png" />
+    <Content Include="CustomDesign\images\de.jpg" />
+    <Content Include="CustomDesign\images\de1.jpg" />
+    <Content Include="CustomDesign\images\de10.jpg" />
+    <Content Include="CustomDesign\images\de11.jpg" />
+    <Content Include="CustomDesign\images\de2.jpg" />
+    <Content Include="CustomDesign\images\de3.jpg" />
+    <Content Include="CustomDesign\images\de4.jpg" />
+    <Content Include="CustomDesign\images\de5.jpg" />
+    <Content Include="CustomDesign\images\de6.jpg" />
+    <Content Include="CustomDesign\images\de7.jpg" />
+    <Content Include="CustomDesign\images\de8.jpg" />
+    <Content Include="CustomDesign\images\de9.jpg" />
+    <Content Include="CustomDesign\images\defslider.jpg" />
+    <Content Include="CustomDesign\images\defsliderlist.jpg" />
+    <Content Include="CustomDesign\images\develop.png" />
+    <Content Include="CustomDesign\images\edit.png" />
+    <Content Include="CustomDesign\images\en.jpg" />
+    <Content Include="CustomDesign\images\err.png" />
+    <Content Include="CustomDesign\images\error.png" />
+    <Content Include="CustomDesign\images\eye.png" />
+    <Content Include="CustomDesign\images\fbh.png" />
+    <Content Include="CustomDesign\images\ga.jpg" />
+    <Content Include="CustomDesign\images\ga1.jpg" />
+    <Content Include="CustomDesign\images\ga2.jpg" />
+    <Content Include="CustomDesign\images\ga3.jpg" />
+    <Content Include="CustomDesign\images\green%402x.png" />
+    <Content Include="CustomDesign\images\green.png" />
+    <Content Include="CustomDesign\images\help.png" />
+    <Content Include="CustomDesign\images\ho1.jpg" />
+    <Content Include="CustomDesign\images\home.png" />
+    <Content Include="CustomDesign\images\house.png" />
+    <Content Include="CustomDesign\images\img-sprite.png" />
+    <Content Include="CustomDesign\images\img_fjords.jpg" />
+    <Content Include="CustomDesign\images\info.png" />
+    <Content Include="CustomDesign\images\lang.png" />
+    <Content Include="CustomDesign\images\lg.png" />
+    <Content Include="CustomDesign\images\lg1.png" />
+    <Content Include="CustomDesign\images\lg2.png" />
+    <Content Include="CustomDesign\images\lg3.png" />
+    <Content Include="CustomDesign\images\lg4.png" />
+    <Content Include="CustomDesign\images\lg5.png" />
+    <Content Include="CustomDesign\images\lg6.png" />
+    <Content Include="CustomDesign\images\lg7.png" />
+    <Content Include="CustomDesign\images\lg8.png" />
+    <Content Include="CustomDesign\images\lg9.png" />
+    <Content Include="CustomDesign\images\lo.png" />
+    <Content Include="CustomDesign\images\lo1.png" />
+    <Content Include="CustomDesign\images\lo2.png" />
+    <Content Include="CustomDesign\images\loading.gif" />
+    <Content Include="CustomDesign\images\logo-h.png" />
+    <Content Include="CustomDesign\images\logo.png" />
+    <Content Include="CustomDesign\images\lold.png" />
+    <Content Include="CustomDesign\images\lout.png" />
+    <Content Include="CustomDesign\images\mapdefault.png" />
+    <Content Include="CustomDesign\images\marker.ico" />
+    <Content Include="CustomDesign\images\marker.png" />
+    <Content Include="CustomDesign\images\marker_small.png" />
+    <Content Include="CustomDesign\images\mng.png" />
+    <Content Include="CustomDesign\images\pc1.jpg" />
+    <Content Include="CustomDesign\images\pc2.jpg" />
+    <Content Include="CustomDesign\images\pc3.jpg" />
+    <Content Include="CustomDesign\images\pc4.jpg" />
+    <Content Include="CustomDesign\images\pc5.jpg" />
+    <Content Include="CustomDesign\images\ph1.png" />
+    <Content Include="CustomDesign\images\pi.jpg" />
+    <Content Include="CustomDesign\images\pi1.jpg" />
+    <Content Include="CustomDesign\images\pi2.jpg" />
+    <Content Include="CustomDesign\images\pi3.jpg" />
+    <Content Include="CustomDesign\images\pr.jpg" />
+    <Content Include="CustomDesign\images\rg.png" />
+    <Content Include="CustomDesign\images\sb.jpg" />
+    <Content Include="CustomDesign\images\sb1.jpg" />
+    <Content Include="CustomDesign\images\sb2.jpg" />
+    <Content Include="CustomDesign\images\sb3.jpg" />
+    <Content Include="CustomDesign\images\sb4.jpg" />
+    <Content Include="CustomDesign\images\sb5.jpg" />
+    <Content Include="CustomDesign\images\sb6.jpg" />
+    <Content Include="CustomDesign\images\search.png" />
+    <Content Include="CustomDesign\images\sl.jpg" />
+    <Content Include="CustomDesign\images\sl1.jpg" />
+    <Content Include="CustomDesign\images\sl2.jpg" />
+    <Content Include="CustomDesign\images\sl3.jpg" />
+    <Content Include="CustomDesign\images\sl4.jpg" />
+    <Content Include="CustomDesign\images\spin.svg" />
+    <Content Include="CustomDesign\images\ss.jpg" />
+    <Content Include="CustomDesign\images\ss1.jpg" />
+    <Content Include="CustomDesign\images\ss2.jpg" />
+    <Content Include="CustomDesign\images\ss3.jpg" />
+    <Content Include="CustomDesign\images\star.png" />
+    <Content Include="CustomDesign\images\star1.png" />
+    <Content Include="CustomDesign\images\te.jpg" />
+    <Content Include="CustomDesign\images\te1.jpg" />
+    <Content Include="CustomDesign\images\te2.jpg" />
+    <Content Include="CustomDesign\images\tr.jpg" />
+    <Content Include="CustomDesign\images\ueh.png" />
+    <Content Include="CustomDesign\images\user.png" />
+    <Content Include="CustomDesign\images\v.jpg" />
+    <Content Include="CustomDesign\images\vah.png" />
+    <Content Include="CustomDesign\images\vih.png" />
+    <Content Include="CustomDesign\images\warning.png" />
+    <Content Include="CustomDesign\index.html" />
+    <Content Include="CustomDesign\js\analytics.js" />
+    <Content Include="CustomDesign\js\ar.js" />
+    <Content Include="CustomDesign\js\asBreadcrumbs.js" />
+    <Content Include="CustomDesign\js\base.js" />
+    <Content Include="CustomDesign\js\bootstrap-toggle.min.js" />
+    <Content Include="CustomDesign\js\bootstrap.min.js" />
+    <Content Include="CustomDesign\js\ckeditor\adapters\jquery.js" />
+    <Content Include="CustomDesign\js\ckeditor\build-config.js" />
+    <Content Include="CustomDesign\js\ckeditor\ckeditor.js" />
+    <Content Include="CustomDesign\js\ckeditor\config.js" />
+    <Content Include="CustomDesign\js\ckeditor\contents.css" />
+    <Content Include="CustomDesign\js\ckeditor\lang\en.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\a11yhelp.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\af.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\ar.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\bg.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\ca.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\cs.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\cy.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\da.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\de-ch.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\de.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\el.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\en-gb.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\en.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\eo.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\es.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\et.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\eu.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\fa.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\fi.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\fo.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\fr-ca.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\fr.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\gl.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\gu.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\he.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\hi.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\hr.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\hu.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\id.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\it.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\ja.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\km.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\ko.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\ku.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\lt.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\lv.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\mk.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\mn.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\nb.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\nl.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\no.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\oc.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\pl.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\pt-br.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\pt.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\ro.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\ru.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\si.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\sk.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\sl.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\sq.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\sr-latn.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\sr.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\sv.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\th.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\tr.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\tt.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\ug.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\uk.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\vi.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\zh-cn.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\zh.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\a11yhelp\dialogs\lang\_translationstatus.txt" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\about\dialogs\about.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\about\dialogs\hidpi\logo_ckeditor.png" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\about\dialogs\logo_ckeditor.png" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\clipboard\dialogs\paste.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\dialog\dialogDefinition.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\icons.png" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\icons_hidpi.png" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\image\dialogs\image.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\image\images\noimage.png" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\link\dialogs\anchor.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\link\dialogs\link.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\link\images\anchor.png" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\link\images\hidpi\anchor.png" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\magicline\images\hidpi\icon-rtl.png" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\magicline\images\hidpi\icon.png" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\magicline\images\icon-rtl.png" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\magicline\images\icon.png" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\pastefromword\filter\default.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\scayt\dialogs\options.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\scayt\dialogs\toolbar.css" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\scayt\skins\moono-lisa\scayt.css" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\af.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\ar.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\bg.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\ca.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\cs.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\cy.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\da.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\de-ch.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\de.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\el.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\en-gb.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\en.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\eo.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\es.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\et.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\eu.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\fa.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\fi.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\fr-ca.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\fr.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\gl.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\he.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\hr.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\hu.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\id.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\it.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\ja.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\km.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\ko.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\ku.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\lt.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\lv.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\nb.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\nl.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\no.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\oc.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\pl.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\pt-br.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\pt.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\ru.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\si.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\sk.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\sl.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\sq.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\sv.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\th.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\tr.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\tt.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\ug.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\uk.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\vi.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\zh-cn.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\zh.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\lang\_translationstatus.txt" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\specialchar\dialogs\specialchar.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\tabletools\dialogs\tableCell.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\table\dialogs\table.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\wsc\dialogs\ciframe.html" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\wsc\dialogs\tmpFrameset.html" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\wsc\dialogs\wsc.css" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\wsc\dialogs\wsc.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\wsc\dialogs\wsc_ie.js" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\wsc\skins\moono-lisa\wsc.css" />
+    <Content Include="CustomDesign\js\ckeditor\samples\css\samples.css" />
+    <Content Include="CustomDesign\js\ckeditor\samples\img\github-top.png" />
+    <Content Include="CustomDesign\js\ckeditor\samples\img\header-bg.png" />
+    <Content Include="CustomDesign\js\ckeditor\samples\img\header-separator.png" />
+    <Content Include="CustomDesign\js\ckeditor\samples\img\logo.png" />
+    <Content Include="CustomDesign\js\ckeditor\samples\img\navigation-tip.png" />
+    <Content Include="CustomDesign\js\ckeditor\samples\index.html" />
+    <Content Include="CustomDesign\js\ckeditor\samples\js\sample.js" />
+    <Content Include="CustomDesign\js\ckeditor\samples\js\sf.js" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\ajax.html" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\api.html" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\appendto.html" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\assets\inlineall\logo.png" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\assets\outputxhtml\outputxhtml.css" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\assets\sample.jpg" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\assets\uilanguages\languages.js" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\datafiltering.html" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\dialog\assets\my_dialog.js" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\dialog\dialog.html" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\divreplace.html" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\enterkey\enterkey.html" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\htmlwriter\assets\outputforflash\outputforflash.swf" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\htmlwriter\assets\outputforflash\swfobject.js" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\htmlwriter\outputforflash.html" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\htmlwriter\outputhtml.html" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\index.html" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\inlineall.html" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\inlinebycode.html" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\inlinetextarea.html" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\jquery.html" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\magicline\magicline.html" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\readonly.html" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\replacebyclass.html" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\replacebycode.html" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\sample.css" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\sample.js" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\tabindex.html" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\toolbar\toolbar.html" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\uicolor.html" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\uilanguages.html" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\wysiwygarea\fullpage.html" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\xhtmlstyle.html" />
+    <Content Include="CustomDesign\js\ckeditor\samples\toolbarconfigurator\css\fontello.css" />
+    <Content Include="CustomDesign\js\ckeditor\samples\toolbarconfigurator\font\fontello.svg" />
+    <Content Include="CustomDesign\js\ckeditor\samples\toolbarconfigurator\font\LICENSE.txt" />
+    <Content Include="CustomDesign\js\ckeditor\samples\toolbarconfigurator\index.html" />
+    <Content Include="CustomDesign\js\ckeditor\samples\toolbarconfigurator\js\abstracttoolbarmodifier.js" />
+    <Content Include="CustomDesign\js\ckeditor\samples\toolbarconfigurator\js\fulltoolbareditor.js" />
+    <Content Include="CustomDesign\js\ckeditor\samples\toolbarconfigurator\js\toolbarmodifier.js" />
+    <Content Include="CustomDesign\js\ckeditor\samples\toolbarconfigurator\js\toolbartextmodifier.js" />
+    <Content Include="CustomDesign\js\ckeditor\samples\toolbarconfigurator\lib\codemirror\codemirror.css" />
+    <Content Include="CustomDesign\js\ckeditor\samples\toolbarconfigurator\lib\codemirror\codemirror.js" />
+    <Content Include="CustomDesign\js\ckeditor\samples\toolbarconfigurator\lib\codemirror\javascript.js" />
+    <Content Include="CustomDesign\js\ckeditor\samples\toolbarconfigurator\lib\codemirror\neo.css" />
+    <Content Include="CustomDesign\js\ckeditor\samples\toolbarconfigurator\lib\codemirror\show-hint.css" />
+    <Content Include="CustomDesign\js\ckeditor\samples\toolbarconfigurator\lib\codemirror\show-hint.js" />
+    <Content Include="CustomDesign\js\ckeditor\skins\moono-lisa\dialog.css" />
+    <Content Include="CustomDesign\js\ckeditor\skins\moono-lisa\dialog_ie.css" />
+    <Content Include="CustomDesign\js\ckeditor\skins\moono-lisa\dialog_ie8.css" />
+    <Content Include="CustomDesign\js\ckeditor\skins\moono-lisa\dialog_iequirks.css" />
+    <Content Include="CustomDesign\js\ckeditor\skins\moono-lisa\editor.css" />
+    <Content Include="CustomDesign\js\ckeditor\skins\moono-lisa\editor_gecko.css" />
+    <Content Include="CustomDesign\js\ckeditor\skins\moono-lisa\editor_ie.css" />
+    <Content Include="CustomDesign\js\ckeditor\skins\moono-lisa\editor_ie8.css" />
+    <Content Include="CustomDesign\js\ckeditor\skins\moono-lisa\editor_iequirks.css" />
+    <Content Include="CustomDesign\js\ckeditor\skins\moono-lisa\icons.png" />
+    <Content Include="CustomDesign\js\ckeditor\skins\moono-lisa\icons_hidpi.png" />
+    <Content Include="CustomDesign\js\ckeditor\skins\moono-lisa\images\arrow.png" />
+    <Content Include="CustomDesign\js\ckeditor\skins\moono-lisa\images\close.png" />
+    <Content Include="CustomDesign\js\ckeditor\skins\moono-lisa\images\hidpi\close.png" />
+    <Content Include="CustomDesign\js\ckeditor\skins\moono-lisa\images\hidpi\lock-open.png" />
+    <Content Include="CustomDesign\js\ckeditor\skins\moono-lisa\images\hidpi\lock.png" />
+    <Content Include="CustomDesign\js\ckeditor\skins\moono-lisa\images\hidpi\refresh.png" />
+    <Content Include="CustomDesign\js\ckeditor\skins\moono-lisa\images\lock-open.png" />
+    <Content Include="CustomDesign\js\ckeditor\skins\moono-lisa\images\lock.png" />
+    <Content Include="CustomDesign\js\ckeditor\skins\moono-lisa\images\refresh.png" />
+    <Content Include="CustomDesign\js\ckeditor\skins\moono-lisa\images\spinner.gif" />
+    <Content Include="CustomDesign\js\ckeditor\styles.js" />
+    <Content Include="CustomDesign\js\easyResponsiveTabs.js" />
+    <Content Include="CustomDesign\js\ga.js" />
+    <Content Include="CustomDesign\js\html5shiv.js" />
+    <Content Include="CustomDesign\js\icheck.js" />
+    <Content Include="CustomDesign\js\jquery-1.10.2.min.js" />
+    <Content Include="CustomDesign\js\jquery-1.11.1.min.js" />
+    <Content Include="CustomDesign\js\jquery-1.9.1.min.js" />
+    <Content Include="CustomDesign\js\jquery-2.1.1.min.js" />
+    <Content Include="CustomDesign\js\jquery-asBreadcrumbs.js" />
+    <Content Include="CustomDesign\js\jquery-ui.js" />
+    <Content Include="CustomDesign\js\jquery.blueberry.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.all.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.coptic.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.discworld.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.ethiopian-am.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.ethiopian.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.hebrew-he.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.hebrew.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.islamic-ar.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.islamic-fa.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.islamic.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.julian.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.lang.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.mayan.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.nanakshahi-pa.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.nanakshahi.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.nepali-ne.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.nepali.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.persian-fa.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.persian.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.picker-ar.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.picker.ext.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.picker.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.plus.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.taiwan-zh-TW.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.taiwan.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.thai-th.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.thai.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.ummalqura-ar.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.ummalqura.js" />
+    <Content Include="CustomDesign\js\jquery.calendars.validation.js" />
+    <Content Include="CustomDesign\js\jquery.flexisel.js" />
+    <Content Include="CustomDesign\js\jquery.flexslider.js" />
+    <Content Include="CustomDesign\js\jquery.isotope.min.js" />
+    <Content Include="CustomDesign\js\jquery.js" />
+    <Content Include="CustomDesign\js\jquery.magnific-popup.js" />
+    <Content Include="CustomDesign\js\jquery.min.js" />
+    <Content Include="CustomDesign\js\jquery.plugin.js" />
+    <Content Include="CustomDesign\js\jquery.plugin.min.js" />
+    <Content Include="CustomDesign\js\jquery.prettyPhoto.js" />
+    <Content Include="CustomDesign\js\jssor.slider-26.3.0.min.js" />
+    <Content Include="CustomDesign\js\LoadCalender.js" />
+    <Content Include="CustomDesign\js\locales.js" />
+    <Content Include="CustomDesign\js\main.js" />
+    <Content Include="CustomDesign\js\mdb.js" />
+    <Content Include="CustomDesign\js\mdb.min.js" />
+    <Content Include="CustomDesign\js\modernizr.js" />
+    <Content Include="CustomDesign\js\moment-with-locales.js" />
+    <Content Include="CustomDesign\js\moment.js" />
+    <Content Include="CustomDesign\js\packed.js" />
+    <Content Include="CustomDesign\js\popper.min.js" />
+    <Content Include="CustomDesign\js\prettify-1.0.min.js" />
+    <Content Include="CustomDesign\js\prettify.min.js" />
+    <Content Include="CustomDesign\js\prettySticky.js" />
+    <Content Include="CustomDesign\js\pushmenu\jquery.multilevelpushmenu.min.js" />
+    <Content Include="CustomDesign\js\pushmenu\options.js" />
+    <Content Include="CustomDesign\js\respond.min.js" />
+    <Content Include="CustomDesign\js\responsiveslides.min.js" />
+    <Content Include="CustomDesign\js\scripts.js" />
+    <Content Include="CustomDesign\js\tinybox.js" />
+    <Content Include="CustomDesign\js\tooltip.js" />
+    <Content Include="CustomDesign\loan.html" />
+    <Content Include="CustomDesign\loan_single.html" />
+    <Content Include="CustomDesign\login.html" />
+    <Content Include="CustomDesign\mobile_app.html" />
+    <Content Include="CustomDesign\privacy.html" />
+    <Content Include="CustomDesign\register.html" />
+    <Content Include="CustomDesign\single.html" />
+    <Content Include="CustomDesign\suggestion.html" />
+    <Content Include="CustomDesign\terms.html" />
+    <Content Include="CustomDesign\typo.html" />
+    <Content Include="CustomDesign\w3layouts-License.txt" />
+    <Content Include="DesignOrginal\CustomDesign\Add_Edit Form.htm" />
+    <Content Include="DesignOrginal\CustomDesign\css\animate.css" />
+    <Content Include="DesignOrginal\CustomDesign\css\blueberry.css" />
+    <Content Include="DesignOrginal\CustomDesign\css\bootstrap.min.css" />
+    <Content Include="DesignOrginal\CustomDesign\css\dashboard.css" />
+    <Content Include="DesignOrginal\CustomDesign\css\DevExpressStyle.css" />
+    <Content Include="DesignOrginal\CustomDesign\css\fine-uploader-new.css" />
+    <Content Include="DesignOrginal\CustomDesign\css\font-awesome.min.css" />
+    <Content Include="DesignOrginal\CustomDesign\css\fonts.css" />
+    <Content Include="DesignOrginal\CustomDesign\css\Layout.css" />
+    <Content Include="DesignOrginal\CustomDesign\css\LayoutIE7.css" />
+    <Content Include="DesignOrginal\CustomDesign\css\lightbox.css" />
+    <Content Include="DesignOrginal\CustomDesign\css\main.css" />
+    <Content Include="DesignOrginal\CustomDesign\css\netstyle.css" />
+    <Content Include="DesignOrginal\CustomDesign\css\popup.css" />
+    <Content Include="DesignOrginal\CustomDesign\css\prettyPhoto.css" />
+    <Content Include="DesignOrginal\CustomDesign\css\print.css" />
+    <Content Include="DesignOrginal\CustomDesign\css\reveal.css" />
+    <Content Include="DesignOrginal\CustomDesign\css\right_menu.css" />
+    <Content Include="DesignOrginal\CustomDesign\css\tabs.css" />
+    <Content Include="DesignOrginal\CustomDesign\css\tooltip.css" />
+    <Content Include="DesignOrginal\CustomDesign\css\top_menu.css" />
+    <Content Include="DesignOrginal\CustomDesign\devexp_grid.htm" />
+    <Content Include="DesignOrginal\CustomDesign\Display Form.htm" />
+    <Content Include="DesignOrginal\CustomDesign\Fonts\DINNextLTArabic.eot" />
+    <Content Include="DesignOrginal\CustomDesign\Fonts\DINNextLTArabic.ttf" />
+    <Content Include="DesignOrginal\CustomDesign\Fonts\HelveticaNeueW23-Reg.eot" />
+    <Content Include="DesignOrginal\CustomDesign\Fonts\HelveticaNeueW23-Reg.ttf" />
+    <Content Include="DesignOrginal\CustomDesign\home.htm" />
+    <Content Include="DesignOrginal\CustomDesign\images\accordionBG.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\activate.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\add.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\ajax-loader.gif" />
+    <Content Include="DesignOrginal\CustomDesign\images\Allowed.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\arrow_1.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\arrow_2.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\arrow_3.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\banner_bg.jpg" />
+    <Content Include="DesignOrginal\CustomDesign\images\bg.jpg" />
+    <Content Include="DesignOrginal\CustomDesign\images\body_bg.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\br_separate.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\btn_bg.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\bullet_banner_off.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\bullet_banner_on.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\cancel.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\check-radio-bg.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\collArrDown.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\collArrUp.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\dash_1.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\dash_2.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\dash_3.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\deactivate.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\delete.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\delete_off.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\email_icon.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\error.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\expandRightMenu.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\floral-green-vector-backgrounds-powerpoint - Copy.jpg" />
+    <Content Include="DesignOrginal\CustomDesign\images\floral-green-vector-backgrounds-powerpoint.jpg" />
+    <Content Include="DesignOrginal\CustomDesign\images\folder-edit.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\folder-edit_off.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\footer_bg.jpg" />
+    <Content Include="DesignOrginal\CustomDesign\images\gnome_dialog_question.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\gs.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\header.jpg" />
+    <Content Include="DesignOrginal\CustomDesign\images\help_bg.jpg" />
+    <Content Include="DesignOrginal\CustomDesign\images\Icons\favicon.ico" />
+    <Content Include="DesignOrginal\CustomDesign\images\Icons\help.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\Icons\marker.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\Icons\people.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\Icons\search.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\Icons\window.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\left_menu_bg.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\loading.gif" />
+    <Content Include="DesignOrginal\CustomDesign\images\loading1.gif" />
+    <Content Include="DesignOrginal\CustomDesign\images\lock.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\loginArrow-1.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\loginArrow-2.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\logo.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\logoutIcon.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\NotAllowed.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\notice.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\passwordIcon.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\password_icon.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\password_icon2.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\tabs_bg.jpg" />
+    <Content Include="DesignOrginal\CustomDesign\images\tabs_bg_current.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\tabs_current_arrow.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\tabs_current_line.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\title_icon.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\username_icon.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\ver_menu_accordion_img.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\ver_menu_bg.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\ver_menu_bullet.png" />
+    <Content Include="DesignOrginal\CustomDesign\images\ver_menu_item_bullet.png" />
+    <Content Include="DesignOrginal\CustomDesign\innerPage.htm" />
+    <Content Include="DesignOrginal\CustomDesign\js\bootstrap.min.js" />
+    <Content Include="DesignOrginal\CustomDesign\js\fine-uploader.js" />
+    <Content Include="DesignOrginal\CustomDesign\js\html5shiv.js" />
+    <Content Include="DesignOrginal\CustomDesign\js\jquery-1.8.2.min.js" />
+    <Content Include="DesignOrginal\CustomDesign\js\jquery-cookie-master\.gitignore" />
+    <Content Include="DesignOrginal\CustomDesign\js\jquery-cookie-master\.jshintrc" />
+    <Content Include="DesignOrginal\CustomDesign\js\jquery-cookie-master\.tm_properties" />
+    <Content Include="DesignOrginal\CustomDesign\js\jquery-cookie-master\.travis.yml" />
+    <Content Include="DesignOrginal\CustomDesign\js\jquery-cookie-master\bower.json" />
+    <Content Include="DesignOrginal\CustomDesign\js\jquery-cookie-master\CHANGELOG.md" />
+    <Content Include="DesignOrginal\CustomDesign\js\jquery-cookie-master\component.json" />
+    <Content Include="DesignOrginal\CustomDesign\js\jquery-cookie-master\CONTRIBUTING.md" />
+    <Content Include="DesignOrginal\CustomDesign\js\jquery-cookie-master\cookie.jquery.json" />
+    <Content Include="DesignOrginal\CustomDesign\js\jquery-cookie-master\Gruntfile.js" />
+    <Content Include="DesignOrginal\CustomDesign\js\jquery-cookie-master\jquery.cookie.js" />
+    <Content Include="DesignOrginal\CustomDesign\js\jquery-cookie-master\MIT-LICENSE.txt" />
+    <Content Include="DesignOrginal\CustomDesign\js\jquery-cookie-master\package.json" />
+    <Content Include="DesignOrginal\CustomDesign\js\jquery-cookie-master\README.md" />
+    <Content Include="DesignOrginal\CustomDesign\js\jquery-cookie-master\test\index.html" />
+    <Content Include="DesignOrginal\CustomDesign\js\jquery-cookie-master\test\malformed_cookie.html" />
+    <Content Include="DesignOrginal\CustomDesign\js\jquery-cookie-master\test\server.js" />
+    <Content Include="DesignOrginal\CustomDesign\js\jquery-cookie-master\test\tests.js" />
+    <Content Include="DesignOrginal\CustomDesign\js\jquery.blueberry.js" />
+    <Content Include="DesignOrginal\CustomDesign\js\jquery.easytabs.js" />
+    <Content Include="DesignOrginal\CustomDesign\js\jquery.isotope.min.js" />
+    <Content Include="DesignOrginal\CustomDesign\js\jquery.js" />
+    <Content Include="DesignOrginal\CustomDesign\js\jquery.prettyPhoto.js" />
+    <Content Include="DesignOrginal\CustomDesign\js\jquery.reveal.js" />
+    <Content Include="DesignOrginal\CustomDesign\js\lightbox.js" />
+    <Content Include="DesignOrginal\CustomDesign\js\main.js" />
+    <Content Include="DesignOrginal\CustomDesign\js\MapScript.js" />
+    <Content Include="DesignOrginal\CustomDesign\js\organictabs.jquery.js" />
+    <Content Include="DesignOrginal\CustomDesign\js\packed.js" />
+    <Content Include="DesignOrginal\CustomDesign\js\respond.min.js" />
+    <Content Include="DesignOrginal\CustomDesign\js\tinybox.js" />
+    <Content Include="DesignOrginal\CustomDesign\js\tooltip.js" />
+    <Content Include="DesignOrginal\CustomDesign\Pupup_error.htm" />
+    <Content Include="DesignOrginal\CustomDesign\Pupup_form.htm" />
+    <Content Include="DesignOrginal\CustomDesign\Pupup_info.htm" />
+    <Content Include="DesignOrginal\CustomDesign\Reports.htm" />
+    <Content Include="DesignOrginal\CustomDesign\signin.htm" />
+    <Content Include="DesignOrginal\CustomDesign\Tab.htm" />
+    <Content Include="DynamicDataReports\Sample.rdlc" />
+    <Content Include="DynamicData\CustomPages\Properties\Details.aspx" />
+    <Content Include="DynamicData\CustomPages\Users\Details.aspx" />
+    <Content Include="DynamicData\CustomPages\Users\Edit.aspx" />
+    <Content Include="DynamicData\CustomPages\Users\Insert.aspx" />
+    <Content Include="DynamicData\CustomPages\Users\List.aspx" />
+    <Content Include="DynamicData\FieldTemplates\CascadingForeignKey.ascx" />
+    <Content Include="DynamicData\FieldTemplates\CascadingForeignKey_Edit.ascx" />
+    <Content Include="DynamicData\FieldTemplates\DatePicker.ascx" />
+    <Content Include="DynamicData\FieldTemplates\DatePicker_Edit.ascx" />
+    <Content Include="DynamicData\FieldTemplates\Html.ascx" />
+    <Content Include="DynamicData\FieldTemplates\HTMLEditor.ascx" />
+    <Content Include="DynamicData\FieldTemplates\HTMLEditor_Edit.ascx" />
+    <Content Include="DynamicData\FieldTemplates\Html_Edit.ascx" />
+    <Content Include="DynamicData\FieldTemplates\ImagePathUpload.ascx" />
+    <Content Include="DynamicData\FieldTemplates\ImagePathUpload_Edit.ascx" />
+    <Content Include="DynamicData\FieldTemplates\Integer.ascx" />
+    <Content Include="DynamicData\FieldTemplates\Localized_Foreign_Key.ascx" />
+    <Content Include="DynamicData\FieldTemplates\Localized_Foreign_Key_Edit.ascx" />
+    <Content Include="DynamicData\FieldTemplates\MapLocation.ascx" />
+    <Content Include="DynamicData\FieldTemplates\MapLocation_Edit.ascx" />
+    <Content Include="DynamicData\FieldTemplates\MapLocation_Insert.ascx" />
+    <Content Include="DynamicData\FieldTemplates\MultilineText.ascx" />
+    <Content Include="DynamicData\FieldTemplates\MultilineText_Edit.ascx" />
+    <Content Include="DynamicData\FieldTemplates\Nestoria_Logo.ascx" />
+    <Content Include="DynamicData\FieldTemplates\Nestoria_Logo_Edit.ascx" />
+    <Content Include="DynamicData\FieldTemplates\Phone.ascx" />
+    <Content Include="DynamicData\FieldTemplates\Phone_Edit.ascx" />
+    <Content Include="DynamicData\FieldTemplates\GoogleMap.ascx" />
+    <Content Include="DynamicData\FieldTemplates\FormView.ascx" />
+    <Content Include="DynamicData\FieldTemplates\FormView__Edit.ascx" />
+    <Content Include="DynamicData\FieldTemplates\User_Edit.ascx" />
+    <Content Include="DynamicData\FieldTemplates\User_Insert.ascx" />
+    <Content Include="DynamicData\Filters\CascadingForeignKey.ascx" />
+    <Content Include="DynamicData\PageTemplates\ListDetails.aspx" />
+    <Content Include="DynamicData\PageTemplates\ListOriginal.aspx" />
+    <Content Include="DynamicData\PageTemplates\Default.aspx" />
+    <Content Include="DynamicData\PageTemplates\DetailsOriginal.aspx" />
+    <Content Include="DynamicData\PageTemplates\ListWithIcons.aspx" />
+    <Content Include="Error.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Feed.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="googlea6883df2aa1b9968.html" />
+    <Content Include="Home.aspx" />
+    <Compile Include="App_GlobalResources\DynamicData.ar.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DynamicData.ar.resx</DependentUpon>
+    </Compile>
+    <Compile Include="AutocompleteFilter.asmx.cs">
+      <DependentUpon>AutocompleteFilter.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Autocomplete.ascx.cs">
+      <DependentUpon>Autocomplete.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Autocomplete.ascx.designer.cs">
+      <DependentUpon>Autocomplete.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Autocomplete_Edit.ascx.cs">
+      <DependentUpon>Autocomplete_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Autocomplete_Edit.ascx.designer.cs">
+      <DependentUpon>Autocomplete_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\GridView_Edit.ascx.cs">
+      <DependentUpon>GridView_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\GridView_Edit.ascx.designer.cs">
+      <DependentUpon>GridView_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\GridView.ascx.cs">
+      <DependentUpon>GridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\GridView.ascx.designer.cs">
+      <DependentUpon>GridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\SelectImage.ascx.cs">
+      <DependentUpon>SelectImage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\SelectImage.ascx.designer.cs">
+      <DependentUpon>SelectImage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\SelectImage_Edit.ascx.cs">
+      <DependentUpon>SelectImage_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\SelectImage_Edit.ascx.designer.cs">
+      <DependentUpon>SelectImage_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\UploadFile.ascx.cs">
+      <DependentUpon>UploadFile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\UploadFile.ascx.designer.cs">
+      <DependentUpon>UploadFile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\UploadFile_Edit.ascx.cs">
+      <DependentUpon>UploadFile_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\UploadFile_Edit.ascx.designer.cs">
+      <DependentUpon>UploadFile_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\UploadImage.ascx.cs">
+      <DependentUpon>UploadImage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\UploadImage.ascx.designer.cs">
+      <DependentUpon>UploadImage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\UploadImage_Edit.ascx.cs">
+      <DependentUpon>UploadImage_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\UploadImage_Edit.ascx.designer.cs">
+      <DependentUpon>UploadImage_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\Filters\Autocomplete.ascx.cs">
+      <DependentUpon>Autocomplete.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\Filters\Autocomplete.ascx.designer.cs">
+      <DependentUpon>Autocomplete.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\Filters\Contains.ascx.cs">
+      <DependentUpon>Contains.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\Filters\Contains.ascx.designer.cs">
+      <DependentUpon>Contains.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\Filters\CompairNumber.ascx.cs">
+      <DependentUpon>CompairNumber.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\Filters\CompairNumber.ascx.designer.cs">
+      <DependentUpon>CompairNumber.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\Filters\DateFrom.ascx.cs">
+      <DependentUpon>DateFrom.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\Filters\DateFrom.ascx.designer.cs">
+      <DependentUpon>DateFrom.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\Filters\DateTo.ascx.cs">
+      <DependentUpon>DateTo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\Filters\DateTo.ascx.designer.cs">
+      <DependentUpon>DateTo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\Filters\EndsWith.ascx.cs">
+      <DependentUpon>EndsWith.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\Filters\EndsWith.ascx.designer.cs">
+      <DependentUpon>EndsWith.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\Filters\GreaterThan.ascx.cs">
+      <DependentUpon>GreaterThan.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\Filters\GreaterThan.ascx.designer.cs">
+      <DependentUpon>GreaterThan.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\Filters\GreaterThanOrEqualTo.ascx.cs">
+      <DependentUpon>GreaterThanOrEqualTo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\Filters\GreaterThanOrEqualTo.ascx.designer.cs">
+      <DependentUpon>GreaterThanOrEqualTo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\Filters\LessThan.ascx.cs">
+      <DependentUpon>LessThan.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\Filters\LessThan.ascx.designer.cs">
+      <DependentUpon>LessThan.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\Filters\LessThanOrEqualTo.ascx.cs">
+      <DependentUpon>LessThanOrEqualTo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\Filters\LessThanOrEqualTo.ascx.designer.cs">
+      <DependentUpon>LessThanOrEqualTo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\Filters\MultiForeignKey.ascx.cs">
+      <DependentUpon>MultiForeignKey.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\Filters\MultiForeignKey.ascx.designer.cs">
+      <DependentUpon>MultiForeignKey.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\Filters\Range.ascx.cs">
+      <DependentUpon>Range.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\Filters\Range.ascx.designer.cs">
+      <DependentUpon>Range.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\Filters\StartsWith.ascx.cs">
+      <DependentUpon>StartsWith.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\Filters\StartsWith.ascx.designer.cs">
+      <DependentUpon>StartsWith.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\Filters\Where.ascx.cs">
+      <DependentUpon>Where.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\Filters\Where.ascx.designer.cs">
+      <DependentUpon>Where.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicData\Filters\WhereDropdownList.ascx.cs">
+      <DependentUpon>WhereDropdownList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\Filters\WhereDropdownList.ascx.designer.cs">
+      <DependentUpon>WhereDropdownList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\CustomPages\View_AbsenceCount\ListViewOnly.aspx" />
+    <Content Include="DynamicData\FieldTemplates\Autocomplete.ascx" />
+    <Content Include="DynamicData\FieldTemplates\Autocomplete_Edit.ascx" />
+    <Content Include="DynamicData\FieldTemplates\GridView_Edit.ascx" />
+    <Content Include="DynamicData\FieldTemplates\GridView.ascx" />
+    <Content Include="DynamicData\FieldTemplates\SelectImage.ascx" />
+    <Content Include="DynamicData\FieldTemplates\SelectImage_Edit.ascx" />
+    <Content Include="DynamicData\FieldTemplates\UploadFile.ascx" />
+    <Content Include="DynamicData\FieldTemplates\UploadFile_Edit.ascx" />
+    <Content Include="DynamicData\FieldTemplates\UploadImage.ascx" />
+    <Content Include="DynamicData\FieldTemplates\UploadImage_Edit.ascx" />
+    <Content Include="DynamicData\FieldTemplates\User.ascx" />
+    <Content Include="DynamicData\Filters\Autocomplete.ascx" />
+    <Content Include="DynamicData\Filters\Contains.ascx" />
+    <Content Include="DynamicData\Filters\CompairNumber.ascx" />
+    <Content Include="DynamicData\Filters\DateFrom.ascx" />
+    <Content Include="DynamicData\Filters\DateTo.ascx" />
+    <Content Include="DynamicData\Filters\EndsWith.ascx" />
+    <Content Include="DynamicData\Filters\GreaterThan.ascx" />
+    <Content Include="DynamicData\Filters\GreaterThanOrEqualTo.ascx" />
+    <Content Include="DynamicData\Filters\LessThan.ascx" />
+    <Content Include="DynamicData\Filters\LessThanOrEqualTo.ascx" />
+    <Content Include="DynamicData\Filters\MultiForeignKey.ascx" />
+    <Content Include="DynamicData\Filters\Range.ascx" />
+    <Content Include="DynamicData\Filters\StartsWith.ascx" />
+    <Content Include="DynamicData\Filters\Where.ascx" />
+    <Content Include="DynamicData\Filters\WhereDropdownList.ascx" />
+    <Content Include="Global.asax" />
+    <Compile Include="DynamicData\FieldTemplates\User.ascx.cs">
+      <DependentUpon>User.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\User.ascx.designer.cs">
+      <DependentUpon>User.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Content Include="Default.aspx" />
+    <Content Include="Pages\ErrorPage.aspx" />
+    <Content Include="PrivacyPolicy.aspx" />
+    <Content Include="Properties\PublishProfiles\Smarter ASP FTP.pubxml.user" />
+    <Content Include="ReadMe.txt" />
+    <Content Include="Account\Web.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="RealEstate\PropertyImage\6SXKLPI4KGLJWQY.jpg" />
+    <Content Include="RealEstate\PropertyImage\ADZJDLWZ8E6NEQV.jpg" />
+    <Content Include="RealEstate\PropertyImage\AFHOA1JX3PNXY1O.jpg" />
+    <Content Include="RealEstate\PropertyImage\BRY9ZBQIVXITDAO.jpg" />
+    <Content Include="RealEstate\PropertyImage\BX6W0Y8893RUM24.jpg" />
+    <Content Include="RealEstate\PropertyImage\C156E8S94H7VNGN.jpg" />
+    <Content Include="RealEstate\PropertyImage\D3CUPVZ05AE6XOH.jpg" />
+    <Content Include="RealEstate\PropertyImage\DW0F5P8KOBAR3EM.jpg" />
+    <Content Include="RealEstate\PropertyImage\E8UTDQ37XA28W1Z.jpg" />
+    <Content Include="RealEstate\PropertyImage\EWPP10AJDBAEUWO.jpg" />
+    <Content Include="RealEstate\PropertyImage\HCY3RSJMYMK9A2K.jpg" />
+    <Content Include="RealEstate\PropertyImage\I9KO8N6JBHAMM9A.jpg" />
+    <Content Include="RealEstate\PropertyImage\I9KO8N6JBHAMM9B.jpg" />
+    <Content Include="RealEstate\PropertyImage\I9KO8N6JBHAMM9C.jpg" />
+    <Content Include="RealEstate\PropertyImage\II7KDOP9AOVATCQ.jpg" />
+    <Content Include="RealEstate\PropertyImage\IRH8HYU7JALLVNN.jpg" />
+    <Content Include="RealEstate\PropertyImage\JMD3503S98Y2GKE.jpg" />
+    <Content Include="RealEstate\PropertyImage\LDSP1Y943MZWHZ8.jpg" />
+    <Content Include="RealEstate\PropertyImage\M8LEDF69GV2AQRJ.png" />
+    <Content Include="RealEstate\PropertyImage\MAOSXA5OGROB39E.jpg" />
+    <Content Include="RealEstate\PropertyImage\MJ5FOOACV5HIUGF.jpg" />
+    <Content Include="RealEstate\PropertyImage\OV3HHJG0GY8XBGS.jpg" />
+    <Content Include="RealEstate\PropertyImage\QBJMTWGO1MPUZ1E.png" />
+    <Content Include="RealEstate\PropertyImage\RIQLOHIN082ZHLM.jpg" />
+    <Content Include="RealEstate\PropertyImage\RTYZ9FOUPQHWK3O.jpg" />
+    <Content Include="RealEstate\PropertyImage\SDJZK0X7ADGP3YE.jpg" />
+    <Content Include="RealEstate\PropertyImage\SPJY116L9YY1R7O.jpg" />
+    <Content Include="RealEstate\PropertyImage\TOKVBMA58LLXL99.jpg" />
+    <Content Include="RealEstate\PropertyImage\VGONPX08I6D3VZA.jpg" />
+    <Content Include="RealEstate\PropertyImage\VGONPX08I6D3VZB.jpg" />
+    <Content Include="RealEstate\PropertyImage\VGONPX08I6D3VZU.jpg" />
+    <Content Include="RealEstate\PropertyImage\VPHJR80REC43UO6.png" />
+    <Content Include="RealEstate\PropertyImage\Y80HSZ27A6ZCMQW.jpg" />
+    <Content Include="RealEstate\PropertyImage\Y80HSZ27A6ZCMQX.jpg" />
+    <Content Include="RealEstate\PropertyImage\Y80HSZ27A6ZCMQZ.jpg" />
+    <Content Include="RealEstate\PropertyImage\YCWJBJID5TDH4SE.jpg" />
+    <Content Include="robots.txt" />
+    <Content Include="Scripts\html5shiv.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="App_GlobalResources\Contract_Type.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Contract_Type.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Contract_Type.ar.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Contract_Type.ar.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Map.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Map.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Map.ar.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Map.ar.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\City.ar.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>City.ar1.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\City.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>City1.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="CustomDesign\js\bower.json" />
+    <Content Include="CustomDesign\js\kbw.calendars.jquery.json" />
+    <Content Include="CustomDesign\fonts\SEGOEUIL.woff" />
+    <Content Include="ServerControls\BreadCrumb.ascx" />
+    <Content Include="ServerControls\Pushmenu\Pushmenu.ascx" />
+    <Content Include="ServerControls\Pushmenu\PushMenu_Item.ascx" />
+    <Content Include="Services\Telegram_Handler.svc" />
+    <Content Include="sitemap.xml" />
+    <Content Include="sitemap_ar.xml" />
+    <Content Include="TestMaster.aspx" />
+    <Content Include="TestNoMaster.aspx" />
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Property_Category.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Property_Category.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Property_Category.ar.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Property_Category.ar.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\About.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>About.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\About.ar.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>About.ar.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\HeavyParts.ar.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>HeavyParts.ar.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Route.ar.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Route.ar.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Privacy.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Privacy.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Privacy.ar.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Privacy.ar.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Terms.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Terms.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Terms.ar.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Terms.ar.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Route.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Route.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+    <Content Include="App_GlobalResources\RealEstate.tr.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RealEstate.tr.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\About.tr.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>About.tr.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Account.tr.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Account.tr.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Application.tr.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Application.tr.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\City.tr.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>City.tr.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Contract_Type.tr.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Contract_Type.tr.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\DynamicData.tr.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>DynamicData.tr.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\IdentityError.tr.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>IdentityError.tr.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Map.tr.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Map.tr.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Privacy.tr.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Privacy.tr.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Property_Category.tr.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Property_Category.tr.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Property_Type.tr.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Property_Type.tr.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Route.tr.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Route.tr.designer.cs</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="Properties\Resources.resx" />
+    <Content Include="CustomDesign\js\ckeditor\CHANGES.md" />
+    <Content Include="CustomDesign\js\ckeditor\LICENSE.md" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\scayt\CHANGELOG.md" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\scayt\LICENSE.md" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\scayt\README.md" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\wsc\LICENSE.md" />
+    <Content Include="CustomDesign\js\ckeditor\plugins\wsc\README.md" />
+    <Content Include="CustomDesign\js\ckeditor\README.md" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\assets\posteddata.php" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\htmlwriter\assets\outputforflash\outputforflash.fla" />
+    <Content Include="CustomDesign\js\ckeditor\samples\old\sample_posteddata.php" />
+    <Content Include="CustomDesign\js\ckeditor\samples\toolbarconfigurator\font\config.json" />
+    <Content Include="CustomDesign\js\ckeditor\samples\toolbarconfigurator\font\fontello.eot" />
+    <Content Include="CustomDesign\js\ckeditor\samples\toolbarconfigurator\font\fontello.ttf" />
+    <Content Include="CustomDesign\js\ckeditor\samples\toolbarconfigurator\font\fontello.woff" />
+    <Content Include="CustomDesign\js\ckeditor\samples\toolbarconfigurator\lib\codemirror\LICENSE" />
+    <Content Include="CustomDesign\js\ckeditor\skins\moono-lisa\readme.md" />
+    <Content Include="CustomDesign\fonts\SEGOEUIL.eot" />
+    <Content Include="CustomDesign\fonts\segoeuil.ttf" />
+    <None Include="Properties\PublishProfiles\FeatureTest.pubxml" />
+    <None Include="Properties\PublishProfiles\FIle.pubxml" />
+    <None Include="Properties\PublishProfiles\Smarter ASP FTP.pubxml" />
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="ServerControls\CheckBox.ascx" />
+    <Content Include="ServerControls\Loader.ascx" />
+    <Content Include="Terms.aspx" />
+    <Content Include="App_GlobalResources\Property_Type.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Property_Type.ar.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Account\Role\Web.config" />
+    <Content Include="CustomDesign\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="CustomDesign\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="CustomDesign\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="CustomDesign\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="CustomDesign\fonts\Montserrat-Regular.ttf" />
+    <Content Include="CustomDesign\fonts\Oxygen-Regular.ttf" />
+    <None Include="Scripts\amplify-vsdoc.js" />
+    <Content Include="Scripts\amplify.js" />
+    <Content Include="Scripts\amplify.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\GPL-LICENSE.txt" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-ui-1.9.0.js" />
+    <Content Include="Scripts\jquery-ui-1.9.0.min.js" />
+    <Content Include="Scripts\jquery-ui-1.9.2.js" />
+    <Content Include="Scripts\jquery-ui-1.9.2.min.js" />
+    <Content Include="Scripts\jquery.isotope.min.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\jquery.prettyPhoto.js" />
+    <Content Include="Scripts\json2.js" />
+    <Content Include="Scripts\json2.min.js" />
+    <Content Include="Scripts\juice.js" />
+    <Content Include="Scripts\juice.min.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\MIT-LICENSE.txt" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\packed.js" />
+    <Content Include="Scripts\README.txt" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\tinybox.js" />
+    <Content Include="Scripts\tooltip.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <None Include="Scripts\_references.js" />
+    <Content Include="ServerControls\Icons.ascx" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Content Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="DynamicData\web.config" />
+    <Content Include="DynamicData\Content\GridViewPager.ascx" />
+    <Compile Include="DynamicData\Content\GridViewPager.ascx.cs">
+      <DependentUpon>GridViewPager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\Content\GridViewPager.ascx.designer.cs">
+      <DependentUpon>GridViewPager.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\Content\Images\Back.gif" />
+    <Content Include="DynamicData\Content\Images\header_back.gif" />
+    <Content Include="DynamicData\Content\Images\PgFirst.gif" />
+    <Content Include="DynamicData\Content\Images\PgLast.gif" />
+    <Content Include="DynamicData\Content\Images\PgNext.gif" />
+    <Content Include="DynamicData\Content\Images\PgPrev.gif" />
+    <Content Include="DynamicData\Content\Images\plus.gif" />
+    <Content Include="DynamicData\EntityTemplates\Default.ascx" />
+    <Compile Include="DynamicData\EntityTemplates\Default.ascx.cs">
+      <DependentUpon>Default.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\EntityTemplates\Default.ascx.designer.cs">
+      <DependentUpon>Default.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\EntityTemplates\Default_Edit.ascx" />
+    <Compile Include="DynamicData\EntityTemplates\Default_Edit.ascx.cs">
+      <DependentUpon>Default_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\EntityTemplates\Default_Edit.ascx.designer.cs">
+      <DependentUpon>Default_Edit.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\EntityTemplates\Default_Insert.ascx" />
+    <Compile Include="DynamicData\EntityTemplates\Default_Insert.ascx.cs">
+      <DependentUpon>Default_Insert.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\EntityTemplates\Default_Insert.ascx.designer.cs">
+      <DependentUpon>Default_Insert.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\Boolean.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\Boolean.ascx.cs">
+      <DependentUpon>Boolean.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Boolean.ascx.designer.cs">
+      <DependentUpon>Boolean.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\Boolean_Edit.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\Boolean_Edit.ascx.cs">
+      <DependentUpon>Boolean_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Boolean_Edit.ascx.designer.cs">
+      <DependentUpon>Boolean_Edit.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\Children.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\Children.ascx.cs">
+      <DependentUpon>Children.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Children.ascx.designer.cs">
+      <DependentUpon>Children.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\Children_Insert.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\Children_Insert.ascx.cs">
+      <DependentUpon>Children_Insert.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Children_Insert.ascx.designer.cs">
+      <DependentUpon>Children_Insert.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\DateTime.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\DateTime.ascx.cs">
+      <DependentUpon>DateTime.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\DateTime.ascx.designer.cs">
+      <DependentUpon>DateTime.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\DateTime_Edit.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\DateTime_Edit.ascx.cs">
+      <DependentUpon>DateTime_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\DateTime_Edit.ascx.designer.cs">
+      <DependentUpon>DateTime_Edit.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\Decimal_Edit.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\Decimal_Edit.ascx.cs">
+      <DependentUpon>Decimal_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Decimal_Edit.ascx.designer.cs">
+      <DependentUpon>Decimal_Edit.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\EmailAddress.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\EmailAddress.ascx.cs">
+      <DependentUpon>EmailAddress.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\EmailAddress.ascx.designer.cs">
+      <DependentUpon>EmailAddress.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\EmailAddress_Edit.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\EmailAddress_Edit.ascx.cs">
+      <DependentUpon>EmailAddress_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\EmailAddress_Edit.ascx.designer.cs">
+      <DependentUpon>EmailAddress_Edit.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\Enumeration.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\Enumeration.ascx.cs">
+      <DependentUpon>Enumeration.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Enumeration.ascx.designer.cs">
+      <DependentUpon>Enumeration.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\Enumeration_Edit.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\Enumeration_Edit.ascx.cs">
+      <DependentUpon>Enumeration_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Enumeration_Edit.ascx.designer.cs">
+      <DependentUpon>Enumeration_Edit.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\ForeignKey.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\ForeignKey.ascx.cs">
+      <DependentUpon>ForeignKey.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\ForeignKey.ascx.designer.cs">
+      <DependentUpon>ForeignKey.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\ForeignKey_Edit.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\ForeignKey_Edit.ascx.cs">
+      <DependentUpon>ForeignKey_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\ForeignKey_Edit.ascx.designer.cs">
+      <DependentUpon>ForeignKey_Edit.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\Integer_Edit.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\Integer_Edit.ascx.cs">
+      <DependentUpon>Integer_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Integer_Edit.ascx.designer.cs">
+      <DependentUpon>Integer_Edit.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\ManyToMany.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\ManyToMany.ascx.cs">
+      <DependentUpon>ManyToMany.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\ManyToMany.ascx.designer.cs">
+      <DependentUpon>ManyToMany.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\ManyToMany_Edit.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\ManyToMany_Edit.ascx.cs">
+      <DependentUpon>ManyToMany_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\ManyToMany_Edit.ascx.designer.cs">
+      <DependentUpon>ManyToMany_Edit.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\Text.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\Text.ascx.cs">
+      <DependentUpon>Text.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Text.ascx.designer.cs">
+      <DependentUpon>Text.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\Text_Edit.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\Text_Edit.ascx.cs">
+      <DependentUpon>Text_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Text_Edit.ascx.designer.cs">
+      <DependentUpon>Text_Edit.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\Url.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\Url.ascx.cs">
+      <DependentUpon>Url.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Url.ascx.designer.cs">
+      <DependentUpon>Url.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\Url_Edit.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\Url_Edit.ascx.cs">
+      <DependentUpon>Url_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Url_Edit.ascx.designer.cs">
+      <DependentUpon>Url_Edit.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\Filters\Boolean.ascx" />
+    <Compile Include="DynamicData\Filters\Boolean.ascx.cs">
+      <DependentUpon>Boolean.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\Filters\Boolean.ascx.designer.cs">
+      <DependentUpon>Boolean.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\Filters\Enumeration.ascx" />
+    <Compile Include="DynamicData\Filters\Enumeration.ascx.cs">
+      <DependentUpon>Enumeration.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\Filters\Enumeration.ascx.designer.cs">
+      <DependentUpon>Enumeration.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\Filters\ForeignKey.ascx" />
+    <Compile Include="DynamicData\Filters\ForeignKey.ascx.cs">
+      <DependentUpon>ForeignKey.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\Filters\ForeignKey.ascx.designer.cs">
+      <DependentUpon>ForeignKey.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\PageTemplates\Details.aspx" />
+    <Compile Include="DynamicData\PageTemplates\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\PageTemplates\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\PageTemplates\Edit.aspx" />
+    <Compile Include="DynamicData\PageTemplates\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\PageTemplates\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\PageTemplates\Insert.aspx" />
+    <Compile Include="DynamicData\PageTemplates\Insert.aspx.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\PageTemplates\Insert.aspx.designer.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\PageTemplates\List.aspx" />
+    <Compile Include="DynamicData\PageTemplates\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\PageTemplates\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+    </Compile>
+    <Content Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="web.config.bkup040220171111" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="Web.FeatureTest.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Web.Smarter ASP FTP.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="General\" />
+    <Folder Include="RealEstate\Temp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="DynamicData\PageTemplates\ListViewOnly.aspx" />
+    <Content Include="Print.Master" />
+    <Content Include="Site.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\DynamicData.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>DynamicData1.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\DynamicData.ar.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>DynamicData.ar.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\DynamicDataLibrary\DynamicDataLibrary.csproj">
+      <Project>{194cf206-bc0c-4875-b702-8c9d8b2fdf25}</Project>
+      <Name>DynamicDataLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\NotAClue%28Modified%29\NotAClue.ComponentModel.DataAnnotations\NotAClue.ComponentModel.DataAnnotations.csproj">
+      <Project>{d6d0b33d-ee27-45b0-b39a-603f9e8180b5}</Project>
+      <Name>NotAClue.ComponentModel.DataAnnotations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\NotAClue%28Modified%29\NotAClue.Web.DynamicData\NotAClue.Web.DynamicData.csproj">
+      <Project>{397b67f4-8e78-4f10-8d60-d05f0daafc5c}</Project>
+      <Name>NotAClue.Web.DynamicData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\NotAClue%28Modified%29\NotAClue.Web.UI.WebControls\NotAClue.Web.UI.WebControls.csproj">
+      <Project>{2f5dcdd8-4fab-4b4e-8d86-33b2851b11b3}</Project>
+      <Name>NotAClue.Web.UI.WebControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\NotAClue%28Modified%29\NotAClue.Web\NotAClue.Web.csproj">
+      <Project>{4de564cf-c12e-4678-9c1b-f6589a6a5601}</Project>
+      <Name>NotAClue.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\NotAClue%28Modified%29\NotAClue\NotAClue.csproj">
+      <Project>{6c5b5e7e-6abe-4915-bfa1-a135be9c7a12}</Project>
+      <Name>NotAClue</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\PortableLibrary\PortableLibrary.csproj">
+      <Project>{d39fe9a3-5295-495b-b31a-cca17f422dfc}</Project>
+      <Name>PortableLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DynamicDataModel\DynamicDataModel.csproj">
+      <Project>{d4ce3438-635e-4896-b120-4afe72d3835d}</Project>
+      <Name>DynamicDataModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Application.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Application.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Application.ar.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Application.ar.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Account.ar.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Account.ar.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Account.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Account.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\IdentityError.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>IdentityError.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\IdentityError.de.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>IdentityError.de.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\IdentityError.ar.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>IdentityError.ar.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Property_Type.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Property_Type.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RealEstate.ar.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RealEstate.ar1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\RealEstate.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RealEstate1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="Migrations\201601131410427_InitialCreate.resx">
+      <DependentUpon>201601131410427_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601150103376_FirstName.resx">
+      <DependentUpon>201601150103376_FirstName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601150107240_LastName.resx">
+      <DependentUpon>201601150107240_LastName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601151339165_Address.resx">
+      <DependentUpon>201601151339165_Address.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601151343056_HasOffice.resx">
+      <DependentUpon>201601151343056_HasOffice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>5270</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:26554/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

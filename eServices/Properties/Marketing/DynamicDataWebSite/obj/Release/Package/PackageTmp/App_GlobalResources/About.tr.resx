@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Body" xml:space="preserve">
+    <value>&lt;div class = "about-head"&gt;
+&lt;div class = "container"&gt;
+&lt;h3 style = "font-family: 'Segoe UI'"&gt; Apper Tech &lt;/ h3&gt;
+&lt;div class = "about-in"&gt;
+&lt;a href="#"&gt; &lt;img src="CustomDesign/images/at.png" alt = "image" class = "img-responsive" style = "width: 200px;"&gt; &lt;a
+&lt;h6&gt; &lt;a href="#"&gt; Apper Tech &lt;/a&gt; &lt;/ h6&gt;
+&lt;p&gt; Kamu yönetimi ve sivil toplum kuruluşu sağlayan bir şirket
+                        bireylere ve şirketlere hizmetler.
+&lt;/ P&gt;
+&lt;P&gt;
+  &lt;img src="CustomDesign/images/comodo_secure_seal_113x59_transp.png" alt = "Güvenli SSL"&gt;
+  &lt;/ P&gt;
+&lt;/ Div&gt;
+&lt;/ Div&gt;
+&lt;/ Div&gt;
+    &lt;div class="about-middle"&gt;
+&lt;div class="container"&gt;
+&lt;div class="col-md-8 about-mid"&gt;
+&lt;h4 style="font-family: 'Segoe UI'"&gt; Özellikler &lt;/ h4&gt;
+&lt;h6&gt; &lt;a href="#"&gt; Elektronik Hizmetler Şirketi &lt;/a&gt; &lt;/ h6&gt;
+&lt;p&gt; Şirket, kullanıcıların her birinin eklenmesiyle satış veya kiralık mülk eklemelerine izin verir. &lt;br /&gt;
+Gerekli detaylar
+Ardından, en fazla sayıda kişiye ulaşmak için doğrudan görüntüleyebilir veya görüntüleyebilir ve gayrimenkulleri takip edebilirsiniz.
+   Her türlü özel ve kamunun fiyatları talep etmesine ve herhangi bir aracı olmadan doğrudan sahibiyle iletişim kurmasına izin veriyoruz &lt;/ p&gt;
+&lt;/ Div&gt;
+&lt;div class="col-md-4 about-mid1"&gt;
+&lt;p style = "font-family: 'Segoe UI'; text-dönüşümü: none;"&gt; Göz at &lt;a href = "http://ApperTech.com" style = "color: # 31708f; text-decoration: alt çizgi ; "&gt; Apper Tech.com &lt;/a&gt; &lt;/ p&gt;
+&lt;h6&gt; &lt;a href="#"&gt; E-hizmetler şirketi &lt;/a&gt; &lt;/ h6&gt;
+&lt;p style="font-family: 'Segoe UI'"&gt;
+            
+&lt;/ P&gt;
+&lt;/ Div&gt;
+&lt;div class="clearfix"&gt; &lt;/ div&gt;
+&lt;/ Div&gt;
+&lt;/ Div&gt;</value>
+  </data>
+</root>

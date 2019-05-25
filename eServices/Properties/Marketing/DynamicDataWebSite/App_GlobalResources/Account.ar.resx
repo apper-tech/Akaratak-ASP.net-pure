@@ -1,0 +1,655 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Contact_info" xml:space="preserve">
+    <value>للتواصل</value>
+  </data>
+  <data name="Control_OpenAuthProviders_SubmitTitleFormat" xml:space="preserve">
+    <value>سجل دخولك باستخدام حسابك في {0}.</value>
+  </data>
+  <data name="Control_OpenAuthProviders_Title" xml:space="preserve">
+    <value>بإمكانك تسجيل الدخول عن طريق موقع آخر.</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>دخول</value>
+  </data>
+  <data name="Logoff" xml:space="preserve">
+    <value>تسجيل الخروج</value>
+  </data>
+  <data name="Page_AddPhoneNumber_Name" xml:space="preserve">
+    <value>رقم الهاتف</value>
+  </data>
+  <data name="Page_AddPhoneNumber_PhoneNumber" xml:space="preserve">
+    <value>رقم الهاتف</value>
+  </data>
+  <data name="Page_AddPhoneNumber_PhoneNumber_Message_YourSecurityCode" xml:space="preserve">
+    <value>رقم التحقق هو: {0}</value>
+  </data>
+  <data name="Page_AddPhoneNumber_PhoneNumber_RequiredFieldValidator" xml:space="preserve">
+    <value>الحقل &lt;b&gt;رقم الهاتف&lt;/b&gt; مطلوب</value>
+  </data>
+  <data name="Page_AddPhoneNumber_PhoneNumber_Submit" xml:space="preserve">
+    <value>أضف</value>
+  </data>
+  <data name="Page_AddPhoneNumber_Title" xml:space="preserve">
+    <value>أضف رقم هاتفك</value>
+  </data>
+  <data name="Page_Confirm_Error" xml:space="preserve">
+    <value>حدث خطأ, نرجو الاتصال بمشرف الموقع.</value>
+  </data>
+  <data name="Page_Confirm_Here" xml:space="preserve">
+    <value> هنا </value>
+  </data>
+  <data name="Page_Confirm_Name" xml:space="preserve">
+    <value>تأكيد الحساب</value>
+  </data>
+  <data name="Page_Confirm_ThankYouPrefix" xml:space="preserve">
+    <value>نشكرك على تأكيد حسابك. اضغط </value>
+  </data>
+  <data name="Page_Confirm_ThankYouSuffix" xml:space="preserve">
+    <value> لتسجيل الدخول</value>
+  </data>
+  <data name="Page_Forgot_DisplayEmail" xml:space="preserve">
+    <value>فضلا قم بالتحقق من رسالة تم إرسالها إلى بريدك ليمكنك تغيير كلمة السر.</value>
+  </data>
+  <data name="Page_Forgot_Email" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+  </data>
+  <data name="Page_Forgot_Email_RequiredFieldValidator" xml:space="preserve">
+    <value>الحقل &lt;b&gt;البريد الإلكتروني&lt;/b&gt; مطلوب</value>
+  </data>
+  <data name="Page_Forgot_FailureText" xml:space="preserve">
+    <value>المستخدم إما غير موجود أو غير مؤكد تسجيله.</value>
+  </data>
+  <data name="Page_Forgot_Name" xml:space="preserve">
+    <value>نسيت كلمة السر</value>
+  </data>
+  <data name="Page_Forgot_Submit" xml:space="preserve">
+    <value>إرسال الرابط</value>
+  </data>
+  <data name="Page_Forgot_Title" xml:space="preserve">
+    <value>هل نسيت كلمة السر؟</value>
+  </data>
+  <data name="Page_Lockout_Message" xml:space="preserve">
+    <value>تم إقفال هذا الحساب مؤقتا، فضلا قم بالمحاولة لاحقا أو اتصل بمشرف الموقع.</value>
+  </data>
+  <data name="Page_Lockout_Name" xml:space="preserve">
+    <value>الحساب مقفول</value>
+  </data>
+  <data name="Page_Login_Email" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+  </data>
+  <data name="Page_Login_Email_RequiredFieldValidator" xml:space="preserve">
+    <value>الحقل &lt;b&gt;البريد&lt;/b&gt; مطلوب</value>
+  </data>
+  <data name="Page_Login_Error_InvalidLoginAttempt" xml:space="preserve">
+    <value>لم تنجح محاولة تسجيل الدخول</value>
+  </data>
+  <data name="Page_Login_ForgotPasswordHyperLink" xml:space="preserve">
+    <value>هل نسيت كلمة السر</value>
+  </data>
+  <data name="Page_Login_Name" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+  </data>
+  <data name="Page_Login_Password" xml:space="preserve">
+    <value>كلمة السر</value>
+  </data>
+  <data name="Page_Login_Password_RequiredFieldValidator" xml:space="preserve">
+    <value>الحقل &lt;b&gt;كلمة السر&lt;/b&gt; مطلوب</value>
+  </data>
+  <data name="Page_Login_RegisterHyperLink" xml:space="preserve">
+    <value>هل تريد إنشاء حساب جديد</value>
+  </data>
+  <data name="Page_Login_RememberMe" xml:space="preserve">
+    <value>تذكرني؟</value>
+  </data>
+  <data name="Page_Login_Submit" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+  </data>
+  <data name="Page_Login_Title" xml:space="preserve">
+    <value>تسجيل الدخول للموقع</value>
+  </data>
+  <data name="Page_ManageDetails_Address" xml:space="preserve">
+    <value>العنوان</value>
+  </data>
+  <data name="Page_ManageDetails_Address_Required" xml:space="preserve">
+    <value>الحقل &lt;b&gt;العنوان&lt;/b&gt; مطلوب</value>
+  </data>
+  <data name="Page_ManageDetails_FirstName" xml:space="preserve">
+    <value>الاسم الاول</value>
+  </data>
+  <data name="Page_ManageDetails_FirstName_Required" xml:space="preserve">
+    <value>الحقل &lt;b&gt;الاسم&lt;/b&gt; مطلوب</value>
+  </data>
+  <data name="Page_ManageDetails_HasOffice" xml:space="preserve">
+    <value>هل تملك مكتب؟</value>
+  </data>
+  <data name="Page_ManageDetails_HasOffice_Required" xml:space="preserve">
+    <value>الحقل &lt;b&gt;المكتب&lt;/b&gt; مطلوب</value>
+  </data>
+  <data name="Page_ManageDetails_LastName" xml:space="preserve">
+    <value>اللقب</value>
+  </data>
+  <data name="Page_ManageDetails_LastName_Required" xml:space="preserve">
+    <value>الحقل &lt;b&gt;اللقب&lt;/b&gt; مطلوب</value>
+  </data>
+  <data name="Page_ManageDetails_Name" xml:space="preserve">
+    <value>تعديل المعلومات</value>
+  </data>
+  <data name="Page_ManageDetails_PhoneNumber" xml:space="preserve">
+    <value>رقم الهاتف</value>
+  </data>
+  <data name="Page_ManageDetails_PhoneNumber_Required" xml:space="preserve">
+    <value>الحقل &lt;b&gt;رقم الهاتف&lt;/b&gt; مطلوب</value>
+  </data>
+  <data name="Page_ManageDetails_Submit_Details" xml:space="preserve">
+    <value>حفظ التعديلات</value>
+  </data>
+  <data name="Page_ManageLogins_Name" xml:space="preserve">
+    <value>إدارة حساباتك الخارجية</value>
+  </data>
+  <data name="Page_ManageLogins_RegisteredLogins" xml:space="preserve">
+    <value>الحسابات الخارجية المسجلة</value>
+  </data>
+  <data name="Page_ManageLogins_SuccessMessage_RemoveLoginSuccess" xml:space="preserve">
+    <value>تم إزالة الحساب الخارجي من حسابك بنجاح</value>
+  </data>
+  <data name="Page_ManagePassword_ChangePassword_Title" xml:space="preserve">
+    <value>تغيير كلمة السر</value>
+  </data>
+  <data name="Page_ManagePassword_ConfirmNewPassword" xml:space="preserve">
+    <value>تأكيد كلمة السر الجديدة</value>
+  </data>
+  <data name="Page_ManagePassword_ConfirmNewPassword_CompareValidator" xml:space="preserve">
+    <value>كلمة السر الجديدة وتأكيد كلمة السر الجديدة لا يتطابقان</value>
+  </data>
+  <data name="Page_ManagePassword_ConfirmNewPassword_RequiredFieldValidator" xml:space="preserve">
+    <value>الحقل &lt;b&gt;تأكيد كلمة السر الجديدة&lt;/b&gt; مطلوب</value>
+  </data>
+  <data name="Page_ManagePassword_ConfirmPassword" xml:space="preserve">
+    <value>تأكيد كلمة السر</value>
+  </data>
+  <data name="Page_ManagePassword_ConfirmPassword_CompareValidator" xml:space="preserve">
+    <value>كلمة السر وتأكيد كلمة السر لا يتطابقان</value>
+  </data>
+  <data name="Page_ManagePassword_ConfirmPassword_RequiredFieldValidator" xml:space="preserve">
+    <value>الحقل &lt;b&gt;تأكيد كلمة السر&lt;/b&gt; مطلوب</value>
+  </data>
+  <data name="Page_ManagePassword_CurrentPassword" xml:space="preserve">
+    <value>كلمة السر الحالية</value>
+  </data>
+  <data name="Page_ManagePassword_CurrentPassword_RequiredFieldValidator" xml:space="preserve">
+    <value>الحقل &lt;b&gt;كلمة السر الحالية&lt;/b&gt; مطلوب</value>
+  </data>
+  <data name="Page_ManagePassword_Name" xml:space="preserve">
+    <value>إدارة كلمة السر</value>
+  </data>
+  <data name="Page_ManagePassword_NewPassword" xml:space="preserve">
+    <value>كلمة السر الجديدة</value>
+  </data>
+  <data name="Page_ManagePassword_NewPassword_RequiredFieldValidator" xml:space="preserve">
+    <value>الحقل &lt;b&gt;كلمة السر الجديدة&lt;/b&gt; مطلوب</value>
+  </data>
+  <data name="Page_ManagePassword_Password" xml:space="preserve">
+    <value>كلمة السر</value>
+  </data>
+  <data name="Page_ManagePassword_Password_RequiredFieldValidator" xml:space="preserve">
+    <value>الحقل &lt;b&gt;كلمة السر&lt;/b&gt; مطلوب</value>
+  </data>
+  <data name="Page_ManagePassword_SetPassword_Text" xml:space="preserve">
+    <value>ليس لديك كلمة سر محلية على هذا الموقع. قم بإضافة كلمة سر محلية لكي تتمكن من تسجيل الدخول بدون الحاجة إلى استخدام حساب خارجي.</value>
+  </data>
+  <data name="Page_ManagePassword_SetPassword_Title" xml:space="preserve">
+    <value>تعيين كلمة السر</value>
+  </data>
+  <data name="Page_ManagePassword_Submit_ChangePassword" xml:space="preserve">
+    <value>تغيير كلمة السر</value>
+  </data>
+  <data name="Page_ManagePassword_Submit_SetPassword" xml:space="preserve">
+    <value>تعيين كلمة السر</value>
+  </data>
+  <data name="Page_Manage_Details" xml:space="preserve">
+    <value>تغيير معلومات الحساب</value>
+  </data>
+  <data name="Page_Manage_Details_Change" xml:space="preserve">
+    <value>[تعديل]</value>
+  </data>
+  <data name="Page_Manage_ExternalLogins" xml:space="preserve">
+    <value>حسابات دخول خارجية</value>
+  </data>
+  <data name="Page_Manage_Name" xml:space="preserve">
+    <value>إدارة الحساب</value>
+  </data>
+  <data name="Page_Manage_Password" xml:space="preserve">
+    <value>كلمة السر</value>
+  </data>
+  <data name="Page_Manage_Password_Change" xml:space="preserve">
+    <value>[تغيير]</value>
+  </data>
+  <data name="Page_Manage_Password_Create" xml:space="preserve">
+    <value>[إنشاء]</value>
+  </data>
+  <data name="Page_Manage_Password_Manage" xml:space="preserve">
+    <value>[إدارة]</value>
+  </data>
+  <data name="Page_Manage_SuccessMessage_AddPhoneNumberSuccess" xml:space="preserve">
+    <value>تمت إضافة رقم الهاتف</value>
+  </data>
+  <data name="Page_Manage_SuccessMessage_ChangePwdSuccess" xml:space="preserve">
+    <value>تم تغيير كلمة سر حسابك.</value>
+  </data>
+  <data name="Page_Manage_SuccessMessage_RemoveLoginProvider" xml:space="preserve">
+    <value>إزالة الحساب الخارجي &lt;b&gt; {0} &lt;/b&gt; من حسابك</value>
+  </data>
+  <data name="Page_Manage_SuccessMessage_RemoveLoginSuccess" xml:space="preserve">
+    <value>تمت إزالة الحساب</value>
+  </data>
+  <data name="Page_Manage_SuccessMessage_RemovePhoneNumberSuccess" xml:space="preserve">
+    <value>تمت إزالة رقم الهاتف</value>
+  </data>
+  <data name="Page_Manage_SuccessMessage_SetPwdSuccess" xml:space="preserve">
+    <value>تم تعيين كلمة سر حسابك.</value>
+  </data>
+  <data name="Page_Manage_Title" xml:space="preserve">
+    <value>تغيير إعدادات حسابك</value>
+  </data>
+  <data name="Page_Manage_TwoFactorAuthentication" xml:space="preserve">
+    <value>المصادقة ثنائية العامل</value>
+  </data>
+  <data name="Page_Manage_TwoFactorAuthentication_NoProvider" xml:space="preserve">
+    <value>There are no two-factor authentication providers configured. See &lt;a href="http://go.microsoft.com/fwlink/?LinkId=403804"&gt;this article&lt;/a&gt;
+                            for details on setting up this ASP.NET application to support two-factor authentication.</value>
+  </data>
+  <data name="Page_RegisterExternalLogin_AssociationForm" xml:space="preserve">
+    <value>نموذج الارتباط</value>
+  </data>
+  <data name="Page_RegisterExternalLogin_Description" xml:space="preserve">
+    <value>تم تسجيد دخولك عن طريق &lt;strong&gt;{0}&lt;/strong&gt;. رجاء أدخل بريدك في الأسفل وقم بالضغط على زر تسجيل الدخول.</value>
+  </data>
+  <data name="Page_RegisterExternalLogin_Email" xml:space="preserve">
+    <value>البريد</value>
+  </data>
+  <data name="Page_RegisterExternalLogin_Name" xml:space="preserve">
+    <value>تسجيل حساب دخول خارجي</value>
+  </data>
+  <data name="Page_RegisterExternalLogin_Submit" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+  </data>
+  <data name="Page_RegisterExternalLogin_Title" xml:space="preserve">
+    <value>تسجيل الدخول باستخدام حسابك في {0}.</value>
+  </data>
+  <data name="Page_Register_Address" xml:space="preserve">
+    <value>العنوان</value>
+  </data>
+  <data name="Page_Register_AddressRequired" xml:space="preserve">
+    <value>الحقل &lt;b&gt;العنوان&lt;/b&gt; مطلوب</value>
+  </data>
+  <data name="Page_Register_ConfirmPassword" xml:space="preserve">
+    <value>إعادة كلمة السر</value>
+  </data>
+  <data name="Page_Register_ConfirmPassword_CompareValidator" xml:space="preserve">
+    <value>كلمة السر وتأكيد كلمة السر لا يتطابقان</value>
+  </data>
+  <data name="Page_Register_ConfirmPassword_RequiredFieldValidator" xml:space="preserve">
+    <value>الحقل &lt;b&gt;تأكيد كلمة السر&lt;/b&gt; مطلوب</value>
+  </data>
+  <data name="Page_Register_Email" xml:space="preserve">
+    <value>البريد</value>
+  </data>
+  <data name="Page_Register_Email_RequiredFieldValidator" xml:space="preserve">
+    <value>الحقل &lt;b&gt;البريد&lt;/b&gt; مطلوب</value>
+  </data>
+  <data name="Page_Register_FirstName" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
+  <data name="Page_Register_FirstNameRequired" xml:space="preserve">
+    <value>الحقل &lt;b&gt;الاسم الاول&lt;/b&gt; مطلوب</value>
+  </data>
+  <data name="Page_Register_HasOffice" xml:space="preserve">
+    <value>هل تملك مكتب عقاري</value>
+  </data>
+  <data name="Page_Register_LastName" xml:space="preserve">
+    <value>اللقب</value>
+  </data>
+  <data name="Page_Register_LastNameRequired" xml:space="preserve">
+    <value>الحقل &lt;b&gt;اللقب&lt;/b&gt; مطلوب</value>
+  </data>
+  <data name="Page_Register_Name" xml:space="preserve">
+    <value>تسجيل مستخدم جديد</value>
+  </data>
+  <data name="Page_Register_Password" xml:space="preserve">
+    <value>كلمة السر</value>
+  </data>
+  <data name="Page_Register_Password_RequiredFieldValidator" xml:space="preserve">
+    <value>الحقل &lt;b&gt;كلمة السر&lt;/b&gt; مطلوب</value>
+  </data>
+  <data name="Page_Register_PhoneNumber" xml:space="preserve">
+    <value>رقم الهاتف(+963)</value>
+  </data>
+  <data name="Page_Register_PhoneNumberRequired" xml:space="preserve">
+    <value>الحقل &lt;b&gt;رقم الهاتف&lt;/b&gt; مطلوب</value>
+  </data>
+  <data name="Page_Register_Submit" xml:space="preserve">
+    <value>إنشاء</value>
+  </data>
+  <data name="Page_Register_Title" xml:space="preserve">
+    <value>إنشاء حساب</value>
+  </data>
+  <data name="Page_ResetPasswordConfirmation_Message_ClickHere" xml:space="preserve">
+    <value> هنا </value>
+  </data>
+  <data name="Page_ResetPasswordConfirmation_Message_Prefix" xml:space="preserve">
+    <value>تم تغيير كلمة سرك بنجاح، قم بالضغط</value>
+  </data>
+  <data name="Page_ResetPasswordConfirmation_Message_Suffix" xml:space="preserve">
+    <value>لتسجيل الدخول</value>
+  </data>
+  <data name="Page_ResetPasswordConfirmation_Name" xml:space="preserve">
+    <value>تم تغيير كلمة السر</value>
+  </data>
+  <data name="Page_ResetPassword_ConfirmPassword" xml:space="preserve">
+    <value>تأكيد كلمة السر</value>
+  </data>
+  <data name="Page_ResetPassword_ConfirmPassword_CompareValidator" xml:space="preserve">
+    <value>كلمة السر وتأكيد كلمة السر لا يتطابقان</value>
+  </data>
+  <data name="Page_ResetPassword_ConfirmPassword_RequiredFieldValidator" xml:space="preserve">
+    <value>الحقل &lt;b&gt;تأكيد كلمة السر&lt;/b&gt; مطلوب</value>
+  </data>
+  <data name="Page_ResetPassword_Email" xml:space="preserve">
+    <value>البريد</value>
+  </data>
+  <data name="Page_ResetPassword_Email_RequiredFieldValidator" xml:space="preserve">
+    <value>الحقل &lt;b&gt;البريد&lt;/b&gt; مطلوب</value>
+  </data>
+  <data name="Page_ResetPassword_Error" xml:space="preserve">
+    <value>حدث خطأ, نرجو الاتصال بمشرف الموقع.</value>
+  </data>
+  <data name="Page_ResetPassword_Error_NoUserFound" xml:space="preserve">
+    <value>المستخدم غير موجود</value>
+  </data>
+  <data name="Page_ResetPassword_Name" xml:space="preserve">
+    <value>إعادة تعيين كلمة المرور</value>
+  </data>
+  <data name="Page_ResetPassword_Password" xml:space="preserve">
+    <value>كلمة السر</value>
+  </data>
+  <data name="Page_ResetPassword_Password_RequiredFieldValidator" xml:space="preserve">
+    <value>الحقل &lt;b&gt;كلمة السر&lt;/b&gt; مطلوب</value>
+  </data>
+  <data name="Page_ResetPassword_Submit" xml:space="preserve">
+    <value>إعادة تعيين</value>
+  </data>
+  <data name="Page_ResetPassword_Title" xml:space="preserve">
+    <value>أدخل كلمة المرور الجديدة</value>
+  </data>
+  <data name="Page_TwoFactorAuthenticationSignIn_EnterVerificationCode_Code" xml:space="preserve">
+    <value>الرقم</value>
+  </data>
+  <data name="Page_TwoFactorAuthenticationSignIn_EnterVerificationCode_RememberBrowser" xml:space="preserve">
+    <value>تذكرني على هذا المتصفح</value>
+  </data>
+  <data name="Page_TwoFactorAuthenticationSignIn_EnterVerificationCode_Submit" xml:space="preserve">
+    <value>إرسال</value>
+  </data>
+  <data name="Page_TwoFactorAuthenticationSignIn_EnterVerificationCode_Title" xml:space="preserve">
+    <value>أدخل رقم التحقق</value>
+  </data>
+  <data name="Page_TwoFactorAuthenticationSignIn_Error_InvalidCode" xml:space="preserve">
+    <value>الرقم غير صحيح</value>
+  </data>
+  <data name="Page_TwoFactorAuthenticationSignIn_Name" xml:space="preserve">
+    <value>المصادقة ثنائية العامل</value>
+  </data>
+  <data name="Page_TwoFactorAuthenticationSignIn_SendVerificationCode_Select" xml:space="preserve">
+    <value>قم باختيار المزود الخاص بالمصادقة ثنائية العامل</value>
+  </data>
+  <data name="Page_TwoFactorAuthenticationSignIn_SendVerificationCode_Submit" xml:space="preserve">
+    <value>إرسال</value>
+  </data>
+  <data name="Page_TwoFactorAuthenticationSignIn_SendVerificationCode_Title" xml:space="preserve">
+    <value>إرسال رقم التحقق</value>
+  </data>
+  <data name="Page_VerifyPhoneNumber_Code" xml:space="preserve">
+    <value>الرمز</value>
+  </data>
+  <data name="Page_VerifyPhoneNumber_Code_RequiredFieldValidator" xml:space="preserve">
+    <value>الحقل &lt;b&gt;الرمز&lt;/b&gt; مطلوب</value>
+  </data>
+  <data name="Page_VerifyPhoneNumber_Error_FailedToVerifyPhone" xml:space="preserve">
+    <value>فشلت عملية التحقق من رقم الهاتف, نرجو الاتصال بمشرف الموقع</value>
+  </data>
+  <data name="Page_VerifyPhoneNumber_Error_InvalidCode" xml:space="preserve">
+    <value>الرمز غير صحيح</value>
+  </data>
+  <data name="Page_VerifyPhoneNumber_Name" xml:space="preserve">
+    <value>أدخل رمز التحقق</value>
+  </data>
+  <data name="Page_VerifyPhoneNumber_Submit" xml:space="preserve">
+    <value>إرسال</value>
+  </data>
+  <data name="Page_VerifyPhoneNumber_Title" xml:space="preserve">
+    <value>التحقق من رقم الهاتف.</value>
+  </data>
+  <data name="Page_ViewDetails_More" xml:space="preserve">
+    <value>معلومات التواصل</value>
+  </data>
+  <data name="Page_ViewDetail_Return" xml:space="preserve">
+    <value>العودة لتفاصيل المنزل</value>
+  </data>
+  <data name="PleaseWait" xml:space="preserve">
+    <value>الرجاء الانتظار...</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>جديد</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>اسم المالك</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>مدير</value>
+  </data>
+  <data name="Stackholder" xml:space="preserve">
+    <value>مالك\عأرض</value>
+  </data>
+  <data name="Visitor" xml:space="preserve">
+    <value>زائر</value>
+  </data>
+  <data name="Page_Manage_Role" xml:space="preserve">
+    <value>ادارة الصلاحيات</value>
+  </data>
+  <data name="Page_Manage_Role_Change" xml:space="preserve">
+    <value>[ادارة]</value>
+  </data>
+  <data name="Page_Login_New" xml:space="preserve">
+    <value>جديد في عقاراتك سجل الان!</value>
+  </data>
+  <data name="Login_Holder" xml:space="preserve">
+    <value>تسجيل دخول</value>
+  </data>
+  <data name="Register_Holder" xml:space="preserve">
+    <value>تسجيل جديد</value>
+  </data>
+  <data name="Complete_Profile" xml:space="preserve">
+    <value>اكمال البيانات</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>تسجيل خروج</value>
+  </data>
+  <data name="Sure" xml:space="preserve">
+    <value>متأكد؟</value>
+  </data>
+  <data name="Page_Register_Agree" xml:space="preserve">
+    <value>&amp;nbsp;&amp;nbsp;بالتسجيل بموقعنا أنت توافق على &lt;a href='../TermsArabic'&gt;اتفاقية التسجيل&lt;/a&gt; و &lt;a href='../PrivacyPolicyArabic.aspx'&gt;نص الخصوصية&lt;/a&gt;</value>
+  </data>
+  <data name="Page_Register_CheckAgree" xml:space="preserve">
+    <value>يجب ان تقبل الشروط للمتابعة</value>
+  </data>
+  <data name="Page_Register_Email_RegularExpVal" xml:space="preserve">
+    <value>الرجاء ادخال بريد الكتروني صحيح</value>
+  </data>
+  <data name="Page_Register_LoginLink" xml:space="preserve">
+    <value>هل أنت عضو بعقاراتك , سجل الدخول هنا </value>
+  </data>
+  <data name="Page_Manage_Property" xml:space="preserve">
+    <value>عرض العقارات المضافة</value>
+  </data>
+  <data name="View_Users" xml:space="preserve">
+    <value>عرض المستخدمين</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
+  <data name="Edit_User_Details" xml:space="preserve">
+    <value>تعديل الحساب</value>
+  </data>
+  <data name="Edit_User_Details_Desc" xml:space="preserve">
+    <value>تعديل معلومات حسابك</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>إضافة</value>
+  </data>
+  <data name="Choose" xml:space="preserve">
+    <value>اختر</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>العدد:</value>
+  </data>
+  <data name="Page_Role_Manage_Title" xml:space="preserve">
+    <value>اذارة الصلاحيات</value>
+  </data>
+  <data name="Permession" xml:space="preserve">
+    <value>الصلاحية</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>تحديث</value>
+  </data>
+  <data name="User_Grantee" xml:space="preserve">
+    <value>المستخدمين الذين ليس لديهم الصلاحية</value>
+  </data>
+  <data name="User_Revoke" xml:space="preserve">
+    <value>المستخدمين الذين يملكون الصلاحية</value>
+  </data>
+  <data name="Phone_Number" xml:space="preserve">
+    <value>رقم الهاتف</value>
+  </data>
+</root>

@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Body" xml:space="preserve">
+    <value>&lt;div class="about"&gt;
+        &lt;div class="about-head"&gt;
+            &lt;div class="container"&gt;
+                &lt;h3&gt;&lt;font&gt;&lt;font&gt;Terms of Service&lt;/font&gt;&lt;/font&gt;&lt;/h3&gt;
+                &lt;div class="about-in"&gt;
+                    &lt;h6&gt;&lt;a href="#"&gt;&lt;font&gt;&lt;font&gt;Analysis of the Terms of Service to the Site&lt;/font&gt;&lt;/font&gt;&lt;/a&gt;&lt;/h6&gt;
+                    &lt;p&gt;
+                        &lt;/p&gt;&lt;h1&gt;&lt;/h1&gt;
+                        &lt;p&gt;
+                            &lt;/p&gt;&lt;h2&gt;&lt;font&gt;&lt;font&gt;an introduction &lt;/font&gt;&lt;/font&gt;&lt;/h2&gt;
+
+                            &lt;p&gt;&lt;font&gt;&lt;font&gt;These terms and conditions that govern your use of this site. &lt;/font&gt;&lt;font&gt;By using this site, you agree to these terms and conditions fully and without reservation. &lt;/font&gt;&lt;font&gt;If you do not agree to these terms and conditions or any part of these Terms and Conditions, you should not use this site.&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+                            &lt;p&gt;&lt;font&gt;&lt;font&gt;You must be at least 18 [eighteen] years of age to use this site. &lt;/font&gt;&lt;font&gt;By using this site, by agreeing to these Terms and Conditions, you warrant and represent that you are at least 18 years of age.&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+
+                            &lt;h2&gt;&lt;font&gt;&lt;font&gt;License to use website &lt;/font&gt;&lt;/font&gt;&lt;/h2&gt;
+                            &lt;p&gt;&lt;font&gt;&lt;font&gt;Unless otherwise stated, www.Akaratak.com and / or its licensors have published intellectual property rights in this site and the materials used in www.Akaratak.com. &lt;/font&gt;&lt;font&gt;Subject to the license below, are booked all these intellectual property rights.&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+                            &lt;p&gt;&lt;font&gt;&lt;font class=""&gt;And you can watch, download for caching purposes only, and print pages or other files or the contents of the site for your personal use, subject to the restrictions set forth below and elsewhere in these terms and conditions. &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+                            &lt;p&gt;&lt;font&gt;&lt;font&gt;Should not be: &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;&lt;font&gt;&lt;font&gt;And the dissemination of material from this site does not print and digital media, documents media (including republication on another website); &lt;/font&gt;&lt;/font&gt;&lt;!-- لى--&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/li&gt;&lt;li&gt;&lt;font&gt;&lt;font&gt;The sale and lease or sub-license material from the site; &lt;/font&gt;&lt;/font&gt;&lt;!-- لى--&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/li&gt;&lt;li&gt;&lt;font&gt;&lt;font&gt;Show any material from the site in public places; &lt;/font&gt;&lt;/font&gt;&lt;!-- لى--&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/li&gt;&lt;li&gt;&lt;font&gt;&lt;font&gt;And reproduce, duplicate, copy or otherwise exploit material on this site for commercial purposes; &lt;/font&gt;&lt;/font&gt;&lt;!-- لى--&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/li&gt;&lt;li&gt;&lt;font&gt;&lt;font&gt;And edit or modify any material on the site; &lt;/font&gt;&lt;/font&gt;&lt;!-- لى--&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/li&gt;&lt;li&gt;&lt;font&gt;&lt;font&gt;And distribution of material from this site - except for content specifically and openly available for redistribution. &lt;/font&gt;&lt;font&gt;or&lt;/font&gt;&lt;/font&gt;&lt;!-- لى--&gt;
+                    &lt;/li&gt;&lt;li&gt;&lt;font&gt;&lt;font&gt;
+                                And publish or reproduce any portion of this site through the use of inline frames or screenscrapers. &lt;/font&gt;&lt;/font&gt;&lt;!-- لى--&gt;
+                            &lt;/li&gt;&lt;/ul&gt;
+                            &lt;p&gt;&lt;font&gt;&lt;font&gt;Where specifically is content for redistribution, it may not be redistributed within the organization. &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+                            &lt;h2&gt;&lt;font&gt;&lt;font&gt;Acceptable Use &lt;/font&gt;&lt;/font&gt;&lt;/h2&gt;
+
+                            &lt;p&gt;&lt;font&gt;&lt;font&gt;And you should not use this site in any way that causes or may cause, damage to the Site or damaging of availability or accessibility www.Akaratak.com or any form of illegal and legal forms, fraudulent or harmful, or in connection with any purpose or activity that is unlawful or illegal, fraudulent or harmful. &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+                            &lt;p&gt;&lt;font&gt;&lt;font&gt;And must not use this website to copy, store, host, transfer, send, use or publish or distribute any material made up of (or linked to) any spyware, computer viruses, Trojans, worms, Registrar, rootkit or other malicious computer software key. &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+                            &lt;p&gt;&lt;font&gt;&lt;font&gt;
+                                You must not conduct any activities or systematic collection of &lt;/font&gt;&lt;font&gt;data or connection with this site mechanism without www.Akaratak.com the express written consent.
+                                 &lt;/font&gt;&lt;/font&gt;&lt;br&gt;&lt;font&gt;&lt;font&gt;
+                                This includes:
+                                &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;ul&gt;
+                                    &lt;li&gt;&lt;font&gt;&lt;font&gt;And scrape &lt;/font&gt;&lt;/font&gt;&lt;!-- لى--&gt;
+                                        &lt;/li&gt;&lt;li&gt;&lt;font&gt;&lt;font&gt;And data mining &lt;/font&gt;&lt;/font&gt;&lt;!-- لى--&gt;
+                                            &lt;/li&gt;&lt;li&gt;&lt;font&gt;&lt;font&gt;And data mining &lt;/font&gt;&lt;/font&gt;&lt;!-- لى--&gt;
+                                                &lt;/li&gt;&lt;li&gt;&lt;font&gt;&lt;font&gt;And harvest data &lt;/font&gt;&lt;/font&gt;&lt;!-- لى--&gt;
+                                                    &lt;/li&gt;&lt;li&gt;&lt;font&gt;&lt;font&gt;And "framing" (iframes) &lt;/font&gt;&lt;/font&gt;&lt;!-- لى--&gt;
+                                                        &lt;/li&gt;&lt;li&gt;&lt;font&gt;&lt;font&gt;
+                                    The article 'Spinning' &lt;/font&gt;&lt;/font&gt;&lt;!-- لى--&gt;
+                                &lt;/li&gt;&lt;/ul&gt;
+                            &lt;p&gt;&lt;/p&gt;
+
+                            &lt;p&gt;&lt;font&gt;&lt;font&gt;And you should not use this site or any portion thereof to transfer or send commercial spam. &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+                            &lt;p&gt;&lt;font&gt;&lt;font&gt;And we should not use this site for any purpose related to marketing without the express written consent of www.Akaratak.com. &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+                            &lt;!-- - إذا مناطق محمية بكلمة سر تبدأ ---&gt;
+                            &lt;h2&gt;&lt;font&gt;&lt;font&gt;Restricted access &lt;/font&gt;&lt;/font&gt;&lt;/h2&gt;
+
+                            &lt;p&gt;&lt;font&gt;&lt;font&gt;And limited access to certain areas of this site. &lt;/font&gt;&lt;font&gt;www.Akaratak.com reserves the right to restrict access to certain areas of this site, or at our discretion, and this entire site. &lt;/font&gt;&lt;font&gt;www.Akaratak.com may change or modify this policy without notice.&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+                            &lt;p&gt;&lt;font&gt;&lt;font&gt;If www.Akaratak.com gives you a user ID and password to gain access to restricted areas of this site or content or other services, you must make sure that is maintained user ID and password confidential. &lt;/font&gt;&lt;font&gt;You are solely responsible for your password and user name for your security ..&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+                            &lt;p&gt;&lt;font&gt;&lt;font&gt;And www.Akaratak.com may disable your user ID and password in the estimation of www.Akaratak.com only without notice or explanation. &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+                            &lt;h2&gt;&lt;font&gt;&lt;font&gt;User Content &lt;/font&gt;&lt;/font&gt;&lt;/h2&gt;
+
+                            &lt;p&gt;&lt;font&gt;&lt;font&gt;In these terms and conditions, "User Content" means material (including without limitation text, images, audio material, video material and audio-visual materials) you send to this site for any purpose. &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+                            &lt;p&gt;&lt;font&gt;&lt;font&gt;And You grant for www.Akaratak.com worldwide, irrevocable, non-exclusive, free license to use, reproduce, adapt, publish, translate and distribute your user content in any existing media outlet or future kings. &lt;/font&gt;&lt;font&gt;www.Akaratak.com the right to sub-license these rights as granted, the right to sue for violation of these rights.&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;font&gt;&lt;font&gt;
+
+                            Should not be
+                            &lt;/font&gt;&lt;/font&gt;&lt;p&gt;&lt;font&gt;&lt;font&gt;And the content of your user is legal or illegal, and must not violate the legal rights of any third party, and you should not be able to cause legal action, whether against you or www.Akaratak.com or a third party (in each case under any applicable law) . &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+                            &lt;p&gt;&lt;font&gt;&lt;font&gt;We must not submit any user content to the site that is or has ever been the subject of any legal proceedings threatened or actual or other similar complaint. &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+                            &lt;p&gt;&lt;font&gt;&lt;font&gt;Www.Akaratak.com and reserves the right to modify or remove any material submitted to this site, or stored on www.Akaratak.com servers, or hosted or published on this site. &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;font&gt;&lt;font&gt;
+
+                            rights
+                            &lt;/font&gt;&lt;/font&gt;&lt;p&gt;&lt;font&gt;&lt;font&gt;And www.Akaratak.com under these terms and conditions related to user content, www.Akaratak.com not based on monitoring of the provision of such content, or publish this content on this site. &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+                            &lt;h2&gt;&lt;font&gt;&lt;font&gt;No guarantees &lt;/font&gt;&lt;/font&gt;&lt;/h2&gt;
+
+                            &lt;p&gt;&lt;font&gt;&lt;font&gt;And this site is provided "as is" without any representations or warranties, express or implied. &lt;/font&gt;&lt;font&gt;www.Akaratak.com makes no representations or warranties with respect to this site or the information and material contained in this site.&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+                            &lt;p&gt;&lt;font&gt;&lt;font&gt;Without prejudice to the generality of the preceding paragraph, www.Akaratak.com not guarantee the following: &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;&lt;font&gt;&lt;font&gt;This site will be constantly available, or available at all. &lt;/font&gt;&lt;font&gt;or&lt;/font&gt;&lt;/font&gt;&lt;!-- لى--&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/li&gt;&lt;li&gt;&lt;font&gt;&lt;font&gt;
+                                The information contained in this site is complete, true and accurate, not misleading. &lt;/font&gt;&lt;/font&gt;&lt;!-- لى--&gt;
+                            &lt;/li&gt;&lt;/ul&gt;
+                            &lt;p&gt;&lt;font&gt;&lt;font&gt;Nothing on this website constitutes, or is supposed to constitute advice of any kind. &lt;/font&gt;&lt;font&gt;If you need advice with respect to any legal, financial or medical issue you should consult the appropriate professional.&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+                            &lt;h2&gt;&lt;font&gt;&lt;font&gt;Limitation of Liability &lt;/font&gt;&lt;/font&gt;&lt;/h2&gt;
+
+                            &lt;p&gt;&lt;font&gt;&lt;font&gt;
+                                Www.Akaratak.com and will not be liable to you (whether under the law of contact, and the law of damages or otherwise) with respect to the contents of, or use of, or otherwise in connection with this site: &amp;lt;/ P&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;ul&gt;
+                &lt;li&gt;&lt;font&gt;&lt;font&gt;To the extent that the site offers free of charge, for any direct loss; &lt;/font&gt;&lt;/font&gt;&lt;!-- لى--&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/li&gt;&lt;li&gt;&lt;font&gt;&lt;font&gt;And any loss of indirect, special or consequential. &lt;/font&gt;&lt;font&gt;or&lt;/font&gt;&lt;/font&gt;&lt;!-- لى--&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/li&gt;&lt;li&gt;&lt;font&gt;&lt;font&gt;
+                And any business losses, loss of revenue, income, profits or anticipated savings, loss of contracts or business relationships, loss of reputation or fame, or loss of information or data corruption. &lt;/font&gt;&lt;/font&gt;&lt;!-- لى--&gt;
+            &lt;/li&gt;&lt;/ul&gt;
+                                &lt;p&gt;&lt;font&gt;&lt;font&gt;These restrictions apply to liability even if www.Akaratak.com has expressly advised of the potential losses. &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+                                &lt;h2&gt;&lt;font&gt;&lt;font&gt;Exceptions &lt;/font&gt;&lt;/font&gt;&lt;/h2&gt;
+
+                                &lt;p&gt;&lt;font&gt;&lt;font&gt;Nothing in this website disclaimer will exclude or limit any implied warranty by law it would be illegal to exclude or limit. &lt;/font&gt;&lt;font&gt;There is nothing in this website disclaimer will exclude or limit the responsibility of the URL in respect of any:&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+                                &lt;ul&gt;
+                                    &lt;li&gt;&lt;font&gt;&lt;font&gt;The death or personal injury caused by negligence www.Akaratak.com or its agents, employees or shareholders / owners; &lt;/font&gt;&lt;/font&gt;&lt;!-- لى--&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/li&gt;&lt;li&gt;&lt;font&gt;&lt;font&gt;Fraud or fraudulent misrepresentation on the part of www.Akaratak.com. &lt;/font&gt;&lt;font&gt;or&lt;/font&gt;&lt;/font&gt;&lt;!-- لى--&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/li&gt;&lt;li&gt;&lt;font&gt;&lt;font&gt;
+                                    And which would be illegal or unlawful for www.Akaratak.com to exclude or limit, or attempt or purport to exclude or limit, its responsibility. &lt;/font&gt;&lt;/font&gt;&lt;!-- لى--&gt;
+                                &lt;/li&gt;&lt;/ul&gt;
+                                &lt;h2&gt;&lt;font&gt;&lt;font&gt;reasonableness &lt;/font&gt;&lt;/font&gt;&lt;/h2&gt;
+
+                                &lt;p&gt;&lt;font&gt;&lt;font&gt;By using this site, you agree to exceptions and limitations of liability set forth in this website disclaimer are reasonable. &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+                                &lt;p&gt;&lt;font&gt;&lt;font&gt;If you do not think it's reasonable, you must not use this site. &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+                                &lt;h2&gt;&lt;font&gt;&lt;font&gt;Other parties &lt;/font&gt;&lt;/font&gt;&lt;/h2&gt;
+
+                                &lt;p&gt;&lt;font&gt;&lt;font&gt;And you accept it, as an entity limited liability, and www.Akaratak.com has an interest in limiting the personal liability of officers and staff. &lt;/font&gt;&lt;font&gt;You agree that you will not bring any claim personally against www.Akaratak.com officers or employees in respect of any losses you suffer in connection with the site.&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+                                &lt;p&gt;&lt;font&gt;&lt;font&gt;Without prejudice to the foregoing paragraph, you agree that the restrictions on the guarantees and commitments contained in this website disclaimer will protect officers, employees, agents, subsidiaries, successors, assigns and sub-contractors, as well as in www.Akaratak.com www.Akaratak.com. &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+                                &lt;h2&gt;&lt;font&gt;&lt;font&gt;Provisions are not implemented &lt;/font&gt;&lt;/font&gt;&lt;/h2&gt;
+
+                                &lt;p&gt;&lt;font&gt;&lt;font&gt;If any provision of this website disclaimer is, or is found to be, unenforceable under applicable law, that will not affect the enforceability of the other provisions of this contract signed. &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+                                &lt;h2&gt;&lt;font&gt;&lt;font&gt;Compensation &lt;/font&gt;&lt;/font&gt;&lt;/h2&gt;
+
+                                &lt;p&gt;&lt;font&gt;&lt;font&gt;You compensation under www.Akaratak.com and action to keep www.Akaratak.com compensation against any losses, damages, costs, liabilities and expenses (including but not limited to legal expenses and any amounts paid for www.Akaratak.com a third party in the settlement of a lawsuit or dispute on the advice of legal advisers www.Akaratak.com l) incurred or suffered by www.Akaratak.com arising out of any breach by you of any provision of these Terms and Conditions, or arising from any claim that you have a breach of any provision of these Terms and provisions. &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+                                &lt;h2&gt;&lt;font&gt;&lt;font&gt;Breach of these terms and conditions &lt;/font&gt;&lt;/font&gt;&lt;/h2&gt;
+
+                                &lt;p&gt;&lt;font&gt;&lt;font&gt;And without prejudice to other rights www.Akaratak.com under these terms and conditions, in the event of a breach of these terms and conditions at any event, www.Akaratak.com may take such action www.Akaratak.com deem appropriate to deal with the breach, including so suspend your access to the site, and prohibits you from accessing the site, and to prevent computers that use your IP address to access the Internet, contact your Internet service to request that they could prevent your access to the site and / or suit court against you. &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+                                &lt;h2&gt;&lt;font&gt;&lt;font&gt;Change &lt;/font&gt;&lt;/font&gt;&lt;/h2&gt;
+
+                                &lt;p&gt;&lt;font&gt;&lt;font&gt;Www.Akaratak.com and may modify these Terms and Conditions from time to time. &lt;/font&gt;&lt;font&gt;Will be the terms and conditions of the revised application to use this site from the date of publication of the amended terms and conditions on this site. &lt;/font&gt;&lt;font&gt;Please check this page regularly to ensure you are familiar with the current version.&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+                                &lt;h2&gt;&lt;font&gt;&lt;font&gt;Designation &lt;/font&gt;&lt;/font&gt;&lt;/h2&gt;
+
+                                &lt;p&gt;&lt;font&gt;&lt;font&gt;And www.Akaratak.com may transfer or sub-contract or otherwise deal with www.Akaratak.com rights and / or obligations under these terms and conditions without notifying you or obtaining your consent. &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+                                &lt;p&gt;&lt;font&gt;&lt;font&gt;You may not transfer, sub-contract or deal with the rights and / or obligations under these terms and conditions. &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+                                &lt;h2&gt;&lt;font&gt;&lt;font&gt;Susceptibility &lt;/font&gt;&lt;/font&gt;&lt;/h2&gt;
+
+                                &lt;p&gt;&lt;font&gt;&lt;font&gt;If you are determined provision of these Terms and Conditions by any court or other competent authority of illegal and / or unenforceable, the other provisions will continue in effect. &lt;/font&gt;&lt;font&gt;If any provision is unlawful and / or unenforceable would be legal or enforceable if part of it were deleted, that part will be deemed to be deleted, and the rest of the provision will continue in effect.&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+                                &lt;h2&gt;&lt;font&gt;&lt;font&gt;Full agreement &lt;/font&gt;&lt;/font&gt;&lt;/h2&gt;
+
+                                &lt;p&gt;&lt;font&gt;&lt;font&gt;These terms and conditions, along with the Privacy Policy www.Akaratak.com to constitute the entire agreement between you and www.Akaratak.com with respect to your use of this site, and supersede all previous agreements in respect of your use of this site. &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+                            &lt;p&gt;&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</value>
+  </data>
+</root>

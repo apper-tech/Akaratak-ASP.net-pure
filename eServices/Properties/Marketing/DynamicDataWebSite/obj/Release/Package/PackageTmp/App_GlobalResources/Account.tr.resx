@@ -1,0 +1,664 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Contact_info" xml:space="preserve">
+    <value>İletişim bilgileri</value>
+  </data>
+  <data name="Control_OpenAuthProviders_SubmitTitleFormat" xml:space="preserve">
+    <value>{0} hesabınızı kullanarak giriş yapın.</value>
+  </data>
+  <data name="Control_OpenAuthProviders_Title" xml:space="preserve">
+    <value>Giriş yapmak için başka bir hizmet kullanın.</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Oturum aç</value>
+  </data>
+  <data name="Logoff" xml:space="preserve">
+    <value>Oturumu Kapat</value>
+  </data>
+  <data name="Page_AddPhoneNumber_Name" xml:space="preserve">
+    <value>Telefon numarası</value>
+  </data>
+  <data name="Page_AddPhoneNumber_PhoneNumber" xml:space="preserve">
+    <value>Telefon numarası</value>
+  </data>
+  <data name="Page_AddPhoneNumber_PhoneNumber_Message_YourSecurityCode" xml:space="preserve">
+    <value>Güvenlik kodunuz: {0}&gt;</value>
+  </data>
+  <data name="Page_AddPhoneNumber_PhoneNumber_RequiredFieldValidator" xml:space="preserve">
+    <value>Telefon Numarası alanı gereklidir.</value>
+  </data>
+  <data name="Page_AddPhoneNumber_PhoneNumber_Submit" xml:space="preserve">
+    <value>Gönder</value>
+  </data>
+  <data name="Page_AddPhoneNumber_Title" xml:space="preserve">
+    <value>Bir telefon numarası ekle</value>
+  </data>
+  <data name="Page_Confirm_Error" xml:space="preserve">
+    <value>Bir hata oluştu. Site Yöneticisi ile iletişim kurun, lütfen.</value>
+  </data>
+  <data name="Page_Confirm_Here" xml:space="preserve">
+    <value>İşte</value>
+  </data>
+  <data name="Page_Confirm_Name" xml:space="preserve">
+    <value>Onaylamak</value>
+  </data>
+  <data name="Page_Confirm_ThankYouPrefix" xml:space="preserve">
+    <value>Hesabınızı onayladığınız için teşekkür ederiz. Click</value>
+  </data>
+  <data name="Page_Confirm_ThankYouSuffix" xml:space="preserve">
+    <value>giriş yapmak</value>
+  </data>
+  <data name="Page_Forgot_DisplayEmail" xml:space="preserve">
+    <value>Şifrenizi sıfırlamak için lütfen e-postanızı kontrol edin.</value>
+  </data>
+  <data name="Page_Forgot_Email" xml:space="preserve">
+    <value>E-posta</value>
+  </data>
+  <data name="Page_Forgot_Email_RequiredFieldValidator" xml:space="preserve">
+    <value>E-posta alanı gerekli.</value>
+  </data>
+  <data name="Page_Forgot_FailureText" xml:space="preserve">
+    <value>Kullanıcı mevcut değil veya doğrulanmadı.</value>
+  </data>
+  <data name="Page_Forgot_Name" xml:space="preserve">
+    <value>Parolanızı mı unuttunuz</value>
+  </data>
+  <data name="Page_Forgot_Submit" xml:space="preserve">
+    <value>E-posta Bağlantısı</value>
+  </data>
+  <data name="Page_Forgot_Title" xml:space="preserve">
+    <value>Parolanızı mı unuttunuz?</value>
+  </data>
+  <data name="Page_Lockout_Message" xml:space="preserve">
+    <value>Bu hesap kilitlendi, lütfen daha sonra tekrar deneyin.</value>
+  </data>
+  <data name="Page_Lockout_Name" xml:space="preserve">
+    <value>Kilitlendi</value>
+  </data>
+  <data name="Page_Login_Email" xml:space="preserve">
+    <value>E-posta</value>
+  </data>
+  <data name="Page_Login_Email_RequiredFieldValidator" xml:space="preserve">
+    <value>E-posta alanı gerekli.</value>
+  </data>
+  <data name="Page_Login_Error_InvalidLoginAttempt" xml:space="preserve">
+    <value>Geçersiz giriş denemesi</value>
+  </data>
+  <data name="Page_Login_ForgotPasswordHyperLink" xml:space="preserve">
+    <value>Parolanızı mı unuttunuz?</value>
+  </data>
+  <data name="Page_Login_Name" xml:space="preserve">
+    <value>Oturum aç</value>
+  </data>
+  <data name="Page_Login_Password" xml:space="preserve">
+    <value>Parola</value>
+  </data>
+  <data name="Page_Login_Password_RequiredFieldValidator" xml:space="preserve">
+    <value>Şifre alanı gereklidir.</value>
+  </data>
+  <data name="Page_Login_RegisterHyperLink" xml:space="preserve">
+    <value>Yeni kullanıcı olarak kayıt ol</value>
+  </data>
+  <data name="Page_Login_RememberMe" xml:space="preserve">
+    <value>Beni hatırla?</value>
+  </data>
+  <data name="Page_Login_Submit" xml:space="preserve">
+    <value>Oturum aç</value>
+  </data>
+  <data name="Page_Login_Title" xml:space="preserve">
+    <value>Oturum aç</value>
+  </data>
+  <data name="Page_ManageDetails_Address" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="Page_ManageDetails_Address_Required" xml:space="preserve">
+    <value>Adres Gerekli</value>
+  </data>
+  <data name="Page_ManageDetails_FirstName" xml:space="preserve">
+    <value>İsim</value>
+  </data>
+  <data name="Page_ManageDetails_FirstName_Required" xml:space="preserve">
+    <value>İsim Gerekli</value>
+  </data>
+  <data name="Page_ManageDetails_HasOffice" xml:space="preserve">
+    <value>Ofisiniz var mı?</value>
+  </data>
+  <data name="Page_ManageDetails_HasOffice_Required" xml:space="preserve">
+    <value>Ofis gerekli</value>
+  </data>
+  <data name="Page_ManageDetails_LastName" xml:space="preserve">
+    <value>Soyadı</value>
+  </data>
+  <data name="Page_ManageDetails_LastName_Required" xml:space="preserve">
+    <value>Soyad gerekli</value>
+  </data>
+  <data name="Page_ManageDetails_Name" xml:space="preserve">
+    <value>Detayları düzenle</value>
+  </data>
+  <data name="Page_ManageDetails_PhoneNumber" xml:space="preserve">
+    <value>Telefon numarası</value>
+  </data>
+  <data name="Page_ManageDetails_PhoneNumber_Required" xml:space="preserve">
+    <value>Telefon Numarası Gerekli</value>
+  </data>
+  <data name="Page_ManageDetails_Submit_Details" xml:space="preserve">
+    <value>Değişiklikleri Kaydet</value>
+  </data>
+  <data name="Page_ManageLogins_Name" xml:space="preserve">
+    <value>Harici girişlerinizi yönetin</value>
+  </data>
+  <data name="Page_ManageLogins_RegisteredLogins" xml:space="preserve">
+    <value>Kayıtlı Girişler</value>
+  </data>
+  <data name="Page_ManageLogins_SuccessMessage_RemoveLoginSuccess" xml:space="preserve">
+    <value>Harici Giriş başarılı bir şekilde kaldırıldı</value>
+  </data>
+  <data name="Page_ManagePassword_ChangePassword_Title" xml:space="preserve">
+    <value>Şifre Formunu Değiştir</value>
+  </data>
+  <data name="Page_ManagePassword_ConfirmNewPassword" xml:space="preserve">
+    <value>Yeni şifreyi onayla</value>
+  </data>
+  <data name="Page_ManagePassword_ConfirmNewPassword_CompareValidator" xml:space="preserve">
+    <value>Yeni şifre ve doğrulama şifresi uyuşmuyor.</value>
+  </data>
+  <data name="Page_ManagePassword_ConfirmNewPassword_RequiredFieldValidator" xml:space="preserve">
+    <value>Yeni şifrenin gerekli olduğunu onaylayın.</value>
+  </data>
+  <data name="Page_ManagePassword_ConfirmPassword" xml:space="preserve">
+    <value>Şifreyi Onayla</value>
+  </data>
+  <data name="Page_ManagePassword_ConfirmPassword_CompareValidator" xml:space="preserve">
+    <value>Şifre ve doğrulama şifresi uyuşmuyor.</value>
+  </data>
+  <data name="Page_ManagePassword_ConfirmPassword_RequiredFieldValidator" xml:space="preserve">
+    <value>Şifreyi onaylama alanı gereklidir.</value>
+  </data>
+  <data name="Page_ManagePassword_CurrentPassword" xml:space="preserve">
+    <value>Şimdiki Şifre</value>
+  </data>
+  <data name="Page_ManagePassword_CurrentPassword_RequiredFieldValidator" xml:space="preserve">
+    <value>Mevcut şifre alanı gereklidir.</value>
+  </data>
+  <data name="Page_ManagePassword_Name" xml:space="preserve">
+    <value>Şifreyi Yönet</value>
+  </data>
+  <data name="Page_ManagePassword_NewPassword" xml:space="preserve">
+    <value>Yeni Şifre</value>
+  </data>
+  <data name="Page_ManagePassword_NewPassword_RequiredFieldValidator" xml:space="preserve">
+    <value>Yeni şifre gerekli.</value>
+  </data>
+  <data name="Page_ManagePassword_Password" xml:space="preserve">
+    <value>Parola</value>
+  </data>
+  <data name="Page_ManagePassword_Password_RequiredFieldValidator" xml:space="preserve">
+    <value>Şifre alanı gereklidir.</value>
+  </data>
+  <data name="Page_ManagePassword_SetPassword_Text" xml:space="preserve">
+    <value>Bu site için yerel bir şifreniz yok. Harici bir giriş yapmadan giriş yapabileceğiniz yerel bir şifre ekleyin.</value>
+  </data>
+  <data name="Page_ManagePassword_SetPassword_Title" xml:space="preserve">
+    <value>Şifre Formunu Ayarla</value>
+  </data>
+  <data name="Page_ManagePassword_Submit_ChangePassword" xml:space="preserve">
+    <value>Şifre değiştir</value>
+  </data>
+  <data name="Page_ManagePassword_Submit_SetPassword" xml:space="preserve">
+    <value>Şifreyi belirle</value>
+  </data>
+  <data name="Page_Manage_Details" xml:space="preserve">
+    <value>Kullanıcı Ayrıntılarını Düzenle</value>
+  </data>
+  <data name="Page_Manage_Details_Change" xml:space="preserve">
+    <value>Düzenle</value>
+  </data>
+  <data name="Page_Manage_ExternalLogins" xml:space="preserve">
+    <value>Dış Girişler</value>
+  </data>
+  <data name="Page_Manage_Name" xml:space="preserve">
+    <value>Hesabı yönet</value>
+  </data>
+  <data name="Page_Manage_Password" xml:space="preserve">
+    <value>Parola</value>
+  </data>
+  <data name="Page_Manage_Password_Change" xml:space="preserve">
+    <value>[Değişiklik]</value>
+  </data>
+  <data name="Page_Manage_Password_Create" xml:space="preserve">
+    <value>[Yaratmak]</value>
+  </data>
+  <data name="Page_Manage_Password_Manage" xml:space="preserve">
+    <value>[Yönetme]</value>
+  </data>
+  <data name="Page_Manage_SuccessMessage_AddPhoneNumberSuccess" xml:space="preserve">
+    <value>Telefon numarası eklendi</value>
+  </data>
+  <data name="Page_Manage_SuccessMessage_ChangePwdSuccess" xml:space="preserve">
+    <value>Şifreniz değiştirildi.</value>
+  </data>
+  <data name="Page_Manage_SuccessMessage_RemoveLoginProvider" xml:space="preserve">
+    <value>Bu {0} girişini hesabınızdan kaldırın</value>
+  </data>
+  <data name="Page_Manage_SuccessMessage_RemoveLoginSuccess" xml:space="preserve">
+    <value>Hesap kaldırıldı.</value>
+  </data>
+  <data name="Page_Manage_SuccessMessage_RemovePhoneNumberSuccess" xml:space="preserve">
+    <value>Telefon numarası kaldırıldı</value>
+  </data>
+  <data name="Page_Manage_SuccessMessage_SetPwdSuccess" xml:space="preserve">
+    <value>Şifreniz ayarlandı.</value>
+  </data>
+  <data name="Page_Manage_Title" xml:space="preserve">
+    <value>Hesap ayarlarınızı değiştirin</value>
+  </data>
+  <data name="Page_Manage_TwoFactorAuthentication" xml:space="preserve">
+    <value>İki Faktörlü Kimlik Doğrulama</value>
+  </data>
+  <data name="Page_Manage_TwoFactorAuthentication_NoProvider" xml:space="preserve">
+    <value>Yapılandırılmış iki faktörlü kimlik doğrulama sağlayıcısı yok. &lt;a href="http://go.microsoft.com/fwlink/?LinkId=403804"&gt; bu makaleye &lt;/a&gt; bakın.
+                            İki faktörlü kimlik doğrulamayı desteklemek için bu ASP.NET uygulamasını ayarlama hakkında ayrıntılar için.</value>
+  </data>
+  <data name="Page_RegisterExternalLogin_AssociationForm" xml:space="preserve">
+    <value>Dernek Formu</value>
+  </data>
+  <data name="Page_RegisterExternalLogin_Description" xml:space="preserve">
+    <value>&lt;Strong&gt; {0} &lt;/ strong&gt; ile doğrulanmışsınız. Mevcut site için lütfen aşağıya bir e-posta girin ve Giriş yap düğmesini tıklayın.</value>
+  </data>
+  <data name="Page_RegisterExternalLogin_Email" xml:space="preserve">
+    <value>E-posta</value>
+  </data>
+  <data name="Page_RegisterExternalLogin_Name" xml:space="preserve">
+    <value>Harici bir giriş yapın</value>
+  </data>
+  <data name="Page_RegisterExternalLogin_Submit" xml:space="preserve">
+    <value>Oturum aç</value>
+  </data>
+  <data name="Page_RegisterExternalLogin_Title" xml:space="preserve">
+    <value>{0} hesabınızla kayıt olun</value>
+  </data>
+  <data name="Page_Register_Address" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="Page_Register_AddressRequired" xml:space="preserve">
+    <value>Adres Gerekli</value>
+  </data>
+  <data name="Page_Register_ConfirmPassword" xml:space="preserve">
+    <value>Şifreyi Onayla</value>
+  </data>
+  <data name="Page_Register_ConfirmPassword_CompareValidator" xml:space="preserve">
+    <value>Şifre ve doğrulama şifresi uyuşmuyor.</value>
+  </data>
+  <data name="Page_Register_ConfirmPassword_RequiredFieldValidator" xml:space="preserve">
+    <value>Şifreyi onaylama alanı gereklidir.</value>
+  </data>
+  <data name="Page_Register_Email" xml:space="preserve">
+    <value>E-posta</value>
+  </data>
+  <data name="Page_Register_Email_RequiredFieldValidator" xml:space="preserve">
+    <value>E-posta alanı gerekli.</value>
+  </data>
+  <data name="Page_Register_FirstName" xml:space="preserve">
+    <value>İsim</value>
+  </data>
+  <data name="Page_Register_FirstNameRequired" xml:space="preserve">
+    <value>İsim Gerekli</value>
+  </data>
+  <data name="Page_Register_HasOffice" xml:space="preserve">
+    <value>Ofisi var mı?</value>
+  </data>
+  <data name="Page_Register_LastName" xml:space="preserve">
+    <value>Soyadı</value>
+  </data>
+  <data name="Page_Register_LastNameRequired" xml:space="preserve">
+    <value>Soyadı Requred</value>
+  </data>
+  <data name="Page_Register_Name" xml:space="preserve">
+    <value>Kayıt olmak</value>
+  </data>
+  <data name="Page_Register_Password" xml:space="preserve">
+    <value>Parola</value>
+  </data>
+  <data name="Page_Register_Password_RequiredFieldValidator" xml:space="preserve">
+    <value>Şifre alanı gereklidir.</value>
+  </data>
+  <data name="Page_Register_PhoneNumber" xml:space="preserve">
+    <value>Telefon Numarası (+963)</value>
+  </data>
+  <data name="Page_Register_PhoneNumberRequired" xml:space="preserve">
+    <value>Telefon Numarası Gerekli</value>
+  </data>
+  <data name="Page_Register_Submit" xml:space="preserve">
+    <value>Kayıt olmak</value>
+  </data>
+  <data name="Page_Register_Title" xml:space="preserve">
+    <value>Yeni bir hesap oluştur.</value>
+  </data>
+  <data name="Page_ResetPasswordConfirmation_Message_ClickHere" xml:space="preserve">
+    <value>İşte</value>
+  </data>
+  <data name="Page_ResetPasswordConfirmation_Message_Prefix" xml:space="preserve">
+    <value>Şifreniz değiştirildi. Click</value>
+  </data>
+  <data name="Page_ResetPasswordConfirmation_Message_Suffix" xml:space="preserve">
+    <value>giriş yapmak</value>
+  </data>
+  <data name="Page_ResetPasswordConfirmation_Name" xml:space="preserve">
+    <value>Şifre değişti</value>
+  </data>
+  <data name="Page_ResetPassword_ConfirmPassword" xml:space="preserve">
+    <value>Şifreyi Onayla</value>
+  </data>
+  <data name="Page_ResetPassword_ConfirmPassword_CompareValidator" xml:space="preserve">
+    <value>Şifre ve doğrulama şifresi uyuşmuyor.</value>
+  </data>
+  <data name="Page_ResetPassword_ConfirmPassword_RequiredFieldValidator" xml:space="preserve">
+    <value>Şifreyi onaylama alanı gereklidir.</value>
+  </data>
+  <data name="Page_ResetPassword_Email" xml:space="preserve">
+    <value>E-posta</value>
+  </data>
+  <data name="Page_ResetPassword_Email_RequiredFieldValidator" xml:space="preserve">
+    <value>E-posta alanı gerekli.</value>
+  </data>
+  <data name="Page_ResetPassword_Error" xml:space="preserve">
+    <value>Bir hata oluştu. Site Yöneticisi ile iletişim kurun, lütfen.</value>
+  </data>
+  <data name="Page_ResetPassword_Error_NoUserFound" xml:space="preserve">
+    <value>Kullanıcı bulunamadı</value>
+  </data>
+  <data name="Page_ResetPassword_Name" xml:space="preserve">
+    <value>Şifreyi yenile</value>
+  </data>
+  <data name="Page_ResetPassword_Password" xml:space="preserve">
+    <value>Parola</value>
+  </data>
+  <data name="Page_ResetPassword_Password_RequiredFieldValidator" xml:space="preserve">
+    <value>Şifre alanı gereklidir.</value>
+  </data>
+  <data name="Page_ResetPassword_Submit" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="Page_ResetPassword_Title" xml:space="preserve">
+    <value>Yeni şifrenizi giriniz</value>
+  </data>
+  <data name="Page_TwoFactorAuthenticationSignIn_EnterVerificationCode_Code" xml:space="preserve">
+    <value>kod</value>
+  </data>
+  <data name="Page_TwoFactorAuthenticationSignIn_EnterVerificationCode_RememberBrowser" xml:space="preserve">
+    <value>tarayıcıyı Hatırla</value>
+  </data>
+  <data name="Page_TwoFactorAuthenticationSignIn_EnterVerificationCode_Submit" xml:space="preserve">
+    <value>Gönder</value>
+  </data>
+  <data name="Page_TwoFactorAuthenticationSignIn_EnterVerificationCode_Title" xml:space="preserve">
+    <value>dogrulama kodunu giriniz</value>
+  </data>
+  <data name="Page_TwoFactorAuthenticationSignIn_Error_InvalidCode" xml:space="preserve">
+    <value>Geçersiz kod</value>
+  </data>
+  <data name="Page_TwoFactorAuthenticationSignIn_Name" xml:space="preserve">
+    <value>İki Faktörlü Kimlik Doğrulama</value>
+  </data>
+  <data name="Page_TwoFactorAuthenticationSignIn_SendVerificationCode_Select" xml:space="preserve">
+    <value>İki Faktörlü Kimlik Doğrulama Sağlayıcısı'nı seçin</value>
+  </data>
+  <data name="Page_TwoFactorAuthenticationSignIn_SendVerificationCode_Submit" xml:space="preserve">
+    <value>Gönder</value>
+  </data>
+  <data name="Page_TwoFactorAuthenticationSignIn_SendVerificationCode_Title" xml:space="preserve">
+    <value>Doğrulama kodu Gönder</value>
+  </data>
+  <data name="Page_VerifyPhoneNumber_Code" xml:space="preserve">
+    <value>kod</value>
+  </data>
+  <data name="Page_VerifyPhoneNumber_Code_RequiredFieldValidator" xml:space="preserve">
+    <value>Kod alanı gereklidir.</value>
+  </data>
+  <data name="Page_VerifyPhoneNumber_Error_FailedToVerifyPhone" xml:space="preserve">
+    <value>Telefon doğrulanamadı. Site Yöneticisi ile iletişim kurun, lütfen.</value>
+  </data>
+  <data name="Page_VerifyPhoneNumber_Error_InvalidCode" xml:space="preserve">
+    <value>Geçersiz kod</value>
+  </data>
+  <data name="Page_VerifyPhoneNumber_Name" xml:space="preserve">
+    <value>dogrulama kodunu giriniz</value>
+  </data>
+  <data name="Page_VerifyPhoneNumber_Submit" xml:space="preserve">
+    <value>Gönder</value>
+  </data>
+  <data name="Page_VerifyPhoneNumber_Title" xml:space="preserve">
+    <value>Telefon Numarasını Doğrula</value>
+  </data>
+  <data name="Page_ViewDetails_More" xml:space="preserve">
+    <value>İletişim Bilgilerini Görüntüle</value>
+  </data>
+  <data name="Page_ViewDetail_Return" xml:space="preserve">
+    <value>Ev Detaylarına Dön</value>
+  </data>
+  <data name="PleaseWait" xml:space="preserve">
+    <value>Lütfen bekle...</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Kayıt olmak</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Kullanıcı adı</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>Yönetici</value>
+  </data>
+  <data name="Stackholder" xml:space="preserve">
+    <value>Ev sahibi</value>
+  </data>
+  <data name="Visitor" xml:space="preserve">
+    <value>Ziyaretçi</value>
+  </data>
+  <data name="Page_Manage_Role" xml:space="preserve">
+    <value>Rolleri Yönet</value>
+  </data>
+  <data name="Page_Manage_Role_Change" xml:space="preserve">
+    <value>Yönetme</value>
+  </data>
+  <data name="Page_Login_New" xml:space="preserve">
+    <value>Emlaklarınız'a yeni kayıt olun!</value>
+  </data>
+  <data name="Page_Register_CheckAgree" xml:space="preserve">
+    <value>You Must Agree to the Terms to Continue</value>
+  </data>
+  <data name="Login_Holder" xml:space="preserve">
+    <value>Oturum aç</value>
+  </data>
+  <data name="Register_Holder" xml:space="preserve">
+    <value>Kayıt olmak</value>
+  </data>
+  <data name="Complete_Profile" xml:space="preserve">
+    <value>Komple Profil</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Çıkış Yap</value>
+  </data>
+  <data name="Sure" xml:space="preserve">
+    <value>Emin?</value>
+  </data>
+  <data name="Page_Register_Agree" xml:space="preserve">
+    <value>&amp;nbsp;&amp;nbsp;By signing up you agree &lt;a href='../TermsArabic'&gt;Registration Terms&lt;/a&gt; And &lt;a href='../PrivacyPolicy.aspx'&gt;Privacy Policy&lt;/a&gt;</value>
+  </data>
+  <data name="Page_Register_Email_RegularExpVal" xml:space="preserve">
+    <value>Please Enter Correct Email</value>
+  </data>
+  <data name="Page_Register_LoginLink" xml:space="preserve">
+    <value>Are you a member of Akaratak , Login in here </value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>Herşey</value>
+  </data>
+  <data name="Page_Manage_Property" xml:space="preserve">
+    <value>Eklenen Özellikleri Görüntüle</value>
+  </data>
+  <data name="String" xml:space="preserve">
+    <value>&lt;%= Resources.RealEstate.Filter_Desc_1_T %&gt;</value>
+  </data>
+  <data name="View_Users" xml:space="preserve">
+    <value>Kullanıcıları Görüntüle</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Evet</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>isim</value>
+  </data>
+  <data name="Edit_User_Details" xml:space="preserve">
+    <value>Hesabı düzenlemek</value>
+  </data>
+  <data name="Edit_User_Details_Desc" xml:space="preserve">
+    <value>Bilgilerinizi düzenleyin</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Eklemek</value>
+  </data>
+  <data name="Choose" xml:space="preserve">
+    <value>Seçmek</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>Kont:</value>
+  </data>
+  <data name="Page_Role_Manage_Title" xml:space="preserve">
+    <value>Manage Roles</value>
+  </data>
+  <data name="Permession" xml:space="preserve">
+    <value>izin</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Kaldır</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Güncelleştirme</value>
+  </data>
+  <data name="User_Grantee" xml:space="preserve">
+    <value>Bu rolde olan kullanıcılar</value>
+  </data>
+  <data name="User_Revoke" xml:space="preserve">
+    <value>Bu rolde olmayan kullanıcılar</value>
+  </data>
+  <data name="Phone_Number" xml:space="preserve">
+    <value>Telefon numarası</value>
+  </data>
+</root>

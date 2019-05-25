@@ -1,0 +1,10 @@
+﻿
+#tinybox {position:absolute; 
+display:none; padding:10px;
+background:#34495E url(images/preload.gif) 
+no-repeat 50% 50%; border:5px solid 
+#2ECC71; z-index:2000}
+#tinymask {position:absolute;             left:10px;
+display:none; top:0; left:0; 
+height:100%; width:100%; z-index:1500}
+#tinycontent {background:#34495E;color:white;}

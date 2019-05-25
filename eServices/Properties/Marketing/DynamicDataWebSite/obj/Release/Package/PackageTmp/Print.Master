@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" CodeBehind="Print.Master.cs" Inherits="DynamicDataWebSite.Print" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>حلولي وخدماتي</title>
+    <%--<link href="~/Site.css" rel="stylesheet" type="text/css" />--%>
+
+    <meta content="IE=8" http-equiv="X-UA-Compatible" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <link href="/CustomDesign/css/fonts.css" rel="stylesheet" type="text/css" />
+    <link href="/CustomDesign/css/Layout.css" rel="stylesheet" type="text/css" />
+    <link href="/CustomDesign/css/blueberry.css" rel="stylesheet" type="text/css" />
+    <link href="/CustomDesign/css/right_menu.css" rel="stylesheet" type="text/css" />
+    <link href="/CustomDesign/css/top_menu.css" rel="stylesheet" type="text/css" />
+    <link href="/CustomDesign/css/DevExpressStyle.css" rel="stylesheet" type="text/css" />
+    <link href="/CustomDesign/css/netstyle.css" rel="stylesheet" type="text/css" />
+    <link href="/CustomDesign/css/LayoutIE7.css" rel="stylesheet" type="text/css" />
+
+    <link href="/CustomDesign/css/print.css" rel="stylesheet" type="text/css" />
+
+    <script src="/CustomDesign/js/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script src="/CustomDesign/js/jquery.reveal.js" type="text/javascript"></script>
+    <script src="/CustomDesign/js/jquery.blueberry.js" type="text/javascript"></script>
+    <script src="/CustomDesign/js/jquery.easytabs.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('.blueberry').blueberry();
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="AutocompleteStyle.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="body">
+
+    <form id="form1" runat="server">
+        <div>
+            <%-- TODO: Enable partial rendering by setting the EnablePartialRendering attribute to "true" to provide a smoother browsing experience.
+             Leaving partial rendering disabled will provide a better debugging experience while the application is in development. --%>
+
+            <ajaxToolkit:ToolkitScriptManager runat="server" ID="ajaxScriptManager"
+                EnablePartialRendering="true"
+                CombineScripts="false"
+                EnableScriptGlobalization="true"
+                EnableScriptLocalization="true"
+                ScriptMode="Release">
+
+                <Scripts>
+                    <asp:ScriptReference Name="jquery" />
+                    <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" />
+                    <asp:ScriptReference Path="/CustomDesign/js/jquery.blueberry.js" />
+                </Scripts>
+            </ajaxToolkit:ToolkitScriptManager>
+            <%--<asp:ScriptManager runat="server" EnablePartialRendering="false">
+                <Scripts>
+                    <asp:ScriptReference Name="jquery" />
+                    <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" />
+                </Scripts>
+            </asp:ScriptManager>--%>
+
+            <div class="container">
+                <div class="container_bg">
+                    <div class="header_print">
+                        <div class="header_print_top">
+                            بسم الله الرحمن الرحيم
+                        </div>
+                        <div class="header_print_right">
+                            موقع قطوف
+                        <br />
+                            <br />
+                            حلولي وخدماتي<br />
+                        </div>
+                        <div class="header_print_middle">
+                            <img alt="" src="/CustomDesign/images/logo.png" />
+                        </div>
+                        <div class="header_print_left">
+
+                        </div>
+                    </div>
+                    <div class="blue_line">
+                    </div>
+
+                    <div style="clear: both">
+                    </div>
+                    <div class="contentDiv_full">
+
+                        <div class="page_text">
+                            <%-- I added EnableViewState="false"! to let the delete work on tables which are sorted!
+                                This is because there is a bug with dynamic data project when trying to sort table using for example: [DisplayColumn("Employee", "StartDate", true)], then the delete will not work!
+                            --%>
+                            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+
+                    </div>
+                    <div style="clear: both">
+                    </div>
+                </div>
+                <div class="footer">
+                </div>
+            </div>
+
+        </div>
+    </form>
+    <script>
+        $(window).load(function () {
+            window.print();
+        });
+    </script>
+</body>
+
+</html>
+

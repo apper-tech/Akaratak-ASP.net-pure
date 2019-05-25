@@ -1,0 +1,5 @@
+﻿.logo,.logo_title, .portal_title, .loginNameDiv, .loginArrow, .inline, .pupup_form_area
+{
+    *display: inline;
+}
+

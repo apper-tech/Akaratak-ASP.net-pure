@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Body" xml:space="preserve">
+    <value>&lt;div class="about"&gt;
+        &lt;div class="about-head"&gt;
+            &lt;div class="container"&gt;
+                &lt;h3&gt;بنود الخدمة&lt;/h3&gt;
+                &lt;div class="about-in"&gt;
+                    &lt;h6&gt;&lt;a href="#"&gt;تحليل بنود الخدمة لعقاراتك&lt;/a&gt;&lt;/h6&gt;
+                    &lt;p&gt;
+                        &lt;h1&gt;&lt;/h1&gt;
+                        &lt;p&gt;
+                            &lt;h2&gt;مقدمة &lt;/h2&gt;
+
+                            &lt;p&gt;وهذه الشروط والأحكام التي تحكم استخدامك لهذا الموقع. باستخدام هذا الموقع، فإنك توافق على هذه الشروط والشروط بالكامل ودون تحفظ. إذا كنت لا توافق على هذه الشروط والأحكام أو أي جزء من هذه الشروط والأحكام، يجب عدم استخدام هذا الموقع. &lt;/p&gt;
+
+                            &lt;p&gt;يجب أن تكون على الأقل 18 [ثمانية عشر] سنوات من العمر لاستخدام هذا الموقع. باستخدام هذا الموقع، وذلك بالموافقة على هذه الشروط والأحكام، فإنك تضمن وتمثل أنك لا يقل عن 18 سنة من العمر. &lt;/p&gt;
+
+
+                            &lt;h2&gt;رخصة لاستخدام موقع &lt;/h2&gt;
+                            &lt;p&gt;وإذا لم ينص على خلاف ذلك، www.Akaratak.com و / أو الجهات المرخصة لها تملك حقوق الملكية الفكرية المنشورة في هذا الموقع والمواد المستخدمة في www.Akaratak.com. تخضع لرخصة أدناه، يتم حجز كل هذه حقوق الملكية الفكرية. &lt;/p&gt;
+
+                            &lt;p&gt;ويمكنك مشاهدة، تحميل لأغراض التخزين المؤقت فقط، وطباعة صفحات أو ملفات أو محتويات أخرى من موقع للاستخدام الشخصي الخاص بك، تخضع لقيود الواردة أدناه، وأماكن أخرى في هذه الشروط والأحكام. &lt;/p&gt;
+
+                            &lt;p&gt;لا يجب أن: &lt;/p&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;ونشر مواد من هذا الموقع لا الطباعة ولا وسائل الإعلام الرقمية أو وثائق (بما في ذلك إعادة نشره على موقع آخر)؛ &lt;/ لى&gt;
+                &lt;li&gt;وبيع والإيجار أو المواد ترخيص من الباطن من موقع؛ &lt;/ لى&gt;
+                &lt;li&gt;وتظهر أي مادة من موقع في الأماكن العامة؛ &lt;/ لى&gt;
+                &lt;li&gt;وإنتاج أو تكرار أو نسخ أو خلاف ذلك استغلال المواد على هذا الموقع لأغراض تجارية؛ &lt;/ لى&gt;
+                &lt;li&gt;وتحرير أو تعديل أي مادة على الموقع؛ &lt;/ لى&gt;
+                &lt;li&gt;وتوزيع مواد من هذا الموقع - باستثناء المحتوى على وجه التحديد وصراحة متاحة لإعادة توزيعها. أو &lt;/ لى&gt;
+                    &lt;li&gt;
+                                ونشر أو إعادة إنتاج أي جزء من هذا الموقع من خلال استخدام الإطارات المضمنة أو screenscrapers. &lt;/ لى&gt;
+                            &lt;/ul&gt;
+                            &lt;p&gt;وأين يتم محتوى خصيصا لإعادة توزيعها، فإنه لا يجوز إعادة توزيعها داخل المؤسسة. &lt;/p&gt;
+
+                            &lt;h2&gt;الاستخدام المقبول &lt;/h2&gt;
+
+                            &lt;p&gt;ويجب عدم استخدام هذا الموقع بأي شكل من الأشكال أن تسبب أو قد تسبب، الأضرار التي لحقت الموقع أو الإضرار توافر أو إتاحة www.Akaratak.com أو بأي شكل من الأشكال غير قانوني وغير قانوني، احتيالية أو ضارة، أو فيما يتعلق بأي غرض أو نشاط غير قانوني أو غير قانوني، احتيالي أو ضارة. &lt;/p&gt;
+
+                            &lt;p&gt;ويجب عدم استخدام هذا الموقع لنسخ وتخزين والمضيف، نقل، إرسال أو إستخدام أو نشر أو توزيع أي مادة تتكون من (أو مرتبط) أي برامج التجسس، فيروسات الكمبيوتر، حصان طروادة، والديدان، المفتاح المسجل، الجذور الخفية أو غيرها من برامج الكمبيوتر الخبيثة. &lt;/p&gt;
+
+                            &lt;p&gt;
+                                ويجب أن لا تجري أي أنشطة منهجية أو آلية جمع البيانات أو فيما يتعلق بهذا الموقع من دون www.Akaratak.com في موافقة كتابية صريحة.
+                                &lt;br /&gt;
+                                هذا يتضمن:
+                                &lt;ul&gt;
+                                    &lt;li&gt;وكشط &lt;/ لى&gt;
+                                        &lt;li&gt;واستخراج البيانات &lt;/ لى&gt;
+                                            &lt;li&gt;واستخراج البيانات &lt;/ لى&gt;
+                                                &lt;li&gt;وحصاد البيانات &lt;/ لى&gt;
+                                                    &lt;li&gt;و"تأطير" (نوافذ الأطر المدمجة) &lt;/ لى&gt;
+                                                        &lt;li&gt;
+                                    والمادة 'غزل' &lt;/ لى&gt;
+                                &lt;/ul&gt;
+                            &lt;/p&gt;
+
+                            &lt;p&gt;ويجب عدم استخدام هذا الموقع أو أي جزء منه إلى نقل أو إرسال الرسائل التجارية غير المرغوب فيها. &lt;/p&gt;
+
+                            &lt;p&gt;ويجب عدم استخدام هذا الموقع لأي غرض من الأغراض المتعلقة بالتسويق بدون موافقة خطية صريحة من www.Akaratak.com. &lt;/p&gt;
+
+                            &lt;! - إذا مناطق محمية بكلمة سر تبدأ -&gt;
+                            &lt;h2&gt;الوصول المقيدة &lt;/h2&gt;
+
+                            &lt;p&gt;ويقتصر الوصول إلى مناطق معينة من هذا الموقع. www.Akaratak.com تحتفظ لنفسها الحق في تقييد الوصول إلى مناطق معينة من هذا الموقع، أو في تقديرنا، وهذا الموقع بأكمله. www.Akaratak.com قد تغيير أو تعديل هذه السياسة دون إشعار. &lt;/p&gt;
+
+                            &lt;p&gt;إذا www.Akaratak.com يوفر لك هوية المستخدم وكلمة المرور لتتمكن من الوصول إلى المناطق المحظورة من هذا الموقع أو المحتوى أو خدمات أخرى، يجب عليك التأكد من أن يتم الاحتفاظ هوية المستخدم وكلمة المرور السرية. أنت وحدك المسؤول عن كلمة المرور واسم المستخدم الخاص بك الأمنية .. &lt;/p&gt;
+
+                            &lt;p&gt;وwww.Akaratak.com قد تعطيل هوية المستخدم وكلمة المرور في تقدير www.Akaratak.com الوحيد دون إشعار أو تفسير. &lt;/p&gt;
+
+                            &lt;h2&gt;محتوى المستخدم &lt;/h2&gt;
+
+                            &lt;p&gt;في هذه الشروط والأحكام، "محتوى المستخدم" يعني المواد (بما في ذلك ودون حصر النصوص والصور والمواد السمعية، مواد الفيديو والمواد السمعية والبصرية) التي ترسلها إلى هذا الموقع لأي غرض. &lt;/p&gt;
+
+                            &lt;p&gt;وأنت تمنح لwww.Akaratak.com في جميع أنحاء العالم، لا رجعة فيه، غير حصري ورخصة الملوك الخالية لاستخدام وإعادة إنتاج وتكييف ونشر وترجمة وتوزيع محتوى المستخدم الخاص بك في أي وسيلة إعلامية الحالية أو المستقبلية. كما تمنح www.Akaratak.com الحق في ترخيص من الباطن هذه الحقوق، والحق في رفع دعوى لانتهاك هذه الحقوق. &lt;/p&gt;
+
+                            يجب ألا يكون
+                            &lt;p&gt;ومحتوى المستخدم الخاص بك غير قانوني أو غير قانوني، ويجب ألا تنتهك الحقوق القانونية لأي طرف ثالث، ويجب أن لا تكون قادرة على التسبب في الإجراءات القانونية سواء ضدك أو www.Akaratak.com أو طرف ثالث (في كل حالة تحت أي قانون معمول به). &lt;/p&gt;
+
+                            &lt;p&gt;ويجب أن لا يقدم أي محتوى المستخدم إلى الموقع الذي هو أو في أي وقت مضى موضوع أي إجراءات قانونية للتهديد أو الفعلية أو غيرها من شكوى مماثلة. &lt;/p&gt;
+
+                            &lt;p&gt;وwww.Akaratak.com تحتفظ لنفسها الحق في تعديل أو إزالة أي مواد قدمت لهذا الموقع، أو تخزينها على خوادم www.Akaratak.com، أو استضافت أو نشرت على هذا الموقع. &lt;/p&gt;
+
+                            حقوق
+                            &lt;p&gt;وwww.Akaratak.com تحت هذه البنود والشروط المتعلقة محتوى المستخدم، www.Akaratak.com لا تقوم على رصد تقديم مثل هذا المحتوى، أو نشر هذا المحتوى على هذا الموقع. &lt;/p&gt;
+
+                            &lt;h2&gt;لا ضمانات &lt;/h2&gt;
+
+                            &lt;p&gt;ويتم توفير هذا الموقع "كما هي" دون أي بيانات أو ضمانات، صريحة أو ضمنية. www.Akaratak.com يجعل أية بيانات أو ضمانات فيما يتعلق بهذا الموقع أو المعلومات والمواد الواردة في هذا الموقع. &lt;/p&gt;
+
+                            &lt;p&gt;ودون المساس بعمومية الفقرة السابقة، www.Akaratak.com لا تضمن ما يلي: &lt;/p&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;وهذا الموقع سيكون متاحا باستمرار، أو متاح على الإطلاق. أو &lt;/ لى&gt;
+                &lt;li&gt;
+                                والمعلومات الواردة في هذا الموقع هي كاملة، صحيحة ودقيقة أو غير مضللة. &lt;/ لى&gt;
+                            &lt;/ul&gt;
+                            &lt;p&gt;لا شيء على هذا الموقع يشكل، أو من المفترض أن تشكل والمشورة من أي نوع. إذا كنت تحتاج إلى المشورة فيما يتعلق بأي مسألة قانونية أو مالية أو طبية يجب عليك استشارة المهنية المناسبة. &lt;/p&gt;
+
+                            &lt;h2&gt;حدود المسؤولية &lt;/h2&gt;
+
+                            &lt;p&gt;
+                                وwww.Akaratak.com لن يكون مسؤولا لك (سواء بموجب قانون الاتصال، وقانون الأضرار أو غير ذلك) فيما يتعلق محتويات، أو استخدام، أو خلاف ذلك في اتصال مع هذا الموقع: &lt; / P&gt;
+            &lt;ul&gt;
+                &lt;li&gt;لدرجة أن الموقع يقدم مجانا من المسؤول، عن أي خسارة مباشرة؛ &lt;/ لى&gt;
+                &lt;li&gt;وعن أي خسارة غير مباشرة أو خاصة أو تبعية. أو &lt;/ لى&gt;
+                &lt;li&gt;
+                وعن أي خسائر تجارية، وفقدان الدخل، الدخل والأرباح أو المدخرات المتوقعة، أو ضياع عقود أو علاقات العمل، وفقدان السمعة أو الشهرة، أو فقدان أو تلف المعلومات أو البيانات. &lt;/ لى&gt;
+            &lt;/ul&gt;
+                                &lt;p&gt;وتنطبق هذه القيود المسؤولية حتى لو www.Akaratak.com وقد نصحت صراحة من الخسائر المحتملة. &lt;/p&gt;
+
+                                &lt;h2&gt;الاستثناءات &lt;/h2&gt;
+
+                                &lt;p&gt;وليس في هذا الموقع تنويه سوف تستبعد أو تحد من أي ضمان ضمني من قبل القانون أنه سيكون غير قانوني لاستبعاد أو تقييد. ولا يوجد في هذا الموقع تنويه سوف تستبعد أو تحد من مسؤولية عنوان الموقع فيما يتعلق بأي: &lt;/p&gt;
+                                &lt;ul&gt;
+                                    &lt;li&gt;والوفاة أو الإصابة الشخصية الناجمة عن إهمال www.Akaratak.com أو وكلائها أو موظفيها أو المساهمين / مالكي؛ &lt;/ لى&gt;
+                &lt;li&gt;والاحتيال أو تحريف احتيالية من جانب www.Akaratak.com. أو &lt;/ لى&gt;
+                &lt;li&gt;
+                                    والأمر الذي سيكون غير قانوني أو غير قانوني للwww.Akaratak.com لاستبعاد أو تقييد، أو محاولة أو ترمي إلى استبعاد أو الحد، مسؤوليته. &lt;/ لى&gt;
+                                &lt;/ul&gt;
+                                &lt;h2&gt;معقولية &lt;/h2&gt;
+
+                                &lt;p&gt;وباستخدام هذا الموقع، فإنك توافق على الاستثناءات وحدود المسؤولية المنصوص عليها في هذا الموقع تنويه معقولة. &lt;/p&gt;
+
+                                &lt;p&gt;إذا كنت لا أعتقد أنها معقولة، يجب عليك عدم استخدام هذا الموقع. &lt;/p&gt;
+
+                                &lt;h2&gt;الأطراف الأخرى &lt;/h2&gt;
+
+                                &lt;p&gt;وأنت تقبل ذلك، ككيان مسؤولية محدودة، وwww.Akaratak.com له مصلحة في الحد من المسؤولية الشخصية للضباط والموظفين. فإنك توافق على أنك لن يجلب أي ادعاء شخصيا ضد الضباط www.Akaratak.com أو الموظفين فيما يتعلق بأي خسائر كنت تعاني في اتصال مع الموقع. &lt;/p&gt;
+
+                                &lt;p&gt;ودون المساس بالفقرة السابقة، فإنك توافق على أن القيود المفروضة على الضمانات والالتزامات الواردة في هذا الموقع تنويه سوف حماية الضباط والموظفين والوكلاء والشركات التابعة، خلفاء، المتنازل والمقاولين من الباطن في www.Akaratak.com وكذلك www.Akaratak.com. &lt;/p&gt;
+
+                                &lt;h2&gt;الأحكام لا تنفذ &lt;/h2&gt;
+
+                                &lt;p&gt;إذا أي حكم من أحكام هذا الموقع تنويه هو، أو وجدت أن يكون، غير قابل للتنفيذ بموجب القانون المعمول به، فإن ذلك لن يؤثر على قابلية تنفيذ الأحكام الأخرى لهذا الموقع العقد. &lt;/p&gt;
+
+                                &lt;h2&gt;التعويض &lt;/h2&gt;
+
+                                &lt;p&gt;ويمكنك تعويض بموجب www.Akaratak.com وإجراء للحفاظ على www.Akaratak.com بالتعويض ضد أي خسائر أو أضرار أو تكاليف والالتزامات والنفقات (بما في ذلك سبيل المثال لا الحصر النفقات القانونية وأي المبالغ التي تدفع لwww.Akaratak.com طرف ثالث في تسوية دعوى أو نزاع بناء على نصيحة المستشارين القانونيين www.Akaratak.com ل) التي تحدث أو يتكبدها www.Akaratak.com تنشأ عن أي خرق من قبلك من أي شرط من هذه الشروط والأحكام، أو الناشئة عن أي ادعاء بأن لديك خرق أي شرط من هذه الشروط والأحكام. &lt;/p&gt;
+
+                                &lt;h2&gt;الإخلال بهذه الشروط والأحكام &lt;/h2&gt;
+
+                                &lt;p&gt;ودون المساس بالحقوق الأخرى www.Akaratak.com في ظل هذه الشروط والأحكام، في حالة خرق هذه الشروط والأحكام في أي حال من الأحوال، قد يستغرق www.Akaratak.com مثل هذا الإجراء www.Akaratak.com تراه مناسبا للتعامل مع اختراق، بما في ذلك تعليق وصولك إلى الموقع، ويحظر لك من الوصول إلى الموقع، ومنع أجهزة الكمبيوتر التي تستخدم عنوان IP الخاص بك من الوصول إلى شبكة الإنترنت، الاتصال بموفر خدمة الإنترنت الخاص بك لطلب بأنها تمنع وصولك إلى الموقع و / أو رفع الدعوى المحكمة ضدك. &lt;/p&gt;
+
+                                &lt;h2&gt;التغيير &lt;/h2&gt;
+
+                                &lt;p&gt;وwww.Akaratak.com قد تعدل هذه الشروط والأحكام من وقت إلى وقت. سيتم تطبيق الأحكام والشروط المنقحة لاستخدام هذا الموقع من تاريخ نشر الأحكام والشروط المعدلة على هذا الموقع. يرجى مراجعة هذه الصفحة بانتظام لضمان كنت معتادا على الإصدار الحالي. &lt;/p&gt;
+
+                                &lt;h2&gt;تعيين &lt;/h2&gt;
+
+                                &lt;p&gt;وwww.Akaratak.com قد نقل أو عقد من الباطن أو غير ذلك يتعامل مع حقوق www.Akaratak.com و / أو التزامات بموجب هذه الشروط والأحكام دون تعلمك أو الحصول على موافقتك. &lt;/p&gt;
+
+                                &lt;p&gt;لا يجوز لك نقل، التعاقد من الباطن أو التعامل مع حقوق و / أو التزامات بموجب هذه الشروط والأحكام. &lt;/p&gt;
+
+                                &lt;h2&gt;قابلية &lt;/h2&gt;
+
+                                &lt;p&gt;إذا يتم تحديد شرط من هذه الشروط والشروط من قبل أي محكمة أو سلطة مختصة أخرى غير قانوني و / أو غير قابل للتنفيذ، وسوف تستمر الأحكام الأخرى سارية المفعول. إذا أي حكم غير قانوني و / أو غير قابل للتنفيذ سيكون قانوني أو واجب النفاذ إذا تم حذف جزء منه، سيعتبر ذلك الجزء المراد حذفه، والباقي من توفير تستمر سارية المفعول. &lt;/p&gt;
+
+                                &lt;h2&gt;اتفاق كامل &lt;/h2&gt;
+
+                                &lt;p&gt;وهذه الشروط والأحكام، جنبا إلى جنب مع سياسة الخصوصية www.Akaratak.com لتشكل مجمل الاتفاق بينك وبين www.Akaratak.com فيما يتعلق استخدامك لهذا الموقع، وتلغي كل الاتفاقات السابقة فيما يتعلق استخدامك لهذا الموقع. &lt;/p&gt;
+                            &lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</value>
+  </data>
+</root>

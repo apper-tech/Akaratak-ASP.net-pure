@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Body" xml:space="preserve">
+    <value>&lt;div class="about"&gt;
+        &lt;div class="about-head"&gt;
+            &lt;div class="container"&gt;
+                &lt;h3&gt;&lt;font&gt;&lt;font&gt;Privacy policy&lt;/font&gt;&lt;/font&gt;&lt;/h3&gt;
+                &lt;div class="about-in"&gt;
+                    &lt;h6&gt;&lt;a href="#"&gt;&lt;font&gt;&lt;font&gt;akaratak.com Privacy Policy&lt;/font&gt;&lt;/font&gt;&lt;/a&gt;&lt;/h6&gt;
+                    &lt;p&gt;&lt;font&gt;&lt;font&gt;
+                        This has been compiled privacy and provide a better service for those who are concerned with how to use their "personal information" (PII) on the Internet. &lt;/font&gt;&lt;font&gt;PII, as described in the Privacy Act of the United States and the security of information, and information that can be used alone or with other information to identify, contact, or locate a single person, or to identify an individual in context. &lt;/font&gt;&lt;font&gt;Please read the privacy policy carefully to get a clear understanding of how we collect, use and protection of or dealing with your Personally Identifiable Information in accordance with our website. &lt;/font&gt;&lt;font&gt;What personal information we collect from the people that visit our Web site or application? &lt;/font&gt;&lt;font&gt;Upon request or registering on our site, as appropriate, you may be asked to enter your name and email address, mailing address, telephone or any other details to help you in your experience number. &lt;/font&gt;&lt;font&gt;When we collect information? &lt;/font&gt;&lt;font&gt;We collect information from you when you register on our site and sign up for a newsletter or enter information on our website. &lt;/font&gt;&lt;font&gt;Reactions to our products or services are provided to us how we use your information? &lt;/font&gt;&lt;font&gt;We may use the information we collect from you when you register, and make purchases or subscribe to our newsletter and respond to a survey or marketing communication, surf the Internet, or use some other sites, is characterized by the following ways: • to customize your experience and allow us to provide this kind offers content and products that you are most interested in. &lt;/font&gt;&lt;font&gt;• to allow us to better serve you in response to your requests for customer service. &lt;/font&gt;&lt;font&gt;• to administer a contest, promotion, survey or other site feature. &lt;/font&gt;&lt;font&gt;• to ask for ratings and reviews of products or services • To follow up with them after the correspondence (live chat, email or phone inquiries)
+                    &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!----&gt;
+        &lt;div class="about-middle"&gt;
+            &lt;div class="container"&gt;
+                &lt;div class="col-md-8 about-mid"&gt;
+                    &lt;h4&gt;&lt;font&gt;&lt;font&gt;How do we protect your information?&lt;/font&gt;&lt;/font&gt;&lt;/h4&gt;
+                    &lt;h6&gt;&lt;a href="#"&gt;&lt;font&gt;&lt;font&gt;Our site is scanned on a regular basis for security gaps and weaknesses known in order to make your visit to our site and safe as possible. &lt;/font&gt;&lt;/a&gt;&lt;/h6&gt;
+                    &lt;p&gt;&lt;font&gt;&lt;font&gt;
+                        Do we use "cookies"? &lt;/font&gt;&lt;font&gt;Yes really. &lt;/font&gt;&lt;font&gt;Cookies are small files that a site or provider transfer service on the hard drive of your computer through your Web browser (if you allow) that enables the site or service provider systems to see your browser and capture and remember certain information. &lt;/font&gt;&lt;font&gt;For example, we use cookies to help us remember and address the items in your shopping cart. &lt;/font&gt;&lt;font&gt;It is also used to help us understand your preferences based on previous or current site activity, which enables us to provide more enhanced services. &lt;/font&gt;&lt;font&gt;We also use cookies to help us collect general data about site traffic and site interaction so that we can offer the experience of the site and better tools in the future. &lt;/font&gt;&lt;font&gt;We use cookies to: • remember and address the items in your shopping cart help. &lt;/font&gt;&lt;font&gt;• Tracking ads. &lt;/font&gt;&lt;font&gt;• collected data about site traffic and site interaction assemble in order to provide the site and better tools in future experiments. &lt;/font&gt;&lt;font&gt;You can also use a trusted third party services that keep track of this information on our behalf. &lt;/font&gt;&lt;font&gt;You can choose to have your computer warn you each time you are sent a cookie, or you can choose to turn off all cookies. &lt;/font&gt;&lt;font&gt;You can do this through your browser settings. &lt;/font&gt;&lt;font&gt;Since the browser is a little different, look at the list of your browser instructions to learn the correct way to modify your cookies. &lt;/font&gt;&lt;font&gt;If users disable cookies in your browser: If you turn off cookies, some features will be disabled. &lt;/font&gt;&lt;font&gt;Some of the features that make the experience of your website more efficient and may not work correctly. &lt;/font&gt;&lt;font&gt;However, you will still be able to place orders and display userlogin State through contact customer service. &lt;/font&gt;&lt;font&gt;Detecting a third party we do not sell, trade, or transfer to a personal identity information external knowledge parties unless we provide users with prior notice. &lt;/font&gt;&lt;font&gt;This does not include hosting partners and other parties who assist us in operating our web site, and conducting our business, or service users, as long as those parties agree to keep this information confidential. &lt;/font&gt;&lt;font&gt;We may also release information when release is appropriate to comply with the law, enforce our site policies, or protect ours or others rights, property or safety. &lt;/font&gt;&lt;font&gt;However, information may be provided non-personal visits to other parties for marketing, advertising, or other uses. &lt;/font&gt;&lt;font&gt;Third party links Occasionally, at our discretion, we may include or offer third party products or services on our website. &lt;/font&gt;&lt;font&gt;These third party sites have separate and independent privacy policies. &lt;/font&gt;&lt;font&gt;Therefore, we assume no responsibility for the content and activities of these linked sites. &lt;/font&gt;&lt;font&gt;However, we seek to protect the integrity of our site and welcome any feedback about these sites. &lt;/font&gt;&lt;font&gt;Google Google ads requirements and principles of the Declaration can be summarized as Google. &lt;/font&gt;&lt;font&gt;They put in place to provide a positive experience for users. &lt;/font&gt;&lt;font&gt;https://support.google.com/adwordspolicy/answer/1316548?hl=en We did not enable Google AdSense on our site, but we may do so in the future. &lt;/font&gt;&lt;font&gt;Online Privacy Protection Act CalOPPA California is the first state law in the country need to commercial sites and services on the Internet to spread the privacy policy. &lt;/font&gt;&lt;font&gt;Reach of the law extends beyond California requires any person or company in the United States (and the perception of the world), which is working to collect personal consumers California Information for the deployment of privacy and a clear policy on its Web site stating the exact information that is collected and those individuals or companies who are sharing sites. &lt;/font&gt;&lt;font&gt;- See more at: http://consumercal.org/california-online-privacy-protection-act-caloppa/#sthash.0FdRbT51.dpuf according CalOPPA's, we agree to the following: Users can visit our site anonymously. &lt;/font&gt;&lt;font&gt;Once the establishment of this Privacy Policy, we will add a link to it on our home page, or at a minimum, the first large page after entering our website. &lt;/font&gt;&lt;font&gt;This includes our connection Privacy Policy word "Privacy", and can easily be found on the page specified above. &lt;/font&gt;&lt;font&gt;You will be notified of any changes to the Privacy Policy: • via e-mail can change your personal information: • Using e-mail us how we can deal with our site does not follow the signals? &lt;/font&gt;&lt;font&gt;We honor not follow the signs and do not follow the plant cookies, or use a browser when the ads do not follow the mechanism (DNT) in place. &lt;/font&gt;&lt;font&gt;It is our third party behavioral tracking allows? &lt;/font&gt;&lt;font&gt;It is also important to note that we allow third party tracking behavioral COPPA (Children Now Privacy) Protection Act when it comes to collecting personal information from children under the age of 13 years, the Child and Protection Act (COPPA) Internet privacy puts parents in control. &lt;/font&gt;&lt;font&gt;Require the Federal Trade Commission, the consumer agency of the United States to protect and COPPA base, which states that operators of websites and online services must be done to protect children's privacy and safety online. &lt;/font&gt;&lt;font&gt;We do not market specifically to children under the age of 13 years. &lt;/font&gt;&lt;font&gt;Fair information practices constitute fair information practices, the backbone of the Privacy Act in the United States, concepts that include played an important role in the development of data protection laws worldwide principles. &lt;/font&gt;&lt;font&gt;Understand the principles of fair information practices and how they should be implemented is critical for compliance with the laws of the various privacy of personal information protection. &lt;/font&gt;&lt;font&gt;In order to be in line with the fair information practices, we will take the following response procedures, should a data breach occur: we will notify you via e-mail • within 1 business day and we also agree on the compensation of individual principle, which requires that individuals have the right to legally prosecute rights enforceable against data collectors and processors who fail to abide by the law. &lt;/font&gt;&lt;font&gt;This principle not only requires that individuals have enforceable rights against data users, but also that individuals have recourse to the courts or government agencies to investigate and / or prosecute non-compliance with data processors. &lt;/font&gt;&lt;font&gt;SPAM Can CAN-SPAM Act Act is the law that defines the rules of commercial e-mail, specifies requirements for commercial messages, gives recipients the right to receive e-mail messages stopped from being sent to them, and sets strict penalties for violations. &lt;/font&gt;&lt;font&gt;We collect your e-mail address to: • Send information, and responding to inquiries, and / or requests or other questions • Market to our mailing list or continue to send emails to our customers after the original transaction. &lt;/font&gt;&lt;font&gt;To be in accordance with the CANSPAM, we agree on include: • not use false, misleading or e-mail addresses material. &lt;/font&gt;&lt;font&gt;If at any time you wish to unsubscribe from receiving future e-mail messages, you can write to us at and we will remove you immediately from all correspondence.
+
+
+                    &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="col-md-4 about-mid1"&gt;
+                    &lt;p&gt;&lt;font&gt;&lt;font&gt;Contact us&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;font&gt;&lt;font&gt;
+                        If there are any questions regarding this privacy policy, please contact us using the information below. &lt;/font&gt;&lt;font style="
+    text-decoration: underline;
+    color: #1f4164;
+    font-size: 20px;
+"&gt;support@akaratak.com
+                    &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+                    &lt;a href="mailto:support@akaratak.com" class="hvr-sweep-to-right more-in"&gt;&lt;font&gt;&lt;font&gt;call us&lt;/font&gt;&lt;/font&gt;&lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class="clearfix"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!----&gt;
+    &lt;/div&gt;</value>
+  </data>
+</root>

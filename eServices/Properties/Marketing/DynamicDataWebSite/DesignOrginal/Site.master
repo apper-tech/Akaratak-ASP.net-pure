@@ -1,0 +1,252 @@
+﻿<%--<%@ Master Language="C#" CodeBehind="Site.master.cs" Inherits="DynamicDataWebSite.Site" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %></title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+
+    <%--    <title>متطوعون</title>--%>
+    <%--<link href="~/Site.css" rel="stylesheet" type="text/css" />--%>
+
+    <meta content="IE=8" http-equiv="X-UA-Compatible" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <link href="/CustomDesign/css/fonts.css" rel="stylesheet" type="text/css" />
+    <link href="/CustomDesign/css/Layout.css" rel="stylesheet" type="text/css" />
+    <link href="/CustomDesign/css/blueberry.css" rel="stylesheet" type="text/css" />
+    <link href="/CustomDesign/css/right_menu.css" rel="stylesheet" type="text/css" />
+    <link href="/CustomDesign/css/top_menu.css" rel="stylesheet" type="text/css" />
+    <link href="/CustomDesign/css/DevExpressStyle.css" rel="stylesheet" type="text/css" />
+    <link href="/CustomDesign/css/netstyle.css" rel="stylesheet" type="text/css" />
+    <link href="/CustomDesign/css/LayoutIE7.css" rel="stylesheet" type="text/css" />
+    <link href="/CustomDesign/css/main.css" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="/CustomDesign/css/tooltip.css" />
+    <link type="text/css" rel="Stylesheet" href="/CustomDesign/css/popup.css" />
+    <link href="/CustomDesign/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/CustomDesign/css/font-awesome.min.css" rel="stylesheet" />
+<!--<link href="DynamicData/Content/css/prettyPhoto.css" rel="stylesheet"> -->
+    <link href="/CustomDesign/css/animate.css" rel="stylesheet" />
+    <script src="/CustomDesign/js/jquery.js"></script>
+    <script src="/CustomDesign/js/bootstrap.min.js"></script>
+    <script src="/CustomDesign/js/jquery.prettyPhoto.js"></script>
+    <script src="/CustomDesign/js/main.js"></script>
+    <script src="/CustomDesign/js/tooltip.js"></script>
+    <script src="/CustomDesign/js/tinybox.js"></script>
+    <script src="/CustomDesign/js/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script src="/CustomDesign/js/jquery.reveal.js" type="text/javascript"></script>
+    <script src="/CustomDesign/js/jquery.blueberry.js" type="text/javascript"></script>
+    <script src="/CustomDesign/js/jquery.easytabs.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('.blueberry').blueberry();
+        });
+    </script>
+    <script src="/Scripts/jquery-ui-1.9.2.min.js" type="text/javascript"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="AutocompleteStyle.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="body">
+
+    <form id="form1" runat="server">
+        <div>
+            <%-- TODO: Enable partial rendering by setting the EnablePartialRendering attribute to "true" to provide a smoother browsing experience.
+             Leaving partial rendering disabled will provide a better debugging experience while the application is in development. --%>
+
+            <ajaxToolkit:ToolkitScriptManager runat="server" ID="ajaxScriptManager"
+                EnablePartialRendering="true"
+                CombineScripts="false"
+                EnableScriptGlobalization="true"
+                EnableScriptLocalization="true"
+                ScriptMode="Release">
+
+                <Scripts>
+                    <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                    <%--Framework Scripts--%>
+                    <%--<asp:ScriptReference Name="MsAjaxBundle" />--%>
+                    <asp:ScriptReference Name="jquery" />
+                    <asp:ScriptReference Name="bootstrap" />
+                    <%-- I commented the calling for bootstrap.css at Bundle.config --%>
+                    <asp:ScriptReference Name="respond" />
+                    <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                    <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                    <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                    <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                    <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                    <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                    <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                    <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                    <asp:ScriptReference Name="WebFormsBundle" />
+                    <%--Site Scripts--%>
+                    <asp:ScriptReference Path="/CustomDesign/js/jquery.blueberry.js" />
+                </Scripts>
+            </ajaxToolkit:ToolkitScriptManager>
+            <%--<asp:ScriptManager runat="server" EnablePartialRendering="false">
+                <Scripts>
+                    <asp:ScriptReference Name="jquery" />
+                    <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" />
+                </Scripts>
+            </asp:ScriptManager>--%>
+            <asp:UpdateProgress ID="updateProgress" runat="server">
+                <ProgressTemplate>
+                    <div id="progressBackgroundFilter">
+                    </div>
+                    <div id="processMessage">
+                        <asp:Label ID="lblLoadinMessage" runat="server" Text="<%$Resources:Account, PleaseWait %>"></asp:Label>
+                        <br />
+                        <br />
+                        <img alt="Loading" src="/CustomDesign/images/loading.gif" />
+                    </div>
+                </ProgressTemplate>
+            </asp:UpdateProgress>
+            <div class="container">
+                <div class="user_area">
+                    <%-- <asp:LoginName ID="LoginName1" runat="server" />
+                    <%= Username != "NO_ERR" ? GetGlobalResourceObject("DynamicData", "Welcome")+": "+ Username :"" %>--%>
+                </div>
+                <div class="container_bg">
+                    <div class="app_logo">
+                        <a href="/">
+                            <img border="0" src="/CustomDesign/images/logo.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="date_area">
+                        <div>
+                            <%--<%= DateTime.Now.ToString("dddd") %>
+                            <%= DateTime.Now.ToString("dd MMM yyy") + "هـ - " %>
+                            <%= DateTime.Now.ToString("dd MMM yyy", new System.Globalization.CultureInfo("ar-EG")) + " م" %>--%>
+                            <br />
+                        </div>
+                        <div style="text-align: center; width: 100%;">
+                            <asp:LoginView runat="server" ViewStateMode="Disabled">
+                                <AnonymousTemplate>
+                                    <span style="display: inline-block; padding: 10px"><a runat="server" href="~/Account/Register"><asp:Literal Text="<%$Resources:Account, Register%>" runat="server" /></a></span>
+                                    <span style="display: inline-block; padding: 10px"><a runat="server" href="~/Account/Login"><asp:Literal Text="<%$Resources:Account, Login%>" runat="server" /></a></span>
+                                </AnonymousTemplate>
+                                <LoggedInTemplate>
+                                    <span style="display: inline-block; padding: 10px">
+                                     <%--  <a href='<%=AccountUrl %>'> <%:WelcomeText %></a>--%>
+                                    </span>
+                                    <span style="display: inline-block; padding: 10px">
+                                        <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="<%$Resources:Account, Logoff%>" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                                    </span>
+                                </LoggedInTemplate>
+                            </asp:LoginView>
+                        </div>
+                        <div style="text-align: center; width: 100%;">
+                            <span class="ToggleFullScreen" onclick="ToggleFullScreen(); return false;"><asp:Literal Text="<%$Resources:DynamicData, FullScreen%>" runat="server" /></span>
+                        </div>
+                    </div>
+                    <div class="blue_line">
+                    </div>
+                    <%--<div dir="rtl">
+                        <asp:Menu ID="TopMenu" CssClass="HorizontalMenu" runat="server" DataSourceID="SiteMapDataSource" SkipLinkText=""
+                            Orientation="Horizontal">
+                            <StaticMenuStyle CssClass="HorizontalMenu_StaticMenu" />
+                            <StaticMenuItemStyle CssClass="HorizontalMenu_StaticItem" />
+
+                        </asp:Menu>
+                    </div>--%>
+
+                    <asp:SiteMapDataSource ID="SiteMapDataSource" runat="server" ShowStartingNode="False" />
+
+                    <div style="clear: both">
+                    </div>
+                    <div class="contentDiv_full">
+                        <asp:ContentPlaceHolder ID="BreadCrumbPlaceHolder" runat="server">
+                            <%--
+                            <asp:SiteMapPath ID="SiteMapPath1" runat="server" CssClass="b_crumb_bg" SkipLinkText="">
+                                <PathSeparatorTemplate>
+                                    <img src="/CustomDesign/images/br_separate.png" alt="" />
+                                </PathSeparatorTemplate>
+                            </asp:SiteMapPath>
+                            --%>
+                        </asp:ContentPlaceHolder>
+                        <div class="page_text">
+                            <%-- I added EnableViewState="false"! to let the delete work on tables which are sorted!
+                                This is because there is a bug with dynamic data project when trying to sort table using for example: [DisplayColumn("Employee", "StartDate", true)], then the delete will not work!
+                            --%>
+                            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+
+                    </div>
+                    <%--<div class="VerticalMenu" id="Div1" style="float: right;">
+                        <div class="VerticalMenu_title">
+                            القائمة الرئيسية
+                        </div>
+                        <ul class="level1 VerticalMenu_StaticMenu static" tabindex="0" role="menu" style="position: relative; width: auto;">
+                            <li class="has-popup static" aria-haspopup="Menu2:submenu:9" role="menuitem" style="position: relative;">
+                                <a class="popout level1 VerticalMenu_StaticItem static" href="http://localhost:49415/WebForm1.aspx#" onclick="__doPostBack('Menu2','عنصر 1')" tabindex="-1">عنصر</a>
+                                <ul class="level2 VerticalMenu_DynamicMenu dynamic" id="Menu2:submenu:9" style="display: none; position: absolute; top: 0px; right: 100%;">
+                                    <li role="menuitem" class="dynamic" style="position: relative;"><a class="level2 VerticalMenu_DynamicMenuItem dynamic" href="http://localhost:49415/WebForm1.aspx#" onclick="__doPostBack('Menu2','عنصر 1\\عنصر 1.1')" tabindex="-1">عنصر 1.1</a></li>
+                                    <li role="menuitem" class="dynamic" style="position: relative;"><a class="level2 VerticalMenu_DynamicMenuItem dynamic" href="http://localhost:49415/WebForm1.aspx#" onclick="__doPostBack('Menu2','عنصر 1\\عنصر 1.2')" tabindex="-1">عنصر 1.2</a></li>
+                                </ul>
+                            </li>
+                            <li role="menuitem" class="static" style="position: relative;">
+                                <a class="level1 VerticalMenu_StaticItem static" href="http://localhost:49415/WebForm1.aspx#" onclick="__doPostBack('Menu2','عنصر 2')" tabindex="-1">عنصر</a>
+                            </li>
+                            <li role="menuitem" class="static" style="position: relative;">
+                                <a class="level1 VerticalMenu_StaticItem static" href="http://localhost:49415/WebForm1.aspx#" onclick="__doPostBack('Menu2','عنصر 3')" tabindex="-1">عنصر</a></li>
+                            <li role="menuitem" class="static" style="position: relative;">
+                                <a class="level1 VerticalMenu_StaticItem static" href="http://localhost:49415/WebForm1.aspx#" onclick="__doPostBack('Menu2','عنصر 4')" tabindex="-1">عنصر</a></li>
+                        </ul>
+                    </div>--%>
+                    <div style="clear: both">
+                    </div>
+                </div>
+                <div class="footer">
+                    <asp:Literal Text="<%$Resources:Application, ApplicationName%>" runat="server" />
+                    <div class="sponsor">
+                        <asp:Literal Text="<%$Resources:Application, CopyRight%>" runat="server" />
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </form>
+</body>
+
+<script src="/CustomDesign/js/jquery-cookie-master/jquery.cookie.js" type="text/javascript"></script>
+<script type="text/javascript">
+    function ToggleFullScreen() {
+        if ($.cookie("FullScreen") == "True")
+            unsetFullScreenCookie();
+        else
+            setFullScreenCookie();
+    }
+    function setFullScreenCookie() {
+        $.cookie("FullScreen", "True", { path: '/', expires: 999999 });
+        setFullScreen();
+    }
+    function unsetFullScreenCookie() {
+        $.cookie("FullScreen", "False", { path: '/', expires: 999999 });
+        unsetFullScreen();
+    }
+    function setFullScreen() {
+        $('body').addClass('FullScreen');
+    }
+    function unsetFullScreen() {
+        $('body').removeClass('FullScreen');
+    }
+    $(window).load(function () {
+        if ($.cookie("FullScreen") == "True")
+            setFullScreen();
+    });
+</script>
+</html>
+--%>

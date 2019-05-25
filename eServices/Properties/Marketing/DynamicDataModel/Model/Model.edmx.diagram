@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="efe22730f85744f9b2365950a0ae2f1c" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.City" Width="1.5" PointX="3" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Contract_Type" Width="1.5" PointX="3" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Country" Width="1.5" PointX="0.75" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Property" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.User" Width="1.5" PointX="3" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Property_Photos" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_Cities_Countries" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Properties_Cities" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Properties_Countries" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Properties_Users" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Model.Property_Category" Width="1.5" PointX="0.75" PointY="6.125" />
+        <AssociationConnector Association="Model.FK_Properties_Property_Category" />
+        <EntityTypeShape EntityType="Model.Property_Type" Width="2.625" PointX="0.5" PointY="0.5" />
+        <AssociationConnector Association="Model.FK_Property_Type" />
+        <AssociationConnector Association="Model.FK_Property_Type_Property_Category" />
+        <AssociationConnector Association="Model.FK_Properties_Contract_Type" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

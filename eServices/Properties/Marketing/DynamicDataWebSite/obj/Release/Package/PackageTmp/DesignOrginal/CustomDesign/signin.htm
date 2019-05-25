@@ -1,0 +1,76 @@
+﻿<html dir="rtl">
+
+<head>
+<meta content="IE=5, IE=8, IE=9, IE=10" http-equiv="X-UA-Compatible">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<link href="/CustomDesign/css/fonts.css" rel="stylesheet" type="text/css">
+<link href="/CustomDesign/css/Layout.css" rel="stylesheet" type="text/css">
+<link href="/CustomDesign/css/blueberry.css" rel="stylesheet" type="text/css">
+<link href="/CustomDesign/css/right_menu.css" rel="stylesheet" type="text/css">
+<link href="/CustomDesign/css/top_menu.css" rel="stylesheet" type="text/css">
+<link href="/CustomDesign/css/DevExpressStyle.css" rel="stylesheet" type="text/css">
+<link href="/CustomDesign/css/LayoutIE7.css" rel="stylesheet" type="text/css">
+<script src="/CustomDesign/js/jquery-1.8.2.min.js" type="text/javascript"></script>
+<script src="/CustomDesign/js/jquery.reveal.js" type="text/javascript"></script>
+<script src="/CustomDesign/js/jquery.blueberry.js" type="text/javascript"></script>
+<script src="/CustomDesign/js/jquery.easytabs.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(window).load(function() {
+	$('.blueberry').blueberry();
+});
+</script>
+<script type="text/javascript">
+    $(document).ready( function() {
+      $('#tab-container').easytabs();
+    });
+  </script>
+<title></title>
+</head>
+
+<body id="body">
+
+<div class="container_signin">
+				<div>
+								<div class="app_logo">
+												<img src="/CustomDesign/images/app_logo_signin.png" alt=""></div>
+								<div id="tab-container" class="tab-container">
+												<ul class="etabs">
+																<li class="tab">
+																<a href="#tabs1-signin">
+																تسجيل الدخول</a></li>
+																<li class="tab">
+																<a href="#tabs1-new">
+																مستخدم جديد</a></li>
+												</ul>
+												<div class="panel-container">
+																<div id="tabs1-signin">
+																				<div class="element-input">
+																								<label class="title">اسم المستخدم</label><img src="/CustomDesign/images/username_icon.png" alt=""><input type="text" name="input"></div>
+																				<div class="element-input">
+																								<label class="title">كلمة السر</label><img src="/CustomDesign/images/password_icon.png" alt=""><input type="text" name="input"></div>
+																				<div class="signin_area">
+																								<input type="radio" name="radio" value="options 1"><span>تذكرني</span><input type="submit" value="تسجيل الدخول" class="signin_btn"> </div>
+																</div>
+																<div id="tabs1-new">
+																				<div class="element-input">
+																								<img src="/CustomDesign/images/username_icon.png" alt=""><input value="اسم المستخدم" onblur="this.value == '' ? this.value = 'اسم المستخدم' : this.value = this.value" onfocus="this.value == 'اسم المستخدم' ? this.value = '' : this.value = this.value"></div>
+																				<div class="element-input">
+																								<img src="/CustomDesign/images/email_icon.png" alt=""><input value="البريد الالكتروني" onblur="this.value == '' ? this.value = 'البريد الالكتروني' : this.value = this.value" onfocus="this.value == 'البريد الالكتروني' ? this.value = '' : this.value = this.value"></div>
+																				<div class="element-input">
+																								<img src="/CustomDesign/images/password_icon.png" alt=""><input value="كلمة السر  " onblur="this.value == '' ? this.value = 'كلمة السر ' : this.value = this.value" onfocus="this.value == 'كلمة السر ' ? this.value = '' : this.value = this.value"></div>
+																				<div class="element-input">
+																								<img src="/CustomDesign/images/password_icon2.png" alt=""><input value="تأكيد كلمة السر " onblur="this.value == '' ? this.value = 'تأكيد كلمة السر ' : this.value = this.value" onfocus="this.value == 'تأكيد كلمة السر ' ? this.value = '' : this.value = this.value"></div>
+																				<div class="create_area">
+																								<a href="#">» إنشاء</a></div>
+																</div>
+												</div>
+								</div>
+				</div>
+				<div class="footer">
+								جميع الحقوق محفوظة لـ موقع قطوف 
+								- 2014</div>
+</div>
+
+</body>
+
+</html>

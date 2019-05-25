@@ -1,0 +1,15 @@
+﻿-------------------------------------------------------------------------
+BUILD INFO AND DEBLOYMENT DESCRIPTION
+-------------------------------------------------------------------------
+///--------------2016/9/9---------------///
+Changset: 81
+Deploy version :0.56b
+Deploy description:
+- Integrate City and Country Database
+- Apply Cascading and map Location filter
+- Apply Email Send Handler
+- Integrate Forget Password and Email Confirm Pages
+- Model Update
+- Minor Dynamic Data Controls Error Handle 
+- Minor Design fixes
+///------------------------------------///

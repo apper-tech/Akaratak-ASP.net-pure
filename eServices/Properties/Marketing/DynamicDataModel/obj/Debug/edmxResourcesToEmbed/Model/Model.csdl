@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="City_ID" />
+    </Key>
+    <Property Name="City_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="City_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Country_ID" Type="Int32" Nullable="false" />
+    <Property Name="City_Native_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Latitude" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Longitude" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="City_Latin_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Country" Relationship="Self.FK_Cities_Countries" FromRole="Cities" ToRole="Countries" />
+    <NavigationProperty Name="Properties" Relationship="Self.FK_Properties_Cities" FromRole="Cities" ToRole="Properties" />
+  </EntityType>
+  <EntityType Name="Contract_Type">
+    <Key>
+      <PropertyRef Name="Contract_Type_ID" />
+    </Key>
+    <Property Name="Contract_Type_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Contract_Type_Desc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Properties" Relationship="Model.FK_Properties_Contract_Type" FromRole="Contract_Type" ToRole="Property" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="Country_ID" />
+    </Key>
+    <Property Name="Country_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Country_Code" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Country_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Country_Native_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Cities" Relationship="Self.FK_Cities_Countries" FromRole="Countries" ToRole="Cities" />
+    <NavigationProperty Name="Properties" Relationship="Self.FK_Properties_Countries" FromRole="Countries" ToRole="Properties" />
+  </EntityType>
+  <EntityType Name="Property">
+    <Key>
+      <PropertyRef Name="PropertyID" />
+    </Key>
+    <Property Name="PropertyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Property_Type_ID" Type="Int32" Nullable="false" />
+    <Property Name="Property_Size" Type="Int32" Nullable="false" />
+    <Property Name="Date_Added" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Floor" Type="Int32" Nullable="false" />
+    <Property Name="Has_Garage" Type="Boolean" />
+    <Property Name="Has_Garden" Type="Boolean" />
+    <Property Name="Num_Bedrooms" Type="Int32" Nullable="false" />
+    <Property Name="Num_Bathrooms" Type="Int32" Nullable="false" />
+    <Property Name="Expire_Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Contract_Type" Type="Int32" />
+    <Property Name="City_ID" Type="Int32" />
+    <Property Name="Country_ID" Type="Int32" />
+    <Property Name="Address" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Zip_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="true" />
+    <Property Name="Other_Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Sale_Price" Type="Int32" />
+    <Property Name="Rent_Price" Type="Int32" />
+    <Property Name="Num_Floors" Type="Int32" />
+    <Property Name="User_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Property_Photo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="City" Relationship="Self.FK_Properties_Cities" FromRole="Properties" ToRole="Cities" />
+    <NavigationProperty Name="Country" Relationship="Self.FK_Properties_Countries" FromRole="Properties" ToRole="Countries" />
+    <NavigationProperty Name="User" Relationship="Self.FK_Properties_Users" FromRole="Properties" ToRole="Users" />
+    <Property Name="Property_Category_ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Property_Category" Relationship="Model.FK_Properties_Property_Category" FromRole="Property" ToRole="Property_Category" />
+    <NavigationProperty Name="Property_Type" Relationship="Model.FK_Property_Type" FromRole="Property" ToRole="Property_Type" />
+    <NavigationProperty Name="Contract_Type1" Relationship="Model.FK_Properties_Contract_Type" FromRole="Property" ToRole="Contract_Type" />
+    <Property Name="Property_Id_ext" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Url_ext" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="User_ID" />
+    </Key>
+    <Property Name="User_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="First_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Last_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Has_Office" Type="Boolean" Nullable="false" />
+    <Property Name="Allow_Prom" Type="Boolean" Nullable="false" />
+    <Property Name="Sub_NewsLetter" Type="Boolean" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Phone_Num" Type="String" />
+    <NavigationProperty Name="Properties" Relationship="Self.FK_Properties_Users" FromRole="Users" ToRole="Properties" />
+    <Property Name="Telegram_ID" Type="Int64" />
+  </EntityType>
+  <EntityType Name="Property_Photos">
+    <Key>
+      <PropertyRef Name="Property_Photo_ID" />
+      <PropertyRef Name="Photo_Num" />
+      <PropertyRef Name="Photo_Description" />
+      <PropertyRef Name="Photo_Path" />
+    </Key>
+    <Property Name="Property_Photo_ID" Type="Int32" Nullable="false" />
+    <Property Name="Photo_Num" Type="Int32" Nullable="false" />
+    <Property Name="Photo_Description" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Photo_Path" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Cities_Countries">
+    <End Role="Countries" Type="Self.Country" Multiplicity="1" />
+    <End Role="Cities" Type="Self.City" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="Country_ID" />
+      </Principal>
+      <Dependent Role="Cities">
+        <PropertyRef Name="Country_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Properties_Cities">
+    <End Role="Cities" Type="Self.City" Multiplicity="0..1" />
+    <End Role="Properties" Type="Self.Property" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cities">
+        <PropertyRef Name="City_ID" />
+      </Principal>
+      <Dependent Role="Properties">
+        <PropertyRef Name="City_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Properties_Countries">
+    <End Role="Countries" Type="Self.Country" Multiplicity="0..1" />
+    <End Role="Properties" Type="Self.Property" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="Country_ID" />
+      </Principal>
+      <Dependent Role="Properties">
+        <PropertyRef Name="Country_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Properties_Users">
+    <End Role="Users" Type="Self.User" Multiplicity="1" />
+    <End Role="Properties" Type="Self.Property" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="User_ID" />
+      </Principal>
+      <Dependent Role="Properties">
+        <PropertyRef Name="User_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cities" EntityType="Self.City" />
+    <EntitySet Name="Contract_Type" EntityType="Self.Contract_Type" />
+    <EntitySet Name="Countries" EntityType="Self.Country" />
+    <EntitySet Name="Properties" EntityType="Self.Property" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <EntitySet Name="Property_Photos" EntityType="Self.Property_Photos" />
+    <AssociationSet Name="FK_Cities_Countries" Association="Self.FK_Cities_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="Cities" EntitySet="Cities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Properties_Cities" Association="Self.FK_Properties_Cities">
+      <End Role="Cities" EntitySet="Cities" />
+      <End Role="Properties" EntitySet="Properties" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Properties_Countries" Association="Self.FK_Properties_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="Properties" EntitySet="Properties" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Properties_Users" Association="Self.FK_Properties_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Properties" EntitySet="Properties" />
+    </AssociationSet>
+    <EntitySet Name="Property_Category" EntityType="Model.Property_Category" />
+    <AssociationSet Name="FK_Properties_Property_Category" Association="Model.FK_Properties_Property_Category">
+      <End Role="Property_Category" EntitySet="Property_Category" />
+      <End Role="Property" EntitySet="Properties" />
+    </AssociationSet>
+    <EntitySet Name="Property_Type" EntityType="Model.Property_Type" />
+    <AssociationSet Name="FK_Property_Type" Association="Model.FK_Property_Type">
+      <End Role="Property_Type" EntitySet="Property_Type" />
+      <End Role="Property" EntitySet="Properties" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Property_Type_Property_Category" Association="Model.FK_Property_Type_Property_Category">
+      <End Role="Property_Category" EntitySet="Property_Category" />
+      <End Role="Property_Type" EntitySet="Property_Type" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Properties_Contract_Type" Association="Model.FK_Properties_Contract_Type">
+      <End Role="Contract_Type" EntitySet="Contract_Type" />
+      <End Role="Property" EntitySet="Properties" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Property_Category">
+    <Key>
+      <PropertyRef Name="Cat_ID" />
+    </Key>
+    <Property Name="Cat_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cat_Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Cat_Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Properties" Relationship="Model.FK_Properties_Property_Category" FromRole="Property_Category" ToRole="Property" />
+    <NavigationProperty Name="Property_Type" Relationship="Model.FK_Property_Type_Property_Category" FromRole="Property_Category" ToRole="Property_Type" />
+  </EntityType>
+  <Association Name="FK_Properties_Property_Category">
+    <End Type="Model.Property_Category" Role="Property_Category" Multiplicity="1" />
+    <End Type="Model.Property" Role="Property" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Property_Category">
+        <PropertyRef Name="Cat_ID" />
+      </Principal>
+      <Dependent Role="Property">
+        <PropertyRef Name="Property_Category_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Property_Type">
+    <Key>
+      <PropertyRef Name="Property_Type_ID" />
+    </Key>
+    <Property Name="Property_Type_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Property_Type_Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Property_Type_Description" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Cat_ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Properties" Relationship="Model.FK_Property_Type" FromRole="Property_Type" ToRole="Property" />
+    <NavigationProperty Name="Property_Category" Relationship="Model.FK_Property_Type_Property_Category" FromRole="Property_Type" ToRole="Property_Category" />
+  </EntityType>
+  <Association Name="FK_Property_Type">
+    <End Type="Model.Property_Type" Role="Property_Type" Multiplicity="1" />
+    <End Type="Model.Property" Role="Property" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Property_Type">
+        <PropertyRef Name="Property_Type_ID" />
+      </Principal>
+      <Dependent Role="Property">
+        <PropertyRef Name="Property_Type_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Property_Type_Property_Category">
+    <End Type="Model.Property_Category" Role="Property_Category" Multiplicity="1" />
+    <End Type="Model.Property_Type" Role="Property_Type" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Property_Category">
+        <PropertyRef Name="Cat_ID" />
+      </Principal>
+      <Dependent Role="Property_Type">
+        <PropertyRef Name="Cat_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Properties_Contract_Type">
+    <End Type="Model.Contract_Type" Role="Contract_Type" Multiplicity="0..1" />
+    <End Type="Model.Property" Role="Property" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contract_Type">
+        <PropertyRef Name="Contract_Type_ID" />
+      </Principal>
+      <Dependent Role="Property">
+        <PropertyRef Name="Contract_Type" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,82 @@
+﻿.HorizontalMenu {
+    background-color: #f0f3ea;
+    display: block;
+    min-height: 30px;
+    margin-bottom: 2px;
+    width: 100%;
+}
+
+.HorizontalMenu_StaticMenu {
+    padding: 0px;
+    margin: 0px;
+    min-height: 30px;
+    list-style-type: none;
+}
+
+.HorizontalMenu_StaticItem {
+    width: 100%;
+    display: block;
+    padding: 0px;
+    margin: 0px 10px 0px 10px;
+    line-height: 30px;
+    font-family: Tahoma;
+    font-weight: bold;
+    font-size: 11px;
+    color: #103f20;
+    text-decoration: none;
+    text-align: center;
+    list-style-type: none;
+}
+
+    .HorizontalMenu_StaticItem:hover {
+        color: #c37400;
+    }
+
+.HorizontalMenu .selected {
+    background-color: #103f20;
+    color: #fff;
+}
+
+.HorizontalMenu_StaticMenu > Li.static {
+    float: right;
+}
+
+.HorizontalMenu_StaticMenu ul.level2 {
+    display: block;
+    font-family: tahoma;
+    font-size: 11px;
+    font-weight: normal;
+    color: #6e8833;
+    background-color: #f0f3ea;
+    text-decoration: none;
+    line-height: 18px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    border: 1px #dc952c solid;
+}
+
+.HorizontalMenu_StaticMenu Li.dynamic a {
+    color: #6e8833;
+    width: 180px;
+    padding: 10px;
+}
+
+.HorizontalMenu_StaticMenu Li.dynamic a.dynamic {
+    white-space: normal !important;
+}
+.HorizontalMenu_StaticMenu Li.dynamic:hover a {
+    color: #c37400;
+}
+
+.HorizontalMenu_StaticMenu Li.dynamic a.selected {
+    color: white;
+}
+
+.HorizontalMenu_StaticMenu a.popout {
+    background-image: none !important;
+    padding-right: 0px !important;
+}
+/******************************************************************************************************/
+

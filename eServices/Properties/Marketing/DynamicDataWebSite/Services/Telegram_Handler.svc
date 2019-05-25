@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="DynamicDataWebSite.Services.Telegram_Handler" CodeBehind="Telegram_Handler.svc.cs" %>

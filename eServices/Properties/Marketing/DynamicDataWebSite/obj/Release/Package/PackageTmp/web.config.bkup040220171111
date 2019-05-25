@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <section name="entityFramework" type="System.Data.Entity.Internal.ConfigFile.EntityFrameworkSection, EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+    <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <section name="DynamicDataWebSite.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+    </sectionGroup>
+    <sectionGroup name="system.web">
+      <section name="sanitizer" requirePermission="false" type="AjaxControlToolkit.Sanitizer.ProviderSanitizerSection, AjaxControlToolkit" />
+    </sectionGroup>
+
+    <!-- For more information on Entity Framework configuration, visit http://go.microsoft.com/fwlink/?LinkID=237468 -->
+  </configSections>
+  <!--  ///////////////Permissions////////////////// -->
+  <location path="Account/Manage">
+    <system.web>
+      <authorization>
+        <allow roles="Stackholder" />
+        <allow roles="Admin" />
+        <deny users="*" />
+      </authorization>
+    </system.web>
+  </location>
+  <location path="Account/ManagePassword">
+    <system.web>
+      <authorization>
+        <allow roles="Stackholder"/>
+        <allow roles="Admin"/>
+        <deny users="*"/>
+      </authorization>
+    </system.web>
+  </location>
+  <location path="Dynamic/Properties/Insert">
+    <system.web>
+      <authorization>
+        <allow roles="Stackholder"/>
+        <allow roles="Admin"/>
+        <deny users="*"/>
+      </authorization>
+    </system.web>
+  </location>
+  <location path="Dynamic/Properties/List">
+    <system.web>
+      <authorization>
+        <allow roles="Stackholder" />
+        <allow roles="Admin"/>
+        <deny users="*"/>
+      </authorization>
+    </system.web>
+  </location>
+  <location path="Dynamic/Properties/ListWithIcons">
+    <system.web>
+      <authorization>
+        <allow users="*" />
+      </authorization>
+    </system.web>
+  </location>
+  <location path="Dynamic/Properties/Edit">
+    <system.web>
+      <authorization>
+        <allow roles="Stackholder"/>
+        <allow roles="Admin"/>
+        <deny users="*"/>
+      </authorization>
+    </system.web>
+  </location>
+  <location path="Dynamic/Properties/Details">
+    <system.web>
+      <authorization>
+        <allow roles="Stackholder" />
+        <allow roles="Admin" />
+        <allow users="*" />
+      </authorization>
+    </system.web>
+  </location>
+  <location path="Dynamic/Users/Insert">
+    <system.web>
+      <authorization>
+        <allow roles="Visitor" />
+        <allow roles="Stackholder" />
+        <deny roles="Admin" />
+      </authorization>
+    </system.web>
+  </location>
+  <location path="Dynamic/Users/Edit">
+    <system.web>
+      <authorization>
+        <allow roles="Stackholder"/>
+        <allow roles="Admin"/>
+        <deny users="*"/>
+      </authorization>
+    </system.web>
+  </location>
+  <location path="Dynamic/Users/List">
+    <system.web>
+      <authorization>
+        <allow roles="Admin"/>
+        <deny users="*"/>
+      </authorization>
+    </system.web>
+  </location>
+  <location path="Feed">
+    <system.web>
+      <authorization>
+        <allow users="*" />
+      </authorization>
+    </system.web>
+  </location>
+  <system.web>
+    
+    <!--<customErrors defaultRedirect="Error.aspx" mode="On">
+      <error statusCode="401" redirect="Unauthorized.aspx" />
+      <error statusCode="403" redirect="Forbidden.aspx" />
+    </customErrors>-->
+    <customErrors mode="Off"></customErrors>
+    <httpHandlers>
+      <add path="Reserved.ReportViewerWebControl.axd" verb="*" type="Microsoft.Reporting.WebForms.HttpHandler, Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" validate="false" />
+      <add verb="*" path="*js.axd" type="ScriptCompressorHandler" />
+    </httpHandlers>
+    <globalization uiCulture="ar-SA" culture="ar-SA" />
+    <compilation targetFramework="4.5">
+      <assemblies>
+        <add assembly="AjaxControlToolkit, Version=4.5.7.1213, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e" />
+        <add assembly="System.Web.Entity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+        <add assembly="System.Data.Entity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+        <!--<add assembly="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845DCD8080CC91" />
+        <add assembly="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845DCD8080CC91" />-->
+        <add assembly="Microsoft.Build.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A" />
+        <add assembly="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+        <add assembly="System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A" />
+        <add assembly="System.Web.Extensions.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+      </assemblies>
+      <!--<buildProviders>
+        <add extension=".rdlc" type="Microsoft.Reporting.RdlBuildProvider, Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+      </buildProviders>-->
+     
+    </compilation>
+    <httpRuntime targetFramework="4.5" />
+    <pages enableEventValidation="false">
+      <namespaces>
+        <add namespace="System.Web.Optimization" />
+        <add namespace="Microsoft.AspNet.Identity" />
+      </namespaces>
+      <controls>
+        <add assembly="JuiceUI" namespace="Juice" tagPrefix="juice" />
+        <add assembly="Microsoft.AspNet.Web.Optimization.WebForms" namespace="Microsoft.AspNet.Web.Optimization.WebForms" tagPrefix="webopt" />
+        <add tagPrefix="ef" assembly="Microsoft.AspNet.EntityDataSource" namespace="Microsoft.AspNet.EntityDataSource" />
+        <add tagPrefix="ajaxToolkit" assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" />
+      </controls>
+    </pages>
+    <siteMap defaultProvider="secureProvider">
+      <providers>
+        <add name="secureProvider" type="System.Web.XmlSiteMapProvider" siteMapFile="web.sitemap" securityTrimmingEnabled="true" />
+      </providers>
+    </siteMap>
+    <authorization>
+      <!--<deny users="?" />-->
+    </authorization>
+    <authentication mode="Windows" />
+    <membership defaultProvider="AspNetSqlMembershipProvider" userIsOnlineTimeWindow="15">
+      <providers>
+        <!--<clear />
+        <add name="AspNetSqlMembershipProvider" type="System.Web.Security.SqlMembershipProvider" connectionStringName="MembershipProviderConnectionString" passwordAttemptWindow="10" applicationName="" />-->
+      </providers>
+    </membership>
+    <roleManager defaultProvider="AspNetSqlRoleProvider" enabled="true" cacheRolesInCookie="true" createPersistentCookie="false" cookieProtection="All">
+      <providers>
+        <clear />
+        <add name="AspNetSqlRoleProvider" type="System.Web.Security.SqlRoleProvider" connectionStringName="RoleProviderConnectionString" applicationName="" />
+        <!--<add name="AspNetWindowsTokenRoleProvider" type="System.Web.Security.WindowsTokenRoleProvider" applicationName="" />-->
+      </providers>
+    </roleManager>
+    <httpModules>
+      <add type="ScriptCompressorModule" name="ScriptCompressorModule" />
+    </httpModules>
+    <sanitizer defaultProvider="HtmlAgilityPackSanitizerProvider">
+      <providers>
+        <add name="HtmlAgilityPackSanitizerProvider" type="AjaxControlToolkit.Sanitizer.HtmlAgilityPackSanitizerProvider" />
+      </providers>
+    </sanitizer>
+  </system.web>
+  <connectionStrings>
+    <!--
+    Muhammad Altabba Configuration:
+    <add name="Entities" connectionString="metadata=res://*/Model.Model.csdl|res://*/Model.Model.ssdl|res://*/Model.Model.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=AMRVM-VS\SQLExpress2012;Initial Catalog=DynamicEservice-RealEstate;Integrated Security=False;User ID=sa;Password=P@ssw0rd;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+    <add name="DynamicDataConnectionString"
+         connectionString="Data Source=AMRVM-VS\SQLExpress2012;Initial Catalog=DynamicEservice-RealEstate;User ID=sa;Password=P@ssw0rd" providerName="System.Data.SqlClient" />
+    <add name="MembershipProviderConnectionString"
+         connectionString="Data Source=AMRVM-VS\SQLEXPRESS2012;Initial Catalog=Membership;Integrated Security=False;User ID=sa;Password=P@ssw0rd;" providerName="System.Data.SqlClient" />
+    <add name="RoleProviderConnectionString"
+         connectionString="Data Source=AMRVM-VS\SQLEXPRESS2012;Initial Catalog=Membership;Integrated Security=False;User ID=sa;Password=P@ssw0rd;" providerName="System.Data.SqlClient" />
+    <add name="DefaultConnection"
+         connectionString="Data Source=AMRVM-VS\SQLEXPRESS2012;Initial Catalog=Membership;Integrated Security=False;User ID=sa;Password=P@ssw0rd;" providerName="System.Data.SqlClient" />
+-->
+    <!--Muhammad Mazen Hafez Configuration:   
+    <add name="Entities" connectionString="metadata=res://*/Model.Model.csdl|res://*/Model.Model.ssdl|res://*/Model.Model.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=Lenovo-IdeaPad;initial catalog=DynamicEservice-RealEstate;user id=sa;password=admini;multipleactiveresultsets=True;connect timeout=15;encrypt=False;trustservercertificate=False;application name=EntityFramework;applicationintent=ReadWrite;multisubnetfailover=False&quot;" providerName="System.Data.EntityClient" />
+    <add name="DynamicDataConnectionString"         connectionString="Data Source=Lenovo-IdeaPad;Initial Catalog=DynamicEservice-RealEstate;User ID=sa;Password=admini;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultipleActiveResultSets=true;MultiSubnetFailover=False;Application Name=EntityFramework" providerName="System.Data.SqlClient" />
+    <add name="MembershipProviderConnectionString"  connectionString="Data Source=Lenovo-IdeaPad;Initial Catalog=Membership;Integrated Security=SSPI;MultipleActiveResultSets=true;" providerName="System.Data.SqlClient" />
+    <add name="RoleProviderConnectionString"        connectionString="Data Source=Lenovo-IdeaPad;Initial Catalog=Membership;Integrated Security=SSPI;MultipleActiveResultSets=true;" providerName="System.Data.SqlClient" />
+    <add name="DefaultConnection" connectionString="Data Source=Lenovo-IdeaPad;Initial Catalog=Membership;Integrated Security=SSPI;MultipleActiveResultSets=true;" providerName="System.Data.SqlClient" />
+ -->
+    <!--Smarter Asp Configuration:    --> 
+    <add name="Entities" connectionString="metadata=res://*/Model.Model.csdl|res://*/Model.Model.ssdl|res://*/Model.Model.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=SQL5028.Smarterasp.net;Initial Catalog=DB_9FEE73_RealEstateDB;User ID=DB_9FEE73_RealEstateDB_admin;Password=Thezxc123321;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+    <add name="DynamicDataConnectionString"         connectionString="Data Source=SQL5028.Smarterasp.net;Initial Catalog=DB_9FEE73_RealEstateDB;User ID=DB_9FEE73_RealEstateDB_admin;Password=Thezxc123321;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultipleActiveResultSets=true;MultiSubnetFailover=False;Application Name=EntityFramework" providerName="System.Data.SqlClient" />
+    <add name="MembershipProviderConnectionString"  connectionString="Data Source=SQL5028.Smarterasp.net;Initial Catalog=DB_9FEE73_Membership;User ID=DB_9FEE73_Membership_admin;Password=THEzxc123#@!;MultipleActiveResultSets=true;" providerName="System.Data.SqlClient" />
+    <add name="RoleProviderConnectionString"        connectionString="Data Source=SQL5028.Smarterasp.net;Initial Catalog=DB_9FEE73_Membership;User ID=DB_9FEE73_Membership_admin;Password=THEzxc123#@!;MultipleActiveResultSets=true;" providerName="System.Data.SqlClient" />
+    <add name="DefaultConnection" connectionString="Data Source=SQL5028.Smarterasp.net;Initial Catalog=DB_9FEE73_Membership;User ID=DB_9FEE73_Membership_admin;Password=THEzxc123#@!;MultipleActiveResultSets=true;" providerName="System.Data.SqlClient" />
+ 
+  </connectionStrings>
+  <appSettings>
+    <add key="DefaultCulture" value="en" />
+    <add key="DisplayForeignKeyAsLink" value="False" />
+    <add key="PasswordValidator_RequiredLength" value="5" />
+    <add key="PasswordValidator_RequireNonLetterOrDigit" value="true" />
+    <add key="PasswordValidator_RequireDigit" value="true" />
+    <add key="PasswordValidator_RequireLowercase" value="true" />
+    <add key="PasswordValidator_RequireUppercase" value="true" />
+    <add key="Host_MailServer" value="mail.akaratak.com"/>
+    <add key="Host_Mail_Info_Username" value="info@akaratak.com"/>
+    <add key="Host_Mail_Info_Password" value="THEzxc123#@!"/>
+    <add key="Host_Mail_Support_Username" value="support@akaratak.com"/>
+    <add key="Host_Mail_Support_Password" value="THEzxc123#@!"/>
+  </appSettings>
+  <entityFramework>
+    <defaultConnectionFactory type="System.Data.Entity.Infrastructure.SqlConnectionFactory, EntityFramework" />
+    <providers>
+      <provider invariantName="System.Data.SqlClient" type="System.Data.Entity.SqlServer.SqlProviderServices, EntityFramework.SqlServer" />
+    </providers>
+  </entityFramework>
+  <system.webServer>
+    <validation validateIntegratedModeConfiguration="false" />
+    <defaultDocument enabled="true">
+      <files>
+        <clear/>
+        <add value="Default.aspx"/>
+      </files>
+    </defaultDocument>
+    <modules runAllManagedModulesForAllRequests="true"></modules>
+    <handlers>
+      <add name="ReportViewerWebControlHandler" preCondition="integratedMode" verb="*" path="Reserved.ReportViewerWebControl.axd" type="Microsoft.Reporting.WebForms.HttpHandler, Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    </handlers>
+    <staticContent>
+      <mimeMap fileExtension=".rdlc" mimeType="application/octet-stream" />
+    </staticContent>
+    <modules />
+  </system.webServer>
+  <!--<system.web.extensions>
+    <scripting>
+      <scriptResourceHandler enableCompression="false" enableCaching="false" />
+    </scripting>
+  </system.web.extensions>-->
+  <applicationSettings>
+    <DynamicDataWebSite.Properties.Settings>
+      <setting name="DynamicDataWebSite_WebReferenceEmployees_wsStarWays" serializeAs="String">
+        <value>http://192.168.10.27/Service/wsStarWays.asmx</value>
+      </setting>
+    </DynamicDataWebSite.Properties.Settings>
+  </applicationSettings>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="AjaxControlToolkit" publicKeyToken="28f01b0e84b6d53e" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.5.7.1213" newVersion="4.5.7.1213" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="HtmlAgilityPack" publicKeyToken="bd319b19eaf3b43a" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-1.4.0.0" newVersion="1.4.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.WindowsAzure.Storage" publicKeyToken="31bf3856ad364e35" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-2.1.0.4" newVersion="2.1.0.4" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="WebGrease" publicKeyToken="31bf3856ad364e35" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-1.5.2.14234" newVersion="1.5.2.14234" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Newtonsoft.Json" publicKeyToken="30ad4fe6b2a6aeed" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-6.0.0.0" newVersion="6.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="AjaxMin" publicKeyToken="21ef50ce11b5d80f" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-5.14.5506.26196" newVersion="5.14.5506.26196" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+</configuration>

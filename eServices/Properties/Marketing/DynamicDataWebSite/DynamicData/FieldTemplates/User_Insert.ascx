@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="User_Insert.ascx.cs" Inherits="DynamicDataWebSite.DynamicData.FieldTemplates.User_Insert" %>
+<asp:Label ID="lbl1" runat="server" Text=""></asp:Label>

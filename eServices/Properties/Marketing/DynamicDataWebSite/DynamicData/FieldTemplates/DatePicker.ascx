@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="DatePicker.ascx.cs" Inherits="DynamicDataWebSite.DynamicData.FieldTemplates.DatePicker" %>
+<asp:Literal runat="server" ID="date" Text="<%# FieldValueString%>"></asp:Literal>

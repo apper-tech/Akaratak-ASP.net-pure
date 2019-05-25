@@ -1,0 +1,51 @@
+This is the readme file for NotAClue.DynamicData.Cascade
+
+Sample Metadata
+
+[MetadataTypeAttribute(typeof(Vehicle.VehicleMetadata))]
+public partial class Vehicle
+{
+    internal sealed class VehicleMetadata
+    {
+        public int Id { get; set; }
+        public int ManufacturerId { get; set; }
+        public int VehicleTypeId { get; set; }
+        public int ModelId { get; set; }
+        public int StyleId { get; set; }
+
+        [Display(Order = 0)]
+        public String Name { get; set; }
+
+        /// <summary>
+        /// Note for cascade to work correctly
+        /// fields must be in cascade order Parent->Child
+        /// </summary>
+        [FilterUIHint("CascadingForeignKey")]
+        [UIHint("CascadingForeignKey")]
+        [Filter(Order = 0)]
+        [Display(Order = 1)]
+        public Manufacturer Manufacturer { get; set; }
+
+        [FilterUIHint("CascadingForeignKey")]
+        [UIHint("CascadingForeignKey")]
+        [Cascade("Manufacturer")]
+        [Filter(Order = 1)]
+        [Display(Order = 2)]
+        public VehicleType VehicleType { get; set; }
+
+        [FilterUIHint("CascadingForeignKey")]
+        [UIHint("CascadingForeignKey")]
+        [Cascade("VehicleType")]
+        [Filter(Order = 2)]
+        [Display(Order = 3)]
+        public Model Model { get; set; }
+
+        [FilterUIHint("CascadingForeignKey")]
+        [UIHint("CascadingForeignKey")]
+        [Cascade("Model")]
+        [Filter(Order = 3)]
+        [Display(Order = 4)]
+        public Style Style { get; set; }
+
+    }
+}

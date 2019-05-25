@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>hakkında</value>
+  </data>
+  <data name="Add_Property" xml:space="preserve">
+    <value>Mülk ekle</value>
+  </data>
+  <data name="Add_Property_Desc" xml:space="preserve">
+    <value>Yeni Özellik Ekle</value>
+  </data>
+  <data name="AllRecords" xml:space="preserve">
+    <value>Tüm Özellikleri Görüntüle</value>
+  </data>
+  <data name="Apartment" xml:space="preserve">
+    <value>Apartman</value>
+  </data>
+  <data name="Beta" xml:space="preserve">
+    <value>Beta</value>
+  </data>
+  <data name="Buy" xml:space="preserve">
+    <value>satın almak</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>Kent</value>
+  </data>
+  <data name="Column_Address" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="Column_City" xml:space="preserve">
+    <value>Kent</value>
+  </data>
+  <data name="Column_Contract_Type" xml:space="preserve">
+    <value>sözleşme tipi</value>
+  </data>
+  <data name="Column_Country" xml:space="preserve">
+    <value>ülke</value>
+  </data>
+  <data name="Column_Date_Add" xml:space="preserve">
+    <value>Ekleme Tarihi</value>
+  </data>
+  <data name="Column_Date_Expire" xml:space="preserve">
+    <value>Tarih Sona Erdi</value>
+  </data>
+  <data name="Column_Floor" xml:space="preserve">
+    <value>zemin</value>
+  </data>
+  <data name="Column_Garage" xml:space="preserve">
+    <value>Garajı var mı?</value>
+  </data>
+  <data name="Column_Garden" xml:space="preserve">
+    <value>Bahçesi var mı?</value>
+  </data>
+  <data name="Column_Location" xml:space="preserve">
+    <value>Emlak Konumu</value>
+  </data>
+  <data name="Column_Num_Bathroom" xml:space="preserve">
+    <value>Banyo Sayısı</value>
+  </data>
+  <data name="Column_Num_Bedroom" xml:space="preserve">
+    <value>Yatak odası sayısı</value>
+  </data>
+  <data name="Column_Num_Floors" xml:space="preserve">
+    <value>Kat sayısı</value>
+  </data>
+  <data name="Column_Other" xml:space="preserve">
+    <value>Diğer detaylar</value>
+  </data>
+  <data name="Column_Photos" xml:space="preserve">
+    <value>Emlak Fotoğrafları</value>
+  </data>
+  <data name="Column_Property_Size" xml:space="preserve">
+    <value>Özellik boyutu</value>
+  </data>
+  <data name="Column_Property_Type" xml:space="preserve">
+    <value>Emlak Tipi</value>
+  </data>
+  <data name="Column_Rent_Price" xml:space="preserve">
+    <value>Kira Fiyatı</value>
+  </data>
+  <data name="Column_Sale_Price" xml:space="preserve">
+    <value>Satış fiyatı</value>
+  </data>
+  <data name="Column_Zip" xml:space="preserve">
+    <value>Alan kodu</value>
+  </data>
+  <data name="Commertial" xml:space="preserve">
+    <value>commertial</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>Apper Teknik</value>
+  </data>
+  <data name="Contact_Us" xml:space="preserve">
+    <value>Bizimle iletişime geçin</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>ayrıntılar</value>
+  </data>
+  <data name="Direct" xml:space="preserve">
+    <value>Direkt temas</value>
+  </data>
+  <data name="Direct_Desc" xml:space="preserve">
+    <value>Hizmetimiz buyier ve Satıcı arasında doğrudan iletişim sağlar</value>
+  </data>
+  <data name="Feed_Back" xml:space="preserve">
+    <value>geri bildirim</value>
+  </data>
+  <data name="Filter_Desc_1_D" xml:space="preserve">
+    <value>Aramanızı Özelleştirmek İçin Aşağıdaki Filtreyi Kullanın</value>
+  </data>
+  <data name="Filter_Desc_1_T" xml:space="preserve">
+    <value>Neyi aramak istediğinizi seçin</value>
+  </data>
+  <data name="Filter_Desc_2_D" xml:space="preserve">
+    <value>Boyut gibi verilen verileri kontrol ederek</value>
+  </data>
+  <data name="Filter_Desc_2_T" xml:space="preserve">
+    <value>Mülk ayrıntılarını doğrulayın</value>
+  </data>
+  <data name="Filter_Desc_3_D" xml:space="preserve">
+    <value>Daha özel sonuçlar istiyorsanız</value>
+  </data>
+  <data name="Filter_Desc_3_T" xml:space="preserve">
+    <value>Daha Fazla Filtre Ekle</value>
+  </data>
+  <data name="Footer" xml:space="preserve">
+    <value>© 2018 Emlaklarınız Tüm Hakları Saklıdır | &lt;a href="/About" target="_blank"&gt; Apper Tech &lt;/a&gt; Grubu</value>
+  </data>
+  <data name="Help_Us" xml:space="preserve">
+    <value>Bizimle çalış</value>
+  </data>
+  <data name="Join_Us" xml:space="preserve">
+    <value>Meslekler</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>Daha</value>
+  </data>
+  <data name="MSQR" xml:space="preserve">
+    <value>m 'sup&gt; 2 &lt;/ sup&gt;</value>
+  </data>
+  <data name="NewRecord" xml:space="preserve">
+    <value>Yeni Mülkiyet</value>
+  </data>
+  <data name="No_Records" xml:space="preserve">
+    <value>Filtrelerle eşleşen bir özellik yok</value>
+  </data>
+  <data name="On_Develop" xml:space="preserve">
+    <value>Devam Ediyor Gelişim</value>
+  </data>
+  <data name="On_Develop_Desc" xml:space="preserve">
+    <value>Yakın Gelecekte Daha Fazla Hizmet ve Fikir Bekliyoruz</value>
+  </data>
+  <data name="Other_Projects" xml:space="preserve">
+    <value>Diğer projeler</value>
+  </data>
+  <data name="Other_Properties" xml:space="preserve">
+    <value>Diğer Özellikler</value>
+  </data>
+  <data name="Page_Details_Title" xml:space="preserve">
+    <value>Mülk Detayları</value>
+  </data>
+  <data name="Page_Edit_Title" xml:space="preserve">
+    <value>Mülk Düzenle</value>
+  </data>
+  <data name="Page_Insert_Title" xml:space="preserve">
+    <value>Mülk ekle</value>
+  </data>
+  <data name="Page_List_Title" xml:space="preserve">
+    <value>Emlak Ara</value>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>Gizlilik Politikası</value>
+  </data>
+  <data name="Property" xml:space="preserve">
+    <value>özellik</value>
+  </data>
+  <data name="Reg_Terms" xml:space="preserve">
+    <value>Kayıt şartları</value>
+  </data>
+  <data name="Rent" xml:space="preserve">
+    <value>Kira</value>
+  </data>
+  <data name="Resident" xml:space="preserve">
+    <value>Konut</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>Hizmetler</value>
+  </data>
+  <data name="Services_Desc" xml:space="preserve">
+    <value>Kişisel ve Bireysel Kullanım İçin Hizmetler</value>
+  </data>
+  <data name="Services_Property" xml:space="preserve">
+    <value>Hizmetler</value>
+  </data>
+  <data name="Shares" xml:space="preserve">
+    <value>Paylar</value>
+  </data>
+  <data name="SiteName" xml:space="preserve">
+    <value>Emlaklarınız</value>
+  </data>
+  <data name="Site_Slogan" xml:space="preserve">
+    <value>Senin malın senin devletin</value>
+  </data>
+  <data name="Site_Welcome" xml:space="preserve">
+    <value>Emlaklarınız'a Hoşgeldiniz</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>Boyut</value>
+  </data>
+  <data name="View_Property" xml:space="preserve">
+    <value>Özellikleri Görüntüle</value>
+  </data>
+  <data name="View_Property_Desc" xml:space="preserve">
+    <value>Tüm mevcut özellikleri görüntüle</value>
+  </data>
+  <data name="View_Property_Desc2" xml:space="preserve">
+    <value>Sitemiz, Kullanıcıların Varlık Özellikleri eklemesine ve görüntülemesine izin verir.</value>
+  </data>
+  <data name="Villa" xml:space="preserve">
+    <value>Villa</value>
+  </data>
+  <data name="Page_ListDetails_Title" xml:space="preserve">
+    <value>Eklenen Özellikler</value>
+  </data>
+  <data name="Flr_Basment" xml:space="preserve">
+    <value>basment</value>
+  </data>
+  <data name="Flr_Fifth" xml:space="preserve">
+    <value>Beşinci kat</value>
+  </data>
+  <data name="Flr_First" xml:space="preserve">
+    <value>Birinci kat</value>
+  </data>
+  <data name="Flr_Fourth" xml:space="preserve">
+    <value>Dördüncü kat</value>
+  </data>
+  <data name="Flr_Ground" xml:space="preserve">
+    <value>Zemin kat</value>
+  </data>
+  <data name="Flr_Second" xml:space="preserve">
+    <value>İkinci kat</value>
+  </data>
+  <data name="Flr_Third" xml:space="preserve">
+    <value>Üçüncü kat</value>
+  </data>
+  <data name="Feed_Back_Desc" xml:space="preserve">
+    <value>Fikirler veya Öneriler?</value>
+  </data>
+  <data name="Opinion" xml:space="preserve">
+    <value>Sitemiz hakkında ne düşünüyorsunuz?</value>
+  </data>
+  <data name="Page_User_Details_Email" xml:space="preserve">
+    <value>E</value>
+  </data>
+  <data name="Page_User_Details_Email_Send" xml:space="preserve">
+    <value>Eposta gönder</value>
+  </data>
+  <data name="Page_User_Details_Lives_In" xml:space="preserve">
+    <value>Mevcut adres:</value>
+  </data>
+  <data name="Page_User_Details_Name" xml:space="preserve">
+    <value>Üye Detayları</value>
+  </data>
+  <data name="Page_User_Details_Office" xml:space="preserve">
+    <value>Ofisi Var</value>
+  </data>
+  <data name="Page_User_Details_Office_Desc" xml:space="preserve">
+    <value>Bir realestate ofisi</value>
+  </data>
+  <data name="Page_User_Details_Phone" xml:space="preserve">
+    <value>Telefon numarası</value>
+  </data>
+  <data name="Page_User_Details_Title" xml:space="preserve">
+    <value>Sahip Detayları</value>
+  </data>
+  <data name="Page_User_Edit" xml:space="preserve">
+    <value>Hesap Ayrıntılarını Düzenle</value>
+  </data>
+  <data name="View_Added_Property" xml:space="preserve">
+    <value>Emlaklarınız</value>
+  </data>
+  <data name="View_Added_Property_Desc" xml:space="preserve">
+    <value>Eklediğiniz Özellikleri Görüntüle</value>
+  </data>
+  <data name="Page_User_Insert" xml:space="preserve">
+    <value>Hesap verisi</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>kullanıcı</value>
+  </data>
+  <data name="Page_Register_Email_Confirm_body" xml:space="preserve">
+    <value>E-postanızı Onaylamak İçin &lt;a href="{0}"&gt; Buradan &lt;/a&gt; tıklayın veya bu URL’yi tarayıcıya kopyalayıp yapıştırın: &lt;br&gt; {0}</value>
+  </data>
+  <data name="Page_Register_Email_Confirm_Title" xml:space="preserve">
+    <value>Lütfen Emlaklarınız'ta hesabınızı onaylayın</value>
+  </data>
+  <data name="Page_Forget_Message_Body" xml:space="preserve">
+    <value>&lt;a href="{0}"&gt; Burada &lt;/a&gt; Tıklayarak Veya Bu URL'yi Tarayıcıya Aktar - {0}</value>
+  </data>
+  <data name="Page_Forget_Message_Title" xml:space="preserve">
+    <value>Şifreyi yenile</value>
+  </data>
+  <data name="SelectFirst" xml:space="preserve">
+    <value>Önce Bir Ülke Seç</value>
+  </data>
+  <data name="Empty" xml:space="preserve">
+    <value>Uygulanabilir değil</value>
+  </data>
+  <data name="Map_Not_Found" xml:space="preserve">
+    <value>Harita Bilgisi mevcut değil</value>
+  </data>
+  <data name="About_Company" xml:space="preserve">
+    <value>Firmamız hakkında</value>
+  </data>
+  <data name="Page_User_Insert_Submit" xml:space="preserve">
+    <value>Bilgisi Kaydet ve profili tamamla</value>
+  </data>
+  <data name="Column_City_Select_First" xml:space="preserve">
+    <value>Önce Ülke Seç</value>
+  </data>
+  <data name="Property_Type_Select_First" xml:space="preserve">
+    <value>Önce Kategori Seç</value>
+  </data>
+  <data name="Image_Upload" xml:space="preserve">
+    <value>Görüntü (ler) Yükle</value>
+  </data>
+  <data name="Image_Uploaded" xml:space="preserve">
+    <value>Resim (ler) Yüklendi</value>
+  </data>
+  <data name="Delete_Item" xml:space="preserve">
+    <value>Bu öğeyi silmek istediğinizden emin misiniz?</value>
+  </data>
+  <data name="User_Area" xml:space="preserve">
+    <value>Kullanıcı Alanı</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Emlaklarınız Emlak bulun ve filtreleyin</value>
+  </data>
+  <data name="First" xml:space="preserve">
+    <value>İlk</value>
+  </data>
+  <data name="Last" xml:space="preserve">
+    <value>Son</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Sonraki</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Önceki</value>
+  </data>
+  <data name="Page_Desc_Desc" xml:space="preserve">
+    <value>Ev, villa, mansoin, daire, kiralık veya kiralık emlak bilgilerini bul</value>
+  </data>
+  <data name="Data_Source" xml:space="preserve">
+    <value>Veri kaynağı</value>
+  </data>
+</root>

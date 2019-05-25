@@ -1,0 +1,281 @@
+﻿
+/*** DevExpress Style ***/
+
+/* DevExp Grid */
+.DevExp_Grid
+{
+    margin: 5px 0px;
+   /* border-top: 3px #022b40 solid;
+    border-bottom: 3px #022b40 solid;*/
+    border-left: 0px !important;
+    border-right: 0px !important;
+    cursor: default;
+    border-collapse:separate; border-spacing: 1px;
+}
+.DevExp_Grid th, .DevExp_Grid td
+{
+    padding: 0px;
+}
+
+.DevExp_Grid .DevExp_Grid_Row > td
+{
+    height: 25px;
+    line-height:20px;
+    background: #fdfeff;
+    color: #434343 !important;
+    font-family: Tahoma;
+    font-size: 12px;
+    text-align: center;
+     padding:8px 6px;
+}
+
+.DevExp_Grid .DevExp_Grid_AltRow > td
+{
+    background: #f0f3ea;
+    color: #434343 !important;
+    font-size: 12px;
+     padding:8px 6px;
+}
+
+.DevExp_Grid .DevExp_Grid_Row > td a, .DevExp_Grid .DevExp_Grid_AltRow > td a
+{
+    color: #434343 !important;
+    text-decoration: none !important;
+}
+
+.DevExp_Grid .DevExp_Grid_Row:hover > td
+{
+    background: #FFF3AD; 
+}
+.DevExp_Grid .DevExp_Grid_Row:hover > td a
+{
+    color: #434343 !important;
+}
+.DevExp_Grid .DevExp_Grid_Header, .DevExp_Grid .dxgvFilterBar_Office2010Silver
+{
+    background: #6e8833;
+    color: #FFF;
+    font-weight: bold;
+    font-family: Tahoma;
+    font-size: 12px;
+    text-shadow: 1px 1px 1px #666;
+    text-align: center;
+    height: 30px;
+    padding: 3px 5px;
+    border-left: 0 !important;
+    border-right: 0 !important;
+}
+.DevExp_Grid .dxgvFilterBar_Office2010Silver a
+{
+    color: #fff !important;
+    font-family: Tahoma;
+    font-size: 12px;
+}
+
+.DevExp_Grid .DevExp_Grid_Hyperlink
+{
+    color: #434343;
+}
+.DevExp_Grid .dxeHyperlink_Office2010Silver
+{
+    color: #006019;
+    display: block;
+    font-size: 11px;
+    padding: 3px 0;
+    text-decoration: none;
+    font-family: Tahoma;
+}
+.DevExp_Grid .dxeHyperlink_Office2010Silver:hover
+{
+    color: #0084ff;
+    text-decoration: underline;
+}
+.DevExp_Grid .dxpSummary_Office2010Silver
+{
+    color: #434343;
+}
+.DevExp_Grid .dxgvGroupPanel_Office2010Silver
+{
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+}
+.DevExp_Grid .dxgvGroupRow_Office2010Silver
+{
+    background-color: #F5F5F5;
+}
+.dxgvControl_Aqua, .dxgvDisabled_Aqua
+{
+    border-color: #CCC;
+}
+.dxgvEditFormDisplayRow_Aqua td.dxgv, .dxgvDataRow_Aqua td.dxgv, .dxgvDataRowAlt_Aqua td.dxgv, .dxgvSelectedRow_Aqua td.dxgv, .dxgvFocusedRow_Aqua td.dxgv
+{
+    border-color: #CCC;
+}
+
+.dxgvCommandColumnItem_Office2010Silver
+{
+    margin: 0 12px;
+}
+.dxgvHeader_Aqua
+{
+    border-color: #FFF;
+}
+.dxGridView_gvCollapsedButton_Aqua, .dxGridView_gvCollapsedButtonRtl_Aqua, .dxGridView_gvExpandedButton_Aqua, .dxGridView_gvExpandedButtonRtl_Aqua, .dxGridView_gvDetailCollapsedButton_Aqua, .dxGridView_gvDetailCollapsedButtonRtl_Aqua, .dxGridView_gvDetailExpandedButton_Aqua, .dxGridView_gvDetailExpandedButtonRtl_Aqua, .dxGridView_gvFilterRowButton_Aqua, .dxGridView_gvHeaderFilter_Aqua, .dxGridView_gvHeaderFilterActive_Aqua, .dxGridView_gvHeaderSortDown_Aqua, .dxGridView_gvHeaderSortUp_Aqua, .dxGridView_gvDragAndDropArrowDown_Aqua, .dxGridView_gvDragAndDropArrowUp_Aqua, .dxGridView_gvDragAndDropHideColumn_Aqua, .dxGridView_gvParentGroupRows_Aqua, .dxGridView_WindowResizer_Aqua, .dxGridView_WindowResizerRtl_Aqua
+{
+    background-image: url(../Images/grid/DXR.png);
+}
+td.GridViewCommandColumnStyle, td.dxgvCommandColumn_Office2010Silver
+{
+    width: 100px !important;
+}
+.GridViewMultiSelection td.GridViewCommandColumnStyle, .GridViewMultiSelection td.dxgvCommandColumn_Office2010Silver
+{
+    width: 30px !important;
+}
+.GridViewMultiSelection .dxgvDataRow_Office2010Silver .dxgvCommandColumn_Office2010Silver
+{
+    border-top: 1px solid #DDDDDD;
+}
+.dxgvFilterRow_Office2010Silver > td
+{
+    background: #E0EED0 !important;
+}
+.DevExp_Grid .dxmLite_Office2010Silver *
+{
+    font-family: Tahoma !important;
+}
+.dxgvFilterRow_Office2010Silver .dxgvCommandColumn_Office2010Silver
+{
+    border-bottom-width: 1px !important;
+    border-bottom-style: solid !important;
+    border-bottom-color: #A5ACB5 !important;
+}
+.GridViewMultiSelection .dxgvFilterRow_Office2010Silver td.dxgv
+{
+    border-left: 1px solid #CCC !important;
+}
+.dxgvSelectedRow_Office2010Silver td, .SelectedRowStyle td
+{
+    background-color: #dc7b1f !important;
+    color: #fff !important;
+}
+
+/* DevExpress Button */
+.ASPxButtonStyle
+{
+    border-radius: 10px;
+}
+.ASPxButtonStyle td.dxbButton
+{
+    border-radius: 10px;
+}
+.ASPxButtonStyle td.dxbButton div.dxb
+{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.inputWithButton .ASPxButtonStyle
+{
+    margin-top: 4px;
+}
+
+/* DevExpress Popup */
+.DevExpressPopup
+{
+    border-radius: 10px;
+}
+.DevExpressPopup_HeaderStyle
+{
+    background: #617928;
+    padding-right: 15px !important;
+    border-radius: 10px 10px 0 0;
+}
+.DevExpressPopup_ContentStyle
+{
+    border-radius: 0 0 10px 10px;
+    background: #F7F7F7 !important;
+}
+.DevExpressPopup_ContentStyle > div.dxpcContentPaddings_Aqua
+{
+    border-radius: 10px;
+    border: 3px solid #DDDDDD;
+    background: #FFF;
+    margin: 10px !important;
+    padding: 10px !important;
+}
+
+
+
+    .dxgvPagerBottomPanel{
+ background-color:#eef6fa;
+ padding:4px 10px;
+ font-size:12px !important;
+ font-family:Tahoma;
+
+
+}
+.dxpSummary{
+				font-size:12px;
+				font-family:Tahoma;
+				color:#10401f;
+}
+.dxpPageNumber{
+				background-color:#10401f;
+				color:#fff;
+				font-size:12px;
+				font-family:Tahoma;
+				padding:4px 6px !important;
+				text-decoration:none;
+}
+.dxpCurrentPageNumber{
+				background-color:#dc952c;
+				font-weight:bold;
+}
+.dxpPageSizeItem label{
+				font-size:12px;
+				font-family:Tahoma;
+				color:#10401f;
+				width:100px;
+}
+
+
+
+​.dxgvTable{
+background-color:#fdfeff;
+font-size:11px !important;
+line-height:18px;
+color:#434343 !important;
+}
+.dxgvHeader {
+padding: 4px 6px 5px !important;
+background-color: #f7941e ;
+color:#fff;
+border: 0px;
+}
+.dxgvHeader, .dxgvHeader table {
+color: #fff;
+font-size:12px;
+font-weight:bold;
+
+}
+.dxgvDetailCell {
+padding: 0px;
+}
+.dxgvFilterRow {
+background-color: #eef6fa;
+}
+.dxgvControl,
+.dxgvDisabled
+{
+border: 1px Solid #eef6fa;
+}
+.dxgvEditFormDisplayRow td.dxgv,
+.dxgvDataRow td.dxgv,
+.dxgvDataRowAlt td.dxgv,
+.dxgvSelectedRow td.dxgv,
+.dxgvFocusedRow td.dxgv
+{
+border-bottom: 1px Solid #eef6fa;
+border-right: 1px Solid #eef6fa;
+border-left: 1px Solid #eef6fa;
+}

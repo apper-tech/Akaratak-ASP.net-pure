@@ -1,0 +1,82 @@
+﻿.dashboard_title {
+				background-image: url('/CustomDesign/images/title_icon.png');
+				background-position: right center;
+				background-repeat: no-repeat;
+				padding-right: 25px;
+				vertical-align: top;
+				margin:0px 0px 7px 0px;
+}
+.dashboard_title span {
+				color: #022b40;
+				font-family: DINNextLTArabic, Arial;
+				font-size: 15px;
+				font-weight: bold;
+}
+.dashboard_right {
+				margin-left: 9px;
+				margin-bottom: 10px;
+				padding: 10px;
+				width: 46.6%;
+				display: inline-block;
+}
+.dashboard_left {
+				margin-right: 9px;
+				margin-bottom: 10px;
+				padding: 10px;
+				width: 46.6%;
+				display: inline-block;
+}
+.dashboard_right div {
+				background-color: #f0f3ea;
+				padding:10px;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+				border: 2px solid #fff;
+				-webkit-box-shadow: #f3f4f0 0px 0px 2px 1px;
+				-moz-box-shadow: #f3f4f0 0px 0px 2px 1px;
+				box-shadow: #f3f4f0 0px 0px 2px 1px;
+				cursor: pointer;
+				text-align:center;
+}
+.dashboard_left div {
+				background-color: #f0f3ea;
+				padding:10px;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+				border: 2px solid #fff;
+				-webkit-box-shadow: #f3f4f0 0px 0px 2px 1px;
+				-moz-box-shadow: #f3f4f0 0px 0px 2px 1px;
+				box-shadow: #f3f4f0 0px 0px 2px 1px;
+				cursor: pointer;
+				text-align:center;
+}
+.dashboard_left div:hover {
+				background-color: #FFF3AD;
+}
+.dashboard_right div:hover {
+				background-color: #FFF3AD;
+}
+.dashboard_big {
+				margin-bottom: 10px;
+				padding: 10px;
+				width:98.2%;
+				display: inline-block;
+}
+.dashboard_big div {
+				background-color: #f0f3ea;
+				padding:10px;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+				border: 2px solid #fff;
+				-webkit-box-shadow: #f3f4f0 0px 0px 2px 1px;
+				-moz-box-shadow: #f3f4f0 0px 0px 2px 1px;
+				box-shadow: #f3f4f0 0px 0px 2px 1px;
+				cursor: pointer;
+				text-align:center;
+}
+.dashboard_big div:hover {
+				background-color: #FFF3AD;
+}

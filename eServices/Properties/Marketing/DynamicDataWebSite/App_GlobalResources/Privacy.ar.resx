@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Body" xml:space="preserve">
+    <value>&lt;div class="about"&gt;
+        &lt;div class="about-head"&gt;
+            &lt;div class="container"&gt;
+                &lt;h3&gt;سياسة الخصوصية&lt;/h3&gt;
+                &lt;div class="about-in"&gt;
+                    &lt;h6&gt;&lt;a href="#"&gt; سياسة الخصوصية&lt;/a&gt;&lt;/h6&gt;
+                    &lt;p&gt;
+                        وقد تم تجميع هذه الخصوصية وتقديم خدمة أفضل لأولئك الذين يشعرون بالقلق مع كيفية استخدام بهم "معلومات شخصية" (PII) على الانترنت. PII، كما هو موضح في قانون الخصوصية الولايات المتحدة وأمن المعلومات، والمعلومات التي يمكن استخدامها بمفردها أو مع غيرها من المعلومات للتعرف على الاتصال، أو تحديد موقع شخص واحد، أو لتحديد فرد في السياق. يرجى قراءة سياسة الخصوصية بعناية للحصول على فهم واضح لكيفية جمع واستخدام وحماية أو التعامل مع المعلومات المعرفة بهويتك الشخصية وفقا لموقعنا على شبكة الإنترنت.
+
+ما هي المعلومات الشخصية التي نجمعها من الناس أن زيارة موقعنا على موقع الويب أو التطبيق؟
+
+عند الطلب أو تسجيل على موقعنا، حسب الاقتضاء، قد يطلب منك أن تدخل اسمك وعنوان البريد الإلكتروني، العنوان البريدي، رقم الهاتف أو أية تفاصيل أخرى لمساعدتك في تجربتك.
+
+عندما نجمع المعلومات؟
+
+نقوم بجمع معلومات خاصة بك عندما تقوم بالتسجيل في موقعنا، والاشتراك في نشرة إخبارية أو إدخال المعلومات على موقعنا.
+
+تقدم لنا ردود الفعل على منتجاتنا أو الخدمات
+كيف نستخدم المعلومات الخاصة بك؟
+
+قد نستخدم المعلومات التي نجمعها منك عند التسجيل، وجعل عمليات الشراء أو الاشتراك في النشرة الإخبارية لدينا والرد على استقصاء، أو التسويق والاتصالات، وتصفح شبكة الإنترنت، أو استخدام بعض المواقع الأخرى، يتميز بالطرق التالية:
+
+      • لتخصيص تجربتك والسماح لنا لتقديم هذا النوع من العروض المحتوى والمنتجات التي كنت الأكثر اهتماما.
+      • للسماح لنا لتقديم خدمة أفضل لكم في الاستجابة لطلبات خدمة العملاء الخاص بك.
+      • لإدارة مسابقة أو عرض ترويجي، والمسح أو غيرها من ميزة الموقع.
+      • لطلب التقييمات والمراجعات من الخدمات أو المنتجات
+      • لمتابعة معهم بعد المراسلات (الدردشة الحية، والبريد الإلكتروني أو الهاتف استفسارات)
+                    &lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!----&gt;
+        &lt;div class="about-middle"&gt;
+            &lt;div class="container"&gt;
+                &lt;div class="col-md-8 about-mid"&gt;
+                    &lt;h4&gt;كيف يمكننا حماية المعلومات الخاصة بك؟&lt;/h4&gt;
+                    &lt;h6&gt;&lt;a href="#"&gt;يتم تفحص موقعنا على أساس منتظم لالثغرات الأمنية ونقاط الضعف المعروفة من أجل جعل زيارتكم لموقعنا وآمنة قدر الإمكان.
+
+                        هل نستخدم "الكوكيز"؟
+
+نعم فعلا. الكوكيز هي عبارة عن ملفات صغيرة يقوم الموقع أو نقل موفر الخدمة على القرص الصلب للكمبيوتر الخاص بك من خلال متصفح الويب الخاص بك (إذا سمحت بذلك) التي تمكن أنظمة الموقع أو مزود الخدمة لمعرفة المتصفح الخاص بك، والتقاط وتذكر بعض المعلومات. على سبيل المثال، ونحن نستخدم الكوكيز لمساعدتنا تذكر ومعالجة عناصر في سلة التسوق الخاصة بك. كما أنها تستخدم لمساعدتنا في فهم التفضيلات الخاصة بك على أساس النشاط الموقع السابق أو الحالي، والتي تمكننا من تقديم المزيد من الخدمات المحسنة. ونحن أيضا استخدام الكوكيز لمساعدتنا على جمع البيانات العامة حول حركة المرور في الموقع والتفاعل موقع بحيث يمكننا أن نقدم تجارب الموقع وأدوات أفضل في المستقبل.
+
+نحن نستخدم الكوكيز ل:
+      • مساعدة تذكر ومعالجة البنود في عربة التسوق.
+      • تتبع الإعلانات.
+      • تجميع البيانات المجمعة حول حركة المرور في الموقع والتفاعل الموقع من أجل تقديم تجارب الموقع وأدوات أفضل في المستقبل. ويمكن أيضا استخدام خدمات طرف ثالث موثوق به أن تتبع هذه المعلومات بالنيابة عنا.
+
+
+يمكنك اختيار أن يكون جهاز الكمبيوتر الخاص بك تحذيرك في كل مرة يتم إرسال ملف تعريف الارتباط، أو يمكنك اختيار إيقاف تشغيل كافة ملفات تعريف الارتباط. يمكنك القيام بذلك من خلال إعدادات المتصفح الخاص بك. منذ المتصفح هو مختلفة قليلا، وننظر في قائمة تعليمات المتصفح الخاص بك لمعرفة الطريقة الصحيحة لتعديل ملفات الكوكيز.
+
+إذا كان المستخدمون تعطيل ملفات تعريف الارتباط في المتصفح:
+
+إذا قمت بإيقاف الكوكيز قبالة، سيتم تعطيل بعض الميزات. بعض من الميزات التي تجعل تجربة موقع الويب الخاص بك أكثر كفاءة وقد لا تعمل بشكل صحيح.
+
+ومع ذلك، سوف يكون لا يزال قادرا على وضع أوامر
+و userlogin عرض الدولة
+عن طريق الاتصال بخدمة العملاء.
+
+
+الكشف عن طرف ثالث
+
+نحن لا نبيع، والتجارة، أو نقل إلى أطراف خارجية المعلومات المعرفة بهويتك الشخصية إلا إذا كنا تزويد المستخدمين مع إشعار مسبق. وهذا لا يشمل استضافة موقع الشركاء والأطراف الأخرى الذين يساعدوننا في تشغيل موقعنا على شبكة الإنترنت، وإجراء أعمالنا، أو خدمة مستخدمينا، طالما وافقت تلك الأطراف للحفاظ على سرية هذه المعلومات. يجوز لنا أيضا الإفراج عن المعلومات عند الإفراج عنها هو المناسب للامتثال للقانون، وفرض سياسات موقعنا، أو حماية حقوقنا أو حقوق الآخرين أو ملكية أو سلامة.
+
+ومع ذلك، يمكن تقديم المعلومات زائر غير شخصية لأطراف أخرى للتسويق والإعلان، أو غيرها من الاستخدامات.
+
+روابط الجهات الخارجية
+
+في بعض الأحيان، في تقديرنا، ونحن قد تشمل أو تقديم منتجات جهة خارجية أو خدمات على موقعنا. مواقع الطرف الثالث هذه لديها سياسات خصوصية منفصلة ومستقلة. وبالتالي فإننا لا نتحمل أية مسؤولية عن محتوى وأنشطة هذه المواقع المرتبطة. ومع ذلك، فإننا نسعى إلى حماية سلامة موقعنا ونرحب بأي ملاحظات حول هذه المواقع.
+
+جوجل
+
+متطلبات إعلانات Google ويمكن تلخيصها مبادئ الإعلان جوجل. وضعوا في المكان لتوفير تجربة إيجابية للمستخدمين. https://support.google.com/adwordspolicy/answer/1316548؟hl=en
+
+نحن لم تمكين جوجل AdSense على موقعنا لكننا قد تفعل ذلك في المستقبل.
+
+قانون حماية الخصوصية على الإنترنت كاليفورنيا
+
+CalOPPA هي أول دولة القانون في البلاد بحاجة إلى المواقع التجارية والخدمات على الإنترنت لنشر سياسة الخصوصية. تمتد متناول القانون إلى ما وراء كاليفورنيا يتطلب أي شخص أو شركة في الولايات المتحدة (وتصور العالم) التي تعمل مواقع جمع معلومات شخصية من المستهلكين كاليفورنيا لنشر سياسة الخصوصية واضح على موقعها على الانترنت تفيد بالضبط المعلومات التي يتم جمعها وتلك الأفراد أو الشركات الذين يتم تقاسمها. - انظر للمزيد على: http://consumercal.org/california-online-privacy-protection-act-caloppa/#sthash.0FdRbT51.dpuf
+
+وفقا لCalOPPA، نوافق على ما يلي:
+ويمكن للمستخدمين زيارة موقعنا مجهول.
+مرة واحدة يتم إنشاء سياسة الخصوصية هذه، وسوف نقوم بإضافة وصلة إليها على الصفحة الرئيسية لدينا أو كحد أدنى، على أول صفحة كبيرة بعد دخول موقعنا على الانترنت.
+ويشمل صلتنا سياسة الخصوصية كلمة "الخصوصية"، ويمكن بسهولة يمكن العثور على الصفحة المحددة أعلاه.
+
+سيتم إعلامك بأي تغييرات سياسة الخصوصية:
+      • عبر البريد الالكتروني
+يمكن تغيير المعلومات الشخصية الخاصة بك:
+      • عن طريق البريد الإلكتروني لنا
+
+كيف يمكن التعامل مع موقعنا لا تتبع الإشارات؟
+نكرم لا تتبع الإشارات ولا تتبع الكوكيز النبات، أو استخدام الإعلانات عندما آلية متصفح لا تتبع (DNT) في المكان.
+
+هل يسمح موقعنا طرف ثالث تتبع السلوكي؟
+من المهم أيضا أن نلاحظ أن نسمح لطرف ثالث تتبع السلوكي
+
+COPPA (الأطفال الآن قانون حماية الخصوصية)
+
+عندما يتعلق الأمر بجمع معلومات شخصية من الأطفال الذين تقل أعمارهم عن 13 عاما، الطفل وقانون حماية (COPPA) الخصوصية على الإنترنت يضع الآباء والأمهات في السيطرة عليها. تفرض لجنة التجارة الاتحادية، وكالة حماية المستهلك الولايات المتحدة الأمريكية، وCOPPA القاعدة، والتي تنص على ما مشغلي المواقع والخدمات عبر الإنترنت يجب القيام به لحماية خصوصية الأطفال والسلامة على الانترنت.
+
+نحن لا تسويق خصيصا على الأطفال الذين تقل أعمارهم عن 13 سنة.
+
+ممارسات معلومات نزيهة
+
+تشكل ممارسات المعلومات العادلة مبادئ العمود الفقري لقانون الخصوصية في الولايات المتحدة والمفاهيم التي تشمل لعبت دورا هاما في تطوير قوانين حماية البيانات في جميع أنحاء العالم. فهم معلومات مبادئ الممارسات العادلة والكيفية التي ينبغي أن تنفذ أمر بالغ الأهمية للامتثال لقوانين الخصوصية المختلفة التي حماية المعلومات الشخصية.
+
+من أجل أن يكون في خط مع ممارسات المعلومات العادلة سنتخذ إجراءات الاستجابة التالية، يجب أن يحدث خرق البيانات:
+وسوف نقوم بإعلامك عبر البريد الإلكتروني
+      • في غضون يوم عمل 1
+
+ونحن نتفق أيضا على التعويض مبدأ الفردية التي تتطلب أن الأفراد لديهم الحق في ملاحقة قانونيا حقوق قابلة للتنفيذ ضد جامعي البيانات والمعالجات الذين يفشلون في الالتزام بالقانون. يتطلب هذا المبدأ ليس فقط أن الأفراد لديهم حقوق واجبة التنفيذ ضد مستخدمي البيانات، ولكن أيضا أن الأفراد لديهم اللجوء إلى المحاكم أو الهيئات الحكومية للتحقيق و / أو مقاضاة عدم امتثال معالجات البيانات.
+
+يستطيع الرسائل الاقتحامية قانون
+
+قانون CAN-SPAM هو القانون الذي يحدد قواعد للبريد الإلكتروني التجاري، يحدد المتطلبات للرسائل التجارية، ويعطي متلقي الحق في الحصول على رسائل البريد الإلكتروني توقفت من إرسالها لهم، ويحدد عقوبات صارمة على الانتهاكات.
+
+نقوم بجمع عنوان البريد الإلكتروني الخاص بك من أجل:
+      • إرسال المعلومات، والرد على الاستفسارات، و / أو طلبات أو أسئلة أخرى
+      • السوق إلى قائمتنا البريدية أو الاستمرار في إرسال رسائل البريد الإلكتروني لعملائنا بعد وقوع المعاملة الأصلية.
+
+أن تكون وفقا للCANSPAM، نوافق على ما يلي:
+      • عدم استخدام المواد كاذبة أو مضللة أو عناوين البريد الإلكتروني.
+
+إذا في أي وقت كنت ترغب في إلغاء الاشتراك الخاص باستلام رسائل البريد الإلكتروني مستقبلا، يمكنك مراسلتنا على
+وسنقوم بإزالة فورا لك من جميع المراسلات.
+
+
+                    &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="col-md-4 about-mid1"&gt;
+                    &lt;p&gt;الاتصال بنا&lt;/p&gt;
+                    &lt;p&gt;
+                        إذا كان هناك أي أسئلة بخصوص سياسة الخصوصية هذه، يمكنكم الاتصال بنا باستخدام المعلومات الواردة أدناه.
+&lt;font style="
+    text-decoration: underline;
+    color: #1f4164;
+    font-size: 20px;
+"&gt;support@akaratak.com
+                    &lt;/font&gt;
+                    &lt;/p&gt;
+                    &lt;a href="mailto:support@akaratak.com" class="hvr-sweep-to-right more-in"&gt;اتصل بنا&lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class="clearfix"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!----&gt;
+    &lt;/div&gt;</value>
+  </data>
+</root>

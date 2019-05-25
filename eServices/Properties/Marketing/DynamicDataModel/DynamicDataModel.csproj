@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D4CE3438-635E-4896-B120-4AFE72D3835D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DynamicDataModel</RootNamespace>
+    <AssemblyName>DynamicDataModel</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="JuiceUI">
+      <HintPath>..\..\..\..\Binaries\Others\JuiceUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.EntityDataSource, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\packages\Microsoft.AspNet.EntityDataSource.6.0.0\lib\net40\Microsoft.AspNet.EntityDataSource.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Linq.Dynamic">
+      <HintPath>..\..\..\..\packages\System.Linq.Dynamic.1.0.0\lib\net40\System.Linq.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.DynamicData.Design" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_LocalResources\TableCols.ar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TableCols.ar.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_LocalResources\TableCols.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TableCols.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_LocalResources\TableCols.tr.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TableCols.tr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_LocalResources\TableColsDesc.ar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TableColsDesc.ar.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_LocalResources\TableColsDesc.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TableColsDesc.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_LocalResources\TableColsDesc.tr.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TableColsDesc.tr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\BL.cs" />
+    <Compile Include="Classes\SessionData.cs" />
+    <Compile Include="Model\City.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Contract_Type.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Country.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Model.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Model.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Model.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PartialClasses\Entities.cs" />
+    <Compile Include="Model\PartialClasses\realestate\City.cs" />
+    <Compile Include="Model\PartialClasses\realestate\Country.cs" />
+    <Compile Include="Model\PartialClasses\realestate\Property.cs" />
+    <Compile Include="Model\PartialClasses\realestate\Property_Type.cs" />
+    <Compile Include="Model\PartialClasses\realestate\Users.cs" />
+    <Compile Include="Model\Property.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Property_Category.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Property_Photos.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Property_Type.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\User.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Content Include="Classes\Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Classes\Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Classes\Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Classes\Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Classes\Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Classes\Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Classes\Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Classes\Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Classes\Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Classes\Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Classes\Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Classes\Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Classes\Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Classes\Content\themes\base\jquery-ui.css" />
+    <Content Include="Classes\Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Classes\Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Classes\Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Classes\Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Classes\Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Classes\Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Classes\Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Classes\Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Classes\Content\themes\base\jquery.ui.menu.css" />
+    <Content Include="Classes\Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Classes\Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Classes\Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Classes\Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Classes\Content\themes\base\jquery.ui.spinner.css" />
+    <Content Include="Classes\Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Classes\Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Classes\Content\themes\base\jquery.ui.tooltip.css" />
+    <Content Include="Classes\Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Classes\Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Classes\Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Classes\Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Classes\Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Classes\Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Classes\Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Classes\Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Classes\Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Classes\Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Classes\Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Classes\Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Classes\Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Classes\Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Classes\Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Classes\Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Classes\Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Classes\Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Classes\Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Classes\Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Classes\Content\themes\base\minified\jquery.ui.menu.min.css" />
+    <Content Include="Classes\Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Classes\Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Classes\Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Classes\Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Classes\Content\themes\base\minified\jquery.ui.spinner.min.css" />
+    <Content Include="Classes\Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Classes\Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Classes\Content\themes\base\minified\jquery.ui.tooltip.min.css" />
+    <Content Include="Classes\Content\themes\Fresh-Squeezed\images\ui-bg_diagonals-small_25_c9c9c9_40x40.png" />
+    <Content Include="Classes\Content\themes\Fresh-Squeezed\images\ui-bg_flat_0_313f3c_40x100.png" />
+    <Content Include="Classes\Content\themes\Fresh-Squeezed\images\ui-bg_flat_0_4d4d4d_40x100.png" />
+    <Content Include="Classes\Content\themes\Fresh-Squeezed\images\ui-bg_flat_100_f1eeee_40x100.png" />
+    <Content Include="Classes\Content\themes\Fresh-Squeezed\images\ui-bg_highlight-soft_50_f7e17d_1x100.png" />
+    <Content Include="Classes\Content\themes\Fresh-Squeezed\images\ui-bg_highlight-soft_65_e9f245_1x100.png" />
+    <Content Include="Classes\Content\themes\Fresh-Squeezed\images\ui-bg_highlight-soft_75_59c9c0_1x100.png" />
+    <Content Include="Classes\Content\themes\Fresh-Squeezed\images\ui-bg_highlight-soft_75_d8ff94_1x100.png" />
+    <Content Include="Classes\Content\themes\Fresh-Squeezed\images\ui-bg_inset-soft_95_f46f5d_1x100.png" />
+    <Content Include="Classes\Content\themes\Fresh-Squeezed\images\ui-icons_16837f_256x240.png" />
+    <Content Include="Classes\Content\themes\Fresh-Squeezed\images\ui-icons_186764_256x240.png" />
+    <Content Include="Classes\Content\themes\Fresh-Squeezed\images\ui-icons_222222_256x240.png" />
+    <Content Include="Classes\Content\themes\Fresh-Squeezed\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Classes\Content\themes\Fresh-Squeezed\images\ui-icons_454545_256x240.png" />
+    <Content Include="Classes\Content\themes\Fresh-Squeezed\images\ui-icons_834916_256x240.png" />
+    <Content Include="Classes\Content\themes\Fresh-Squeezed\images\ui-icons_9f1d1d_256x240.png" />
+    <Content Include="Classes\Content\themes\Fresh-Squeezed\jquery-ui-1.9.0.custom.css" />
+    <Content Include="Classes\Content\themes\Supercharged\images\ui-bg_flat_0_303030_40x100.png" />
+    <Content Include="Classes\Content\themes\Supercharged\images\ui-bg_flat_100_383838_40x100.png" />
+    <Content Include="Classes\Content\themes\Supercharged\images\ui-bg_flat_75_f2f2f2_40x100.png" />
+    <Content Include="Classes\Content\themes\Supercharged\images\ui-bg_inset-hard_5_2b2b2b_1x100.png" />
+    <Content Include="Classes\Content\themes\Supercharged\images\ui-bg_inset-soft_15_5e5e5e_1x100.png" />
+    <Content Include="Classes\Content\themes\Supercharged\images\ui-bg_inset-soft_45_ffc905_1x100.png" />
+    <Content Include="Classes\Content\themes\Supercharged\images\ui-bg_inset-soft_75_ffec52_1x100.png" />
+    <Content Include="Classes\Content\themes\Supercharged\images\ui-bg_inset-soft_95_ff6124_1x100.png" />
+    <Content Include="Classes\Content\themes\Supercharged\images\ui-icons_1c1c1c_256x240.png" />
+    <Content Include="Classes\Content\themes\Supercharged\images\ui-icons_222222_256x240.png" />
+    <Content Include="Classes\Content\themes\Supercharged\images\ui-icons_303030_256x240.png" />
+    <Content Include="Classes\Content\themes\Supercharged\images\ui-icons_774322_256x240.png" />
+    <Content Include="Classes\Content\themes\Supercharged\images\ui-icons_8a4e19_256x240.png" />
+    <Content Include="Classes\Content\themes\Supercharged\images\ui-icons_ffbc0f_256x240.png" />
+    <Content Include="Classes\Content\themes\Supercharged\images\ui-icons_ffc905_256x240.png" />
+    <Content Include="Classes\Content\themes\Supercharged\jquery-ui-1.9.0.custom.css" />
+    <Content Include="Model\Model.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\Model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.cs</LastGenOutput>
+    </Content>
+    <Content Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </Content>
+    <Compile Include="Properties\AssemblyInfo.cs">
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="Web.Config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Model\Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EntityDeploy>
+    <Content Include="Model\Model.edmx.diagram">
+      <DependentUpon>Model.edmx</DependentUpon>
+    </Content>
+    <None Include="Web.Debug.Config">
+      <DependentUpon>Web.Config</DependentUpon>
+    </None>
+    <None Include="Web.Release.Config">
+      <DependentUpon>Web.Config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataSet\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App_LocalResources\TableCols.ar.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>TableCols.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_LocalResources\TableCols.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>TableCols.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_LocalResources\TableCols.tr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>TableCols.tr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_LocalResources\TableColsDesc.ar.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>TableColsDesc.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_LocalResources\TableColsDesc.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>TableColsDesc.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_LocalResources\TableColsDesc.tr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>TableColsDesc.tr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\DynamicDataLibrary\DynamicDataLibrary.csproj">
+      <Project>{194cf206-bc0c-4875-b702-8c9d8b2fdf25}</Project>
+      <Name>DynamicDataLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\NotAClue%28Modified%29\NotAClue.ComponentModel.DataAnnotations\NotAClue.ComponentModel.DataAnnotations.csproj">
+      <Project>{d6d0b33d-ee27-45b0-b39a-603f9e8180b5}</Project>
+      <Name>NotAClue.ComponentModel.DataAnnotations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\NotAClue%28Modified%29\NotAClue.Web.DynamicData\NotAClue.Web.DynamicData.csproj">
+      <Project>{397b67f4-8e78-4f10-8d60-d05f0daafc5c}</Project>
+      <Name>NotAClue.Web.DynamicData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\NotAClue%28Modified%29\NotAClue.Web.UI.WebControls\NotAClue.Web.UI.WebControls.csproj">
+      <Project>{2f5dcdd8-4fab-4b4e-8d86-33b2851b11b3}</Project>
+      <Name>NotAClue.Web.UI.WebControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\NotAClue%28Modified%29\NotAClue.Web\NotAClue.Web.csproj">
+      <Project>{4de564cf-c12e-4678-9c1b-f6589a6a5601}</Project>
+      <Name>NotAClue.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\NotAClue%28Modified%29\NotAClue\NotAClue.csproj">
+      <Project>{6c5b5e7e-6abe-4915-bfa1-a135be9c7a12}</Project>
+      <Name>NotAClue</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\PortableLibrary\PortableLibrary.csproj">
+      <Project>{d39fe9a3-5295-495b-b31a-cca17f422dfc}</Project>
+      <Name>PortableLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'RealEstateBuild|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>39668</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:26554/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

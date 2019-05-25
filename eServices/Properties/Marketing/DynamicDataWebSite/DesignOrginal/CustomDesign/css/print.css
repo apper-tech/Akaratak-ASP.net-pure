@@ -1,0 +1,122 @@
+﻿@page {
+    size: auto;
+    margin: 0;
+}
+
+@page :left {
+    margin: 0.5cm;
+}
+
+@page :right {
+    margin: 0.5cm;
+}
+
+
+@media print {
+    /* All your print styles go here */
+    #header, #footer, #nav {
+        display: none !important;
+    }
+
+    #body {
+        -webkit-print-color-adjust: exact;
+        border-top: 0px;
+    }
+
+    .DDSubHeader {
+        font-size: 20px !important;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .DDLightHeader {
+        padding: 6px 10px !important;
+    }
+}
+
+table {
+    page-break-inside: auto;
+}
+
+tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+}
+
+.header_print {
+    height: 170px;
+}
+
+    .header_print > div {
+        float: right;
+    }
+
+.header_print_top {
+    text-align: center;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.header_print_right {
+    width: 280px;
+    text-align: center;
+    line-height: 1.7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    color: #104221;
+}
+
+.header_print_middle {
+    width: 380px;
+    text-align: center;
+}
+
+.header_print_left {
+    width: 280px;
+    line-height: 2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    color: #104221;
+}
+
+.DDSubHeader {
+    text-align: center;
+}
+/* Hide some elements */
+.DDBottomHyperLink, .EditLink, .InsertLink, .print_button, .blue_line {
+    display: none;
+}
+
+tr, td, th, .tr, .td, .th, .DDGridView tr, .DDGridView td, .DDGridView th {
+    page-break-inside: avoid;
+}
+
+    /*tr:after {
+        content: "   ";
+    }*/
+
+table.DDDetailsTable a:hover {
+    color: inherit !important;
+}
+
+table.DDGridView .td:hover, table.DDListView .td:hover {
+    background-color: inherit;
+}
+
+table.DDGridView .DDSelected a:hover, table.DDListView .DDSelected a:hover {
+    color: inherit;
+}
+
+table.DDGridView .td a:hover, table.DDListView .td a:hover {
+    color: inherit;
+}
+
+/*@media print {
+    a:after {
+        content: " (" attr(href) ") ";
+        font-size: 0.8em;
+        font-weight: normal;
+    }
+}*/

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--use the description to define the icon of the item when bind to push menu
+check font awsome for details-->
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" enableLocalization="true" >
+  <siteMapNode title="Root" url="/%">
+    <siteMapNode url="~/" title="$resources:DynamicData,Home" description="fa fa-home"/>
+    <siteMapNode url="/About" title="$resources:RealEstate,About_Company" description="fa fa-address-card"/>
+    <siteMapNode url="#1" title="$resources:DynamicData,Search"  description="fa fa-search" >
+      <siteMapNode url="#11" title="$resources:Property_Type,Residental"  description="fa fa-home" >
+        <siteMapNode url="/List/Residental/Apartment" title="$resources:Property_Type,Apartment" description="fa fa-building"/>
+        <siteMapNode url="/List/Residental/Commonhold" title="$resources:Property_Type,Commonhold" description="fa fa-industry" />
+        <siteMapNode url="/List/Residental/Timesahre" title="$resources:Property_Type,Timesahre" description="fa fa-clock-o" />
+        <siteMapNode url="/List/Residental/House" title="$resources:Property_Type,House" description="fa fa-home" />
+        <siteMapNode url="/List/Residental/Villa" title="$resources:Property_Type,Villa" description="fa fa-key" />
+        <siteMapNode url="/List/Residental/Mansion" title="$resources:Property_Type,Mansion" description="fa fa-diamond" />
+        <siteMapNode url="/List/Residental/Other" title="$resources:Property_Type,Other" description="fa fa-life-ring" />
+      </siteMapNode>
+      <siteMapNode url="#12" title="$resources:Property_Type,Commertal"  description="fa fa-money" >
+        <siteMapNode url="/List/Commertial/In_Building_Shop" title="$resources:Property_Type,In_Building_Shop" description="fa fa-money"/>
+        <siteMapNode url="/List/Commertial/In_Mall_Shop" title="$resources:Property_Type,In_Mall_Shop" description="fa fa-pencil-square-o" />
+        <siteMapNode url="/List/Commertial/Office" title="$resources:Property_Type,Office" description="fa fa-building" />
+        <siteMapNode url="/List/Commertial/Building" title="$resources:Property_Type,Building" description="fa fa-exchange" />
+        <siteMapNode url="/List/Commertial/Mall" title="$resources:Property_Type,Mall" description="fa fa-glass" />
+        <siteMapNode url="/List/Commertial/Hotel" title="$resources:Property_Type,Hotel" description="fa fa-bed" />
+        <siteMapNode url="/List/Commertial/Resturant" title="$resources:Property_Type,Resturant" description="fa fa-usd" />
+        <siteMapNode url="/List/Commertial/Other" title="$resources:Property_Type,Other" description="fa fa-life-ring" />
+      </siteMapNode>
+      <siteMapNode url="#13" title="$resources:Property_Type,Luxury"  description="fa fa-diamond" >
+        <siteMapNode url="/List/Luxury/Resort" title="$resources:Property_Type,Resort" description="fa fa-leaf"/>
+        <siteMapNode url="/List/Luxury/Hotel_Room" title="$resources:Property_Type,Hotel_Room" description="fa fa-bed" />
+        <siteMapNode url="/List/Luxury/Resturant_Table" title="$resources:Property_Type,Resturant_Table" description="fa fa-table" />
+        <siteMapNode url="/List/Luxury/Other" title="$resources:Property_Type,Other" description="fa fa-life-ring" />
+      </siteMapNode>
+      <siteMapNode url="#14" title="$resources:Property_Category,Land"  description="fa fa-map" >
+        <siteMapNode url="/List/Land/Residental" title="$resources:Property_Type,Residental" description="fa fa-home"/>
+        <siteMapNode url="/List/Land/Commertal" title="$resources:Property_Type,Commertal" description="fa fa-money" />
+        <siteMapNode url="/List/Land/Agriculture" title="$resources:Property_Type,Agriculture" description="fa fa-leaf" />
+        <siteMapNode url="/List/Land/Luxury" title="$resources:Property_Type,Luxury" description="fa fa-diamond" />
+        <siteMapNode url="/List/Land/Non_Licensed" title="$resources:Property_Type,Non_Licensed" description="fa fa-id-card" />
+        <siteMapNode url="/List/Land/Other" title="$resources:Property_Type,Other" description="fa fa-life-ring" />
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="#2" title="$resources:RealEstate,Add_Property"  description="fa fa-plus" >
+      <siteMapNode url="#21" title="$resources:Property_Type,Residental"  description="fa fa-home" >
+        <siteMapNode url="/New/Residental/Apartment" title="$resources:Property_Type,Apartment" description="fa fa-building"/>
+        <siteMapNode url="/New/Residental/Commonhold" title="$resources:Property_Type,Commonhold" description="fa fa-industry" />
+        <siteMapNode url="/New/Residental/Timesahre" title="$resources:Property_Type,Timesahre" description="fa fa-clock-o" />
+        <siteMapNode url="/New/Residental/House" title="$resources:Property_Type,House" description="fa fa-home" />
+        <siteMapNode url="/New/Residental/Villa" title="$resources:Property_Type,Villa" description="fa fa-key" />
+        <siteMapNode url="/New/Residental/Mansion" title="$resources:Property_Type,Mansion" description="fa fa-diamond" />
+        <siteMapNode url="/New/Residental/Other" title="$resources:Property_Type,Other" description="fa fa-life-ring" />
+      </siteMapNode>
+      <siteMapNode url="#22" title="$resources:Property_Type,Commertal"  description="fa fa-money" >
+        <siteMapNode url="/New/Commertial/In_Building_Shop" title="$resources:Property_Type,In_Building_Shop" description="fa fa-money"/>
+        <siteMapNode url="/New/Commertial/In_Mall_Shop" title="$resources:Property_Type,In_Mall_Shop" description="fa fa-pencil-square-o" />
+        <siteMapNode url="/New/Commertial/Office" title="$resources:Property_Type,Office" description="fa fa-building" />
+        <siteMapNode url="/New/Commertial/Building" title="$resources:Property_Type,Building" description="fa fa-exchange" />
+        <siteMapNode url="/New/Commertial/Mall" title="$resources:Property_Type,Mall" description="fa fa-glass" />
+        <siteMapNode url="/New/Commertial/Hotel" title="$resources:Property_Type,Hotel" description="fa fa-bed" />
+        <siteMapNode url="/New/Commertial/Resturant" title="$resources:Property_Type,Resturant" description="fa fa-usd" />
+        <siteMapNode url="/New/Commertial/Other" title="$resources:Property_Type,Other" description="fa fa-life-ring" />
+      </siteMapNode>
+      <siteMapNode url="#23" title="$resources:Property_Type,Luxury"  description="fa fa-diamond" >
+        <siteMapNode url="/New/Luxury/Resort" title="$resources:Property_Type,Resort" description="fa fa-leaf"/>
+        <siteMapNode url="/New/Luxury/Hotel_Room" title="$resources:Property_Type,Hotel_Room" description="fa fa-bed" />
+        <siteMapNode url="/New/Luxury/Resturant_Table" title="$resources:Property_Type,Resturant_Table" description="fa fa-table" />
+        <siteMapNode url="/New/Luxury/Other" title="$resources:Property_Type,Other" description="fa fa-life-ring" />
+      </siteMapNode>
+      <siteMapNode url="#24" title="$resources:Property_Category,Land"  description="fa fa-map" >
+        <siteMapNode url="/New/Land/Residental" title="$resources:Property_Type,Residental" description="fa fa-home"/>
+        <siteMapNode url="/New/Land/Commertal" title="$resources:Property_Type,Commertal" description="fa fa-money" />
+        <siteMapNode url="/New/Land/Agriculture" title="$resources:Property_Type,Agriculture" description="fa fa-leaf" />
+        <siteMapNode url="/New/Land/Luxury" title="$resources:Property_Type,Luxury" description="fa fa-diamond" />
+        <siteMapNode url="/New/Land/Non Licensed" title="$resources:Property_Type,Non_Licensed" description="fa fa-id-card" />
+        <siteMapNode url="/New/Land/Other" title="$resources:Property_Type,Other" description="fa fa-life-ring" />
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="#3" title="$resources:RealEstate,User_Area" description="fa fa-user">
+      <siteMapNode url="/Account/Manage" title="$resources:Account,Page_Manage_Name" description="fa fa-pie-chart"/>
+      <siteMapNode url="/Account/ManagePassword" title="$resources:Account,Page_ManagePassword_Name" description="fa fa-lock"/>
+      <siteMapNode url="/Account/Edit/" title="$resources:Account,Page_ManageDetails_Name" description="fa fa-info"/>
+      <siteMapNode url="/Added/" title="$resources:Account,Page_Manage_Property" description="fa fa-book"></siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="/Carrer" title="$resources:RealEstate,Join_Us" description="fa fa-black-tie"/>
+    <siteMapNode url="/Feed" title="$resources:RealEstate,Feed_Back" description="fa fa-reply"/>
+    <siteMapNode url="/Contact" title="$resources:RealEstate,Contact_Us" description="fa fa-comments-o"/>
+    <!--<siteMapNode url="/Terms" title="Reg_Terms" description="fa fa-user"/>
+    <siteMapNode url="/PrivacyPolicy" title="Privacy" description="fa fa-user"/>-->
+  </siteMapNode>
+</siteMap>
